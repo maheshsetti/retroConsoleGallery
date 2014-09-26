@@ -1,0 +1,22 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+.body {
+    perspective: 100;
+    transform-style: preserve-3d;
+}
+.nintendo {
+    perspective: 100;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 197px;
+    img {
+        max-width: 100%;
+    }
+}
