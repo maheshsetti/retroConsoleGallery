@@ -30,7 +30,6 @@ var generateStar = function(attachmentElement) {
         {
             opacity: 1,
             z: '+=25',
-            rotationX: '-10',
             opacity: 1,
             ease:Linear.easeNone
     });
@@ -44,7 +43,6 @@ var generateStar = function(attachmentElement) {
 var animateOut = function(element) {
     TweenLite.to(element, 5, {
         z: '+=25',
-        rotationX: '-= 10',
         opacity: 0,
         ease:Linear.easeNone,
         onComplete: removeShit,

@@ -69,124 +69,136 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 8, ../sass/screen.scss */
 body, html {
-  perspective: 100;
+  -webkit-perspective: 50;
+  -moz-perspective: 50;
+  -ms-perspective: 50;
+  -o-perspective: 50;
+  perspective: 50;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 0;
   padding: 0;
   background-color: black;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/screen.scss */
-.main-quiz-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-/* line 27, ../sass/screen.scss */
-.main-quiz-wrapper .front-glow {
-  position: absolute;
-  left: 0;
+/* line 25, ../sass/screen.scss */
+.question-wrapper {
+  position: fixed;
   top: 0;
-  width: 10000%;
+  left: 0;
+  width: 100%;
+  display: table;
   height: 100%;
-  background-image: url(../img/front-glow-1987.png);
+}
+/* line 32, ../sass/screen.scss */
+.question-wrapper .question-container {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding: 11px;
 }
 /* line 37, ../sass/screen.scss */
-.main-quiz-wrapper .back-glow {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 10000%;
-  height: 100%;
-  background-image: url(../img/back-glow-1987.png);
+.question-wrapper .question-container .question {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  display: block;
+  -webkit-transform: perspective(50) translateZ(0);
+  -moz-transform: perspective(50) translateZ(0);
+  -ms-transform: perspective(50) translateZ(0);
+  -o-transform: perspective(50) translateZ(0);
+  transform: perspective(50) translateZ(0);
 }
-/* line 47, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container {
-  width: 10000%;
-  height: 100%;
+/* line 46, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-1,
+.question-wrapper .question-container .question .alt-2,
+.question-wrapper .question-container .question .alt-3,
+.question-wrapper .question-container .question .alt-4 {
+  display: block;
   position: absolute;
-  left: 0;
-  top: 0;
+  width: 380px;
+  height: 380px;
+  border: 4px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* line 53, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz {
+.question-wrapper .question-container .question .alt-1.selected,
+.question-wrapper .question-container .question .alt-2.selected,
+.question-wrapper .question-container .question .alt-3.selected,
+.question-wrapper .question-container .question .alt-4.selected {
+  -webkit-box-shadow: 0 0 60px #a5c7fa;
+  -moz-box-shadow: 0 0 60px #a5c7fa;
+  box-shadow: 0 0 60px #a5c7fa;
+  z-index: 100;
+}
+/* line 61, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-2 {
+  -webkit-transform: perspective(0) translate(420px, 0);
+  -moz-transform: perspective(0) translate(420px, 0);
+  -ms-transform: perspective(0) translate(420px, 0);
+  -o-transform: perspective(0) translate(420px, 0);
+  transform: perspective(0) translate(420px, 0);
+}
+/* line 64, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-3 {
+  -webkit-transform: perspective(0) translate(0, 420px);
+  -moz-transform: perspective(0) translate(0, 420px);
+  -ms-transform: perspective(0) translate(0, 420px);
+  -o-transform: perspective(0) translate(0, 420px);
+  transform: perspective(0) translate(0, 420px);
+}
+/* line 67, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-4 {
+  -webkit-transform: perspective(0) translate(420px, 420px);
+  -moz-transform: perspective(0) translate(420px, 420px);
+  -ms-transform: perspective(0) translate(420px, 420px);
+  -o-transform: perspective(0) translate(420px, 420px);
+  transform: perspective(0) translate(420px, 420px);
+}
+
+/* line 75, ../sass/screen.scss */
+.star-1,
+.star-2,
+.star-3 {
   position: absolute;
-  top: 10%;
-  width: 0.8%;
-  height: 80%;
-  background-color: rgba(255, 255, 255, 0.05);
+  width: 250px;
+  height: 250px;
+  left: -324px;
+  top: 0;
+  opacity: 0;
+  background-size: cover;
+  -webkit-transform: perspective(50) translateZ(0);
+  -moz-transform: perspective(50) translateZ(0);
+  -ms-transform: perspective(50) translateZ(0);
+  -o-transform: perspective(50) translateZ(0);
+  transform: perspective(50) translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
-/* line 59, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz .quiz-question {
-  color: white;
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
+
+/* line 88, ../sass/screen.scss */
+.star-1 {
+  background-image: url(../img/star-1.png);
 }
-/* line 65, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz .svar {
-  width: 50%;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  height: 100px;
+
+/* line 91, ../sass/screen.scss */
+.star-2 {
+  background-image: url(../img/star-2.png);
 }
-/* line 72, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz .svar:before {
-  position: absolute;
-  content: "";
-  border: 2px solid white;
-  width: 50%;
-  height: 50px;
-}
-/* line 81, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-1 {
-  left: 0.1%;
-}
-/* line 85, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-2 {
-  left: 1.10%;
-}
-/* line 89, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-3 {
-  left: 2.10%;
-}
-/* line 93, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-4 {
-  left: 3.10%;
-}
-/* line 97, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-5 {
-  left: 4.10%;
-}
-/* line 101, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-6 {
-  left: 5.10%;
-}
-/* line 105, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-7 {
-  left: 6.10%;
-}
-/* line 109, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-8 {
-  left: 7.10%;
-}
-/* line 113, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-9 {
-  left: 8.10%;
-}
-/* line 117, ../sass/screen.scss */
-.main-quiz-wrapper .main-quiz-container .quiz.quiz-10 {
-  left: 9.10%;
+
+/* line 94, ../sass/screen.scss */
+.star-3 {
+  background-image: url(../img/star-3.png);
 }

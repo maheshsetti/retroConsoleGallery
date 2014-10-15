@@ -6,118 +6,92 @@
 @import "compass";
 @import "compass/reset";
 body, html {
-    perspective: 100;
-    transform-style: preserve-3d;
+    @include perspective(50);
+    @include transform-style(preserve-3d);
     margin: 0;
     padding: 0;
     background-color: rgb(0,0,0);
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
+body {
+}
 * {
     @include box-sizing(border-box);
 }
 
-.main-quiz-wrapper {
+.question-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    display: table;
     height: 100%;
-    overflow: hidden;
-    position: relative;
-    .front-glow {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 10000%;
-        height: 100%;
-        background: {
-            image: url(../img/front-glow-1987.png);
-        }
-    }
-    .back-glow {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 10000%;
-        height: 100%;
-        background: {
-            image: url(../img/back-glow-1987.png);
-        }
-    }
-    .main-quiz-container {
-        width: 10000%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        .quiz {
-            position: absolute;
-            top: 10%;
-            width: 0.8%;
-            height: 80%;
-            background-color: rgba(255,255,255,0.05);
-            .quiz-question {
-                color: white;
-                font-size: 30px;
-                margin: 0;
-                padding: 0;
-            }
-            .svar {
-                width: 50%;
+    .question-container {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        padding: 11px;
+        .question {
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            display: block;
+            @include translateZ(0, 50);
+            .alt-1,
+            .alt-2,
+            .alt-3,
+            .alt-4 {
                 display: block;
-                float: left;
-                margin: 0;
-                padding: 0;
-                height: 100px;
-                &:before {
-                    position: absolute;
-                    content: "";
-                    border: 2px solid white;
-                    width: 50%;
-                    height: 50px;
+                position: absolute;
+                width: 380px;
+                height: 380px;
+                border: 4px solid white;
+                background-color: rgba(255,255,255,0.1);
+                &.selected {
+                    @include box-shadow(0 0 60px #a5c7fa);
+                    z-index: 100;
                 }
             }
 
-            &.quiz-1 {
-                left: 0.1%;
+            .alt-1 {
             }
-
-            &.quiz-2 {
-                left: 1.10%;
+            .alt-2 {
+                @include translate(420px, 0, 0);
             }
-
-            &.quiz-3 {
-                left: 2.10%;
+            .alt-3 {
+                @include translate(0, 420px, 0);
             }
-
-            &.quiz-4 {
-                left: 3.10%;
-            }
-
-            &.quiz-5 {
-                left: 4.10%;
-            }
-
-            &.quiz-6 {
-                left: 5.10%;
-            }
-
-            &.quiz-7 {
-                left: 6.10%;
-            }
-
-            &.quiz-8 {
-                left: 7.10%;
-            }
-
-            &.quiz-9 {
-                left: 8.10%;
-            }
-
-            &.quiz-10 {
-                left: 9.10%;
+            .alt-4 {
+                @include translate(420px, 420px, 0);
             }
         }
     }
+}
+.star-1,
+.star-2,
+.star-3, {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: -324px;
+    top: 0;
+    opacity: 0;
+    background: {
+        size: cover;
+    }
+    @include translateZ(0, 50);
+    -webkit-backface-visibility: hidden;
+}
+.star-1 {
+    background-image: url(../img/star-1.png);
+}
+.star-2 {
+    background-image: url(../img/star-2.png);
+}
+.star-3 {
+    background-image: url(../img/star-3.png);
 }
 

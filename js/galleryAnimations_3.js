@@ -22,31 +22,26 @@ var generateStar = function(attachmentElement) {
         left: randomNumber(0, innerWidth),
         top: randomNumber(0, innerHeight),
         width: 40,
-        height: 40,
-        opacity: 0
+        height: 40
     })
     .addClass('star-' + randomStar + '  new-star');
-    TweenLite.to(star, 5,
-        {
-            opacity: 1,
-            z: '+=25',
-            rotationX: '-10',
-            opacity: 1,
-            ease:Linear.easeNone
-    });
+    var tl = new TimelineMax({repeat:-1});
+    tl.to(star, 10, {rotation: 360, repeat: -1, ease:Linear.easeNone});
     attachmentElement.append(star);
-    //animateOut(star);
+    console.log('yo');
+    window.setTimeout(function() {
+        console.log('yooooo');
+    }, 2000);
     setTimeout(function() {
-        animateOut(star);
-    }, 5000);
+        console.log('fading out');
+        fadeOut(star);
+    }, 100);
 };
 
-var animateOut = function(element) {
-    TweenLite.to(element, 5, {
-        z: '+=25',
-        rotationX: '-= 10',
+var fadeOut = function(element) {
+    TweenLite.to(element, 2, {
         opacity: 0,
-        ease:Linear.easeNone,
+        ease:Power4.easeInOut,
         onComplete: removeShit,
         onCompleteParams: [element]
     });
@@ -70,7 +65,23 @@ var randomNumber = function(min, max) {
     return Math.floor((Math.random() * max) + min);
 };
 
-setInterval(function() {
-    console.log('generating stars');
-    generateStar($('body'));
-}, 200);
+document.onkeydown = function(e) {
+    var e = e || window.event;
+    var keypress = e.keyCode || e.which;
+    switch(keypress) {
+        case 38:
+            break;
+        case 37: console.log('left');
+            var stars = $('.new-star')
+                .addClass('old-star')
+                .removeClass('new-star');
+            animateOut(stars);
+            generateStars(40, 0, function() {
+                animateIn('.new-star');
+            });
+        break;
+        case 40: console.log('down'); moveBackground('down'); break;
+        case 39: console.log('right'); moveBackground('right'); break;
+    }
+}
+

@@ -1,0 +1,87 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen3.scss */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 4000;
+  -moz-perspective: 4000;
+  -ms-perspective: 4000;
+  -o-perspective: 4000;
+  perspective: 4000;
+}
+
+/* line 15, ../sass/screen3.scss */
+body {
+  background-color: #e6e6e6;
+  font-family: arial;
+}
+
+/* line 21, ../sass/screen3.scss */
+.left-menu {
+  position: absolute;
+  left: -320px;
+  top: 0;
+  height: 100%;
+  padding: 10px;
+  width: 324px;
+  transform: matrix3d(-0.866, 0, -0.49998, 0, 0, 1, 0, 0, 0.49998, 0, -0.866, 0, 0, 0, 0, 1);
+  background-color: #0b6a92;
+}
+/* line 33, ../sass/screen3.scss */
+.left-menu h3 {
+  color: white;
+  padding: 10px;
+  font-size: 60px;
+}
+/* line 38, ../sass/screen3.scss */
+.left-menu ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+/* line 44, ../sass/screen3.scss */
+.left-menu ul li {
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 51, ../sass/screen3.scss */
+.left-menu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 58, ../sass/screen3.scss */
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: #0b6a92;
+}
+/* line 73, ../sass/screen3.scss */
+.hamburger .bar-1,
+.hamburger .bar-2,
+.hamburger .bar-3 {
+  display: block;
+  background-color: white;
+  height: 6px;
+  width: 30px;
+}
+/* line 80, ../sass/screen3.scss */
+.hamburger .bar-2,
+.hamburger .bar-3 {
+  margin-top: 5px;
+}
