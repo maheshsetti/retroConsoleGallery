@@ -79,16 +79,35 @@ $(function() {
     };
 
     var generatePacMan = function(callback) {
-        var pelletSpaceHorisontal = (window.innerWidth-(30*20)) / 30;
-        var usedSpaced = 0;
+        var pelletSpaceVertical = (window.innerHeight-(20*10)) / 20;
+        var pelletSpaceHorisontal = (window.innerWidth-(40*10)) / 40;
         console.log('pelletspacehorisontal', pelletSpaceHorisontal);
-        for (var x = 0; x<60; x++) {
-            if(x > 0) {
-                usedSpaced = pelletSpaceHorisontal;
-            }
+        for (var x = 0; x<40; x++) {
+            var pellet = $('<div>').addClass('pellet').css('left', (10+pelletSpaceHorisontal)*x + 'px');
+            $('body').append(pellet);
+        }
+        for (var x = 0; x<20; x++) {
+            var pellet = $('<div>').addClass('pellet').css(
+            {
+                'top': (10+pelletSpaceVertical)*x + 'px',
+                'left': (window.innerWidth - 15) + 'px'
+            });
+            $('body').append(pellet);
+        }
+        for (var x = 40; x>0; x--) {
             var pellet = $('<div>').addClass('pellet').css(
                 {
-                'left': (40*(x-1)) + usedSpaced + 'px'
+                    'top': (window.innerHeight-15) + 'px',
+                    'left': (10+pelletSpaceHorisontal)*x + 'px'
+                }
+                );
+            $('body').append(pellet);
+        }
+        for (var x = 20; x>0; x--) {
+            var pellet = $('<div>').addClass('pellet').css(
+                {
+                'top': (10+pelletSpaceVertical)*x + 'px',
+                'left': '20'
                 }
                 );
             $('body').append(pellet);
@@ -100,25 +119,16 @@ $(function() {
         $('.pellet').each(function(index) {
             setTimeoutOnElement($(this), index);
         });
+        TweenLite.to($('.pac-man'), 20, {left:window.innerWidth-20, ease:Linear.easeNone, delay: 0.8, onComplete: function() {
+        }});
     };
 
     var setTimeoutOnElement = function (element, index) {
-        var nextElement = $('.pellet')[index+1] || undefined;
         console.log(element);
         setTimeout(function() {
             console.log(element);
             element.remove();
-            if(nextElement) {
-                TweenLite.to($('.pac-man'), 1, {left: $(nextElement).css('left'), onComplete: function() {
-                    console.log('bla');
-                    $('.pac-man').addClass('aapen');
-                    setTimeout(function() {
-                        console.log('bla2');
-                        $('.pac-man').removeClass('aapen');
-                    }, 800);
-                }});
-            }
-        },1900*(index));
+        },500*(index+1));
     };
 
     var createQuestion = function(question) {

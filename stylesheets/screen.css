@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -94,7 +94,16 @@ body, html {
   box-sizing: border-box;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, ../sass/screen.scss */
 .question-wrapper {
   position: fixed;
   top: 0;
@@ -102,27 +111,34 @@ body, html {
   width: 100%;
   display: table;
   height: 100%;
+  z-index: 1001;
 }
-/* line 32, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .question-wrapper .question-container {
   display: table-cell;
   text-align: left;
   vertical-align: middle;
   padding: 11px;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  z-index: 1001;
 }
-/* line 37, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .question-wrapper .question-container .question {
   width: 800px;
   height: 800px;
   margin: 0 auto;
   display: block;
-  -webkit-transform: perspective(50) translateZ(0);
-  -moz-transform: perspective(50) translateZ(0);
-  -ms-transform: perspective(50) translateZ(0);
-  -o-transform: perspective(50) translateZ(0);
-  transform: perspective(50) translateZ(0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: rotateY(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotateY(90deg);
+  /* Standard syntax */
+  position: relative;
+  z-index: 101;
 }
-/* line 46, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1,
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .question .alt-3,
@@ -134,17 +150,75 @@ body, html {
   border: 4px solid white;
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* line 53, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected,
 .question-wrapper .question-container .question .alt-2.selected,
 .question-wrapper .question-container .question .alt-3.selected,
 .question-wrapper .question-container .question .alt-4.selected {
-  -webkit-box-shadow: 0 0 60px #a5c7fa;
-  -moz-box-shadow: 0 0 60px #a5c7fa;
-  box-shadow: 0 0 60px #a5c7fa;
+  -webkit-box-shadow: 0 0 100px #8cbaff;
+  -moz-box-shadow: 0 0 100px #8cbaff;
+  box-shadow: 0 0 100px #8cbaff;
   z-index: 100;
 }
-/* line 61, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-1.answer-unselected,
+.question-wrapper .question-container .question .alt-2.answer-unselected,
+.question-wrapper .question-container .question .alt-3.answer-unselected,
+.question-wrapper .question-container .question .alt-4.answer-unselected {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+/* line 77, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-1.false-answer:after,
+.question-wrapper .question-container .question .alt-2.false-answer:after,
+.question-wrapper .question-container .question .alt-3.false-answer:after,
+.question-wrapper .question-container .question .alt-4.false-answer:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/false.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-opacity: 1;
+  background--webkit-transform: perspective(50) translateZ(40);
+  background--moz-transform: perspective(50) translateZ(40);
+  background--ms-transform: perspective(50) translateZ(40);
+  background--o-transform: perspective(50) translateZ(40);
+  background-transform: perspective(50) translateZ(40);
+  background--webkit-box-shadow: 0 0 10px #c8c8c8;
+  background--moz-box-shadow: 0 0 10px #c8c8c8;
+  background-box-shadow: 0 0 10px #c8c8c8;
+}
+/* line 95, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-1.correct-answer:after,
+.question-wrapper .question-container .question .alt-2.correct-answer:after,
+.question-wrapper .question-container .question .alt-3.correct-answer:after,
+.question-wrapper .question-container .question .alt-4.correct-answer:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/check.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-opacity: 1;
+  background--webkit-transform: perspective(50) translateZ(40);
+  background--moz-transform: perspective(50) translateZ(40);
+  background--ms-transform: perspective(50) translateZ(40);
+  background--o-transform: perspective(50) translateZ(40);
+  background-transform: perspective(50) translateZ(40);
+  background--webkit-box-shadow: 0 0 10px #c8c8c8;
+  background--moz-box-shadow: 0 0 10px #c8c8c8;
+  background-box-shadow: 0 0 10px #c8c8c8;
+}
+/* line 116, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-2 {
   -webkit-transform: perspective(0) translate(420px, 0);
   -moz-transform: perspective(0) translate(420px, 0);
@@ -152,7 +226,7 @@ body, html {
   -o-transform: perspective(0) translate(420px, 0);
   transform: perspective(0) translate(420px, 0);
 }
-/* line 64, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-3 {
   -webkit-transform: perspective(0) translate(0, 420px);
   -moz-transform: perspective(0) translate(0, 420px);
@@ -160,7 +234,7 @@ body, html {
   -o-transform: perspective(0) translate(0, 420px);
   transform: perspective(0) translate(0, 420px);
 }
-/* line 67, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-4 {
   -webkit-transform: perspective(0) translate(420px, 420px);
   -moz-transform: perspective(0) translate(420px, 420px);
@@ -169,7 +243,35 @@ body, html {
   transform: perspective(0) translate(420px, 420px);
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
+.pellet {
+  position: absolute;
+  top: 100%;
+  width: 20px;
+  height: 20px;
+  margin-top: -40px;
+  z-index: 200001;
+}
+/* line 134, ../sass/screen.scss */
+.pellet:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #f2ea0f;
+  -webkit-box-shadow: 0 0 10px #f2ea0f;
+  -moz-box-shadow: 0 0 10px #f2ea0f;
+  box-shadow: 0 0 10px #f2ea0f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 149, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3 {
@@ -186,19 +288,39 @@ body, html {
   -o-transform: perspective(50) translateZ(0);
   transform: perspective(50) translateZ(0);
   -webkit-backface-visibility: hidden;
+  z-index: 1;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
+}
+
+/* line 172, ../sass/screen.scss */
+.pac-man {
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 100%;
+  margin-top: -80px;
+  margin-left: -50px;
+  left: 0;
+  background-image: url(../img/janolavlukket.png);
+  background-size: 120px 80px;
+  background-repeat: no-repeat;
+  z-index: 200000;
+}
+/* line 186, ../sass/screen.scss */
+.pac-man.aapen {
+  background-image: url(../img/janolavaapen.png);
 }

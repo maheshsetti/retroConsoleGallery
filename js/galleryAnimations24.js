@@ -19,29 +19,37 @@ var generateStar = function(attachmentElement) {
 
     star
     .css({
-        left: 0,
+        left: randomNumber(0, innerWidth),
         top: randomNumber(0, innerHeight),
         width: 40,
         height: 40,
-        opacity: 1
+        opacity: 0
     })
     .addClass('star-' + randomStar + '  new-star');
-    TweenLite.to(star, 10,
+    TweenLite.to(star, 5,
         {
             opacity: 1,
-            x: innerWidth+40,
-            z: 40,
+            z: '+=25',
+            rotationX: '-10',
             opacity: 1,
             ease:Linear.easeNone
     });
     attachmentElement.append(star);
-    animateOut(star);
+    //animateOut(star);
+    setTimeout(function() {
+        animateOut(star);
+    }, 5000);
 };
 
 var animateOut = function(element) {
-    setTimeout(function() {
-        element.remove();
-    }, 10000);
+    TweenLite.to(element, 5, {
+        z: '+=25',
+        rotationX: '-= 10',
+        opacity: 0,
+        ease:Linear.easeNone,
+        onComplete: removeShit,
+        onCompleteParams: [element]
+    });
 };
 
 var removeShit = function(element) {
@@ -64,5 +72,5 @@ var randomNumber = function(min, max) {
 
 setInterval(function() {
     console.log('generating stars');
-    generateStar($('.background-animation'));
+    generateStar($('body'));
 }, 200);
