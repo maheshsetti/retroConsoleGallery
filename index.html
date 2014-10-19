@@ -7,6 +7,33 @@
     </head>
     <body class="body">
     <div class="background-animation"></div>
+    <div class="scoreboard">
+        <div id="level-text">Level </div>
+        <div id="level-number">g00b</div>
+        <div id="score-number">g00b</div>
+        <div id="score-text">Score</div>
+        <div id="lives-number">g00b</div>
+        <div id="lives-text">Liv</div>
+    </div>
+    <div class="menu-wrapper">
+        <div class="menu-container">
+            <div id="main-menu" class="menu">
+                <h2 class="menu-subheader">Velkommen til gards! <br>Klarer du min quiz, er du verdig retro-tronen. <br>Trykk start for å starte spillet!</h2>
+                <div class="menu-button selected">Start game</div>
+            </div>
+            <div id="game-over-menu" class="menu">
+                <h1 class="menu-header">Game over!</h1>
+                <h2 class="menu-subheader">Så var du kanskje ikke verdig likevel?<br><br>Her er poengene dine</h2>
+
+                <div id="menu-points-number" class="points-number">0</div>
+                <div id="menu-points-text" class="points-text">Score</div>
+                <div class="menu-button selected">Main menu</div>
+            </div>
+            <div id="next-level-menu" class="menu"></div>
+        </div>
+    </div>
+    <div class="time-counter"></div>
+    <div id="jan-olav-big"></div>
     <!--
         <div class="question-wrapper">
             <div class="question-container">
@@ -20,7 +47,7 @@
         </div>
         -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/gsap/src/minified/Tweenlite.min.js"></script>
+        <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
         <script src="bower_components/gsap/src/minified/easing/EasePack.min.js"></script>
         <script src="bower_components/gsap/src/minified/jquery.gsap.min.js"></script>

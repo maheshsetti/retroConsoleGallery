@@ -1,0 +1,1302 @@
+[
+  {
+    "question": "Hvem er Mario?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "donkeykong",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Samus Aaran?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "hvem har blueray?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "playstation3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nes",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "supernintendo",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "hvem er sony maskot?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Mega man?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "megaman",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er broren til Mario?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er scart?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "hdmi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "scart",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "rfcable",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Sack Boy?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvor mange bit har Playstation 1?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "16",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "32",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "8",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "64",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Kirby?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Pikachu?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Charmander?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Link?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "link",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Ryu?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem hører til Nintendo 8 Bit?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "xboxcontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem hører til Playstation 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem hører til Nintendo 64?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem hører til Xbox?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xboxcontroller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Guile?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Sonic?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Tails?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er gameboy?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "n-gage",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "atarilynx",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er 3DS?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "atarilynx",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "n-gage",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Master Chief?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er pac man?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Grand theft auto?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "grandtheftauto",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Madden?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "link",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Ducktales?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er symbolet til Quake?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "quakelogo",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gtalogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "Creeper",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Guitar Hero?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "goldeneye",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gtalogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Tony Hawk?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Yoshi?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Metal Gear Solid?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "starwars",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Minecraft?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "spaceinvaders",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "warcraftlogo",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er en Creeper?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "creeper",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Fallout 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "quakelogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "callofdutyscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er Halo?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "callofdutyscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "goldeneye",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "doomscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra tetris?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Mario Kart?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra The sims?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Diablo?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "creeper",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "diablo",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Space Invaders?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "spaceinvaders",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra E.T?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Donkey Kong?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "donkeykong",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Assasins Creed?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "diablo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "assasinscreed",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "hvilken er fra Call of Duty, black ops?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "callofdutyblackops",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Sim City?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "simcity",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "segagamegear",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "playstation4",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xboxone",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "atari2600",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nes",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "supernintendo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  }
+]

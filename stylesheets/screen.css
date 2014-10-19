@@ -67,7 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+@font-face {
+  font-family: 'p2p';
+  src: url("../fonts/p2p.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 17, ../sass/screen.scss */
 body, html {
   -webkit-perspective: 50;
   -moz-perspective: 50;
@@ -85,16 +92,17 @@ body, html {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  font-family: 'p2p';
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .background-animation {
   position: absolute;
   top: 0;
@@ -103,8 +111,9 @@ body, html {
   height: 100%;
 }
 
-/* line 31, ../sass/screen.scss */
-.question-wrapper {
+/* line 42, ../sass/screen.scss */
+.question-wrapper,
+.menu-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -113,8 +122,11 @@ body, html {
   height: 100%;
   z-index: 1001;
 }
-/* line 39, ../sass/screen.scss */
-.question-wrapper .question-container {
+/* line 51, ../sass/screen.scss */
+.question-wrapper .question-container,
+.question-wrapper .menu-container,
+.menu-wrapper .question-container,
+.menu-wrapper .menu-container {
   display: table-cell;
   text-align: left;
   vertical-align: middle;
@@ -123,10 +135,17 @@ body, html {
   perspective: 1000;
   z-index: 1001;
 }
-/* line 47, ../sass/screen.scss */
-.question-wrapper .question-container .question {
-  width: 800px;
-  height: 800px;
+/* line 60, ../sass/screen.scss */
+.question-wrapper .question-container .question,
+.question-wrapper .question-container .menu,
+.question-wrapper .menu-container .question,
+.question-wrapper .menu-container .menu,
+.menu-wrapper .question-container .question,
+.menu-wrapper .question-container .menu,
+.menu-wrapper .menu-container .question,
+.menu-wrapper .menu-container .menu {
+  width: 400px;
+  height: 400px;
   margin: 0 auto;
   display: block;
   -webkit-perspective: 1000;
@@ -138,43 +157,258 @@ body, html {
   position: relative;
   z-index: 101;
 }
-/* line 61, ../sass/screen.scss */
+@media only screen and (min-height: 650px) {
+  /* line 60, ../sass/screen.scss */
+  .question-wrapper .question-container .question,
+  .question-wrapper .question-container .menu,
+  .question-wrapper .menu-container .question,
+  .question-wrapper .menu-container .menu,
+  .menu-wrapper .question-container .question,
+  .menu-wrapper .question-container .menu,
+  .menu-wrapper .menu-container .question,
+  .menu-wrapper .menu-container .menu {
+    width: 800px;
+    height: 800px;
+  }
+}
+/* line 75, ../sass/screen.scss */
+.question-wrapper .question-container .question .question-header,
+.question-wrapper .question-container .menu .question-header,
+.question-wrapper .menu-container .question .question-header,
+.question-wrapper .menu-container .menu .question-header,
+.menu-wrapper .question-container .question .question-header,
+.menu-wrapper .question-container .menu .question-header,
+.menu-wrapper .menu-container .question .question-header,
+.menu-wrapper .menu-container .menu .question-header {
+  font-size: 30px;
+  color: white;
+  margin-top: -40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 85, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1,
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .question .alt-3,
-.question-wrapper .question-container .question .alt-4 {
+.question-wrapper .question-container .question .alt-4,
+.question-wrapper .question-container .menu .alt-1,
+.question-wrapper .question-container .menu .alt-2,
+.question-wrapper .question-container .menu .alt-3,
+.question-wrapper .question-container .menu .alt-4,
+.question-wrapper .menu-container .question .alt-1,
+.question-wrapper .menu-container .question .alt-2,
+.question-wrapper .menu-container .question .alt-3,
+.question-wrapper .menu-container .question .alt-4,
+.question-wrapper .menu-container .menu .alt-1,
+.question-wrapper .menu-container .menu .alt-2,
+.question-wrapper .menu-container .menu .alt-3,
+.question-wrapper .menu-container .menu .alt-4,
+.menu-wrapper .question-container .question .alt-1,
+.menu-wrapper .question-container .question .alt-2,
+.menu-wrapper .question-container .question .alt-3,
+.menu-wrapper .question-container .question .alt-4,
+.menu-wrapper .question-container .menu .alt-1,
+.menu-wrapper .question-container .menu .alt-2,
+.menu-wrapper .question-container .menu .alt-3,
+.menu-wrapper .question-container .menu .alt-4,
+.menu-wrapper .menu-container .question .alt-1,
+.menu-wrapper .menu-container .question .alt-2,
+.menu-wrapper .menu-container .question .alt-3,
+.menu-wrapper .menu-container .question .alt-4,
+.menu-wrapper .menu-container .menu .alt-1,
+.menu-wrapper .menu-container .menu .alt-2,
+.menu-wrapper .menu-container .menu .alt-3,
+.menu-wrapper .menu-container .menu .alt-4 {
   display: block;
   position: absolute;
-  width: 380px;
-  height: 380px;
+  width: 180px;
+  height: 180px;
   border: 4px solid white;
   background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
-/* line 68, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-1 img,
+.question-wrapper .question-container .question .alt-2 img,
+.question-wrapper .question-container .question .alt-3 img,
+.question-wrapper .question-container .question .alt-4 img,
+.question-wrapper .question-container .menu .alt-1 img,
+.question-wrapper .question-container .menu .alt-2 img,
+.question-wrapper .question-container .menu .alt-3 img,
+.question-wrapper .question-container .menu .alt-4 img,
+.question-wrapper .menu-container .question .alt-1 img,
+.question-wrapper .menu-container .question .alt-2 img,
+.question-wrapper .menu-container .question .alt-3 img,
+.question-wrapper .menu-container .question .alt-4 img,
+.question-wrapper .menu-container .menu .alt-1 img,
+.question-wrapper .menu-container .menu .alt-2 img,
+.question-wrapper .menu-container .menu .alt-3 img,
+.question-wrapper .menu-container .menu .alt-4 img,
+.menu-wrapper .question-container .question .alt-1 img,
+.menu-wrapper .question-container .question .alt-2 img,
+.menu-wrapper .question-container .question .alt-3 img,
+.menu-wrapper .question-container .question .alt-4 img,
+.menu-wrapper .question-container .menu .alt-1 img,
+.menu-wrapper .question-container .menu .alt-2 img,
+.menu-wrapper .question-container .menu .alt-3 img,
+.menu-wrapper .question-container .menu .alt-4 img,
+.menu-wrapper .menu-container .question .alt-1 img,
+.menu-wrapper .menu-container .question .alt-2 img,
+.menu-wrapper .menu-container .question .alt-3 img,
+.menu-wrapper .menu-container .question .alt-4 img,
+.menu-wrapper .menu-container .menu .alt-1 img,
+.menu-wrapper .menu-container .menu .alt-2 img,
+.menu-wrapper .menu-container .menu .alt-3 img,
+.menu-wrapper .menu-container .menu .alt-4 img {
+  width: 100%;
+}
+@media only screen and (min-height: 650px) {
+  /* line 85, ../sass/screen.scss */
+  .question-wrapper .question-container .question .alt-1,
+  .question-wrapper .question-container .question .alt-2,
+  .question-wrapper .question-container .question .alt-3,
+  .question-wrapper .question-container .question .alt-4,
+  .question-wrapper .question-container .menu .alt-1,
+  .question-wrapper .question-container .menu .alt-2,
+  .question-wrapper .question-container .menu .alt-3,
+  .question-wrapper .question-container .menu .alt-4,
+  .question-wrapper .menu-container .question .alt-1,
+  .question-wrapper .menu-container .question .alt-2,
+  .question-wrapper .menu-container .question .alt-3,
+  .question-wrapper .menu-container .question .alt-4,
+  .question-wrapper .menu-container .menu .alt-1,
+  .question-wrapper .menu-container .menu .alt-2,
+  .question-wrapper .menu-container .menu .alt-3,
+  .question-wrapper .menu-container .menu .alt-4,
+  .menu-wrapper .question-container .question .alt-1,
+  .menu-wrapper .question-container .question .alt-2,
+  .menu-wrapper .question-container .question .alt-3,
+  .menu-wrapper .question-container .question .alt-4,
+  .menu-wrapper .question-container .menu .alt-1,
+  .menu-wrapper .question-container .menu .alt-2,
+  .menu-wrapper .question-container .menu .alt-3,
+  .menu-wrapper .question-container .menu .alt-4,
+  .menu-wrapper .menu-container .question .alt-1,
+  .menu-wrapper .menu-container .question .alt-2,
+  .menu-wrapper .menu-container .question .alt-3,
+  .menu-wrapper .menu-container .question .alt-4,
+  .menu-wrapper .menu-container .menu .alt-1,
+  .menu-wrapper .menu-container .menu .alt-2,
+  .menu-wrapper .menu-container .menu .alt-3,
+  .menu-wrapper .menu-container .menu .alt-4 {
+    width: 380px;
+    height: 380px;
+  }
+}
+/* line 100, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected,
 .question-wrapper .question-container .question .alt-2.selected,
 .question-wrapper .question-container .question .alt-3.selected,
-.question-wrapper .question-container .question .alt-4.selected {
+.question-wrapper .question-container .question .alt-4.selected,
+.question-wrapper .question-container .menu .alt-1.selected,
+.question-wrapper .question-container .menu .alt-2.selected,
+.question-wrapper .question-container .menu .alt-3.selected,
+.question-wrapper .question-container .menu .alt-4.selected,
+.question-wrapper .menu-container .question .alt-1.selected,
+.question-wrapper .menu-container .question .alt-2.selected,
+.question-wrapper .menu-container .question .alt-3.selected,
+.question-wrapper .menu-container .question .alt-4.selected,
+.question-wrapper .menu-container .menu .alt-1.selected,
+.question-wrapper .menu-container .menu .alt-2.selected,
+.question-wrapper .menu-container .menu .alt-3.selected,
+.question-wrapper .menu-container .menu .alt-4.selected,
+.menu-wrapper .question-container .question .alt-1.selected,
+.menu-wrapper .question-container .question .alt-2.selected,
+.menu-wrapper .question-container .question .alt-3.selected,
+.menu-wrapper .question-container .question .alt-4.selected,
+.menu-wrapper .question-container .menu .alt-1.selected,
+.menu-wrapper .question-container .menu .alt-2.selected,
+.menu-wrapper .question-container .menu .alt-3.selected,
+.menu-wrapper .question-container .menu .alt-4.selected,
+.menu-wrapper .menu-container .question .alt-1.selected,
+.menu-wrapper .menu-container .question .alt-2.selected,
+.menu-wrapper .menu-container .question .alt-3.selected,
+.menu-wrapper .menu-container .question .alt-4.selected,
+.menu-wrapper .menu-container .menu .alt-1.selected,
+.menu-wrapper .menu-container .menu .alt-2.selected,
+.menu-wrapper .menu-container .menu .alt-3.selected,
+.menu-wrapper .menu-container .menu .alt-4.selected {
   -webkit-box-shadow: 0 0 100px #8cbaff;
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
   z-index: 100;
 }
-/* line 72, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.answer-unselected,
 .question-wrapper .question-container .question .alt-2.answer-unselected,
 .question-wrapper .question-container .question .alt-3.answer-unselected,
-.question-wrapper .question-container .question .alt-4.answer-unselected {
+.question-wrapper .question-container .question .alt-4.answer-unselected,
+.question-wrapper .question-container .menu .alt-1.answer-unselected,
+.question-wrapper .question-container .menu .alt-2.answer-unselected,
+.question-wrapper .question-container .menu .alt-3.answer-unselected,
+.question-wrapper .question-container .menu .alt-4.answer-unselected,
+.question-wrapper .menu-container .question .alt-1.answer-unselected,
+.question-wrapper .menu-container .question .alt-2.answer-unselected,
+.question-wrapper .menu-container .question .alt-3.answer-unselected,
+.question-wrapper .menu-container .question .alt-4.answer-unselected,
+.question-wrapper .menu-container .menu .alt-1.answer-unselected,
+.question-wrapper .menu-container .menu .alt-2.answer-unselected,
+.question-wrapper .menu-container .menu .alt-3.answer-unselected,
+.question-wrapper .menu-container .menu .alt-4.answer-unselected,
+.menu-wrapper .question-container .question .alt-1.answer-unselected,
+.menu-wrapper .question-container .question .alt-2.answer-unselected,
+.menu-wrapper .question-container .question .alt-3.answer-unselected,
+.menu-wrapper .question-container .question .alt-4.answer-unselected,
+.menu-wrapper .question-container .menu .alt-1.answer-unselected,
+.menu-wrapper .question-container .menu .alt-2.answer-unselected,
+.menu-wrapper .question-container .menu .alt-3.answer-unselected,
+.menu-wrapper .question-container .menu .alt-4.answer-unselected,
+.menu-wrapper .menu-container .question .alt-1.answer-unselected,
+.menu-wrapper .menu-container .question .alt-2.answer-unselected,
+.menu-wrapper .menu-container .question .alt-3.answer-unselected,
+.menu-wrapper .menu-container .question .alt-4.answer-unselected,
+.menu-wrapper .menu-container .menu .alt-1.answer-unselected,
+.menu-wrapper .menu-container .menu .alt-2.answer-unselected,
+.menu-wrapper .menu-container .menu .alt-3.answer-unselected,
+.menu-wrapper .menu-container .menu .alt-4.answer-unselected {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.5;
 }
-/* line 77, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.false-answer:after,
 .question-wrapper .question-container .question .alt-2.false-answer:after,
 .question-wrapper .question-container .question .alt-3.false-answer:after,
-.question-wrapper .question-container .question .alt-4.false-answer:after {
+.question-wrapper .question-container .question .alt-4.false-answer:after,
+.question-wrapper .question-container .menu .alt-1.false-answer:after,
+.question-wrapper .question-container .menu .alt-2.false-answer:after,
+.question-wrapper .question-container .menu .alt-3.false-answer:after,
+.question-wrapper .question-container .menu .alt-4.false-answer:after,
+.question-wrapper .menu-container .question .alt-1.false-answer:after,
+.question-wrapper .menu-container .question .alt-2.false-answer:after,
+.question-wrapper .menu-container .question .alt-3.false-answer:after,
+.question-wrapper .menu-container .question .alt-4.false-answer:after,
+.question-wrapper .menu-container .menu .alt-1.false-answer:after,
+.question-wrapper .menu-container .menu .alt-2.false-answer:after,
+.question-wrapper .menu-container .menu .alt-3.false-answer:after,
+.question-wrapper .menu-container .menu .alt-4.false-answer:after,
+.menu-wrapper .question-container .question .alt-1.false-answer:after,
+.menu-wrapper .question-container .question .alt-2.false-answer:after,
+.menu-wrapper .question-container .question .alt-3.false-answer:after,
+.menu-wrapper .question-container .question .alt-4.false-answer:after,
+.menu-wrapper .question-container .menu .alt-1.false-answer:after,
+.menu-wrapper .question-container .menu .alt-2.false-answer:after,
+.menu-wrapper .question-container .menu .alt-3.false-answer:after,
+.menu-wrapper .question-container .menu .alt-4.false-answer:after,
+.menu-wrapper .menu-container .question .alt-1.false-answer:after,
+.menu-wrapper .menu-container .question .alt-2.false-answer:after,
+.menu-wrapper .menu-container .question .alt-3.false-answer:after,
+.menu-wrapper .menu-container .question .alt-4.false-answer:after,
+.menu-wrapper .menu-container .menu .alt-1.false-answer:after,
+.menu-wrapper .menu-container .menu .alt-2.false-answer:after,
+.menu-wrapper .menu-container .menu .alt-3.false-answer:after,
+.menu-wrapper .menu-container .menu .alt-4.false-answer:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -194,11 +428,39 @@ body, html {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 95, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.correct-answer:after,
 .question-wrapper .question-container .question .alt-2.correct-answer:after,
 .question-wrapper .question-container .question .alt-3.correct-answer:after,
-.question-wrapper .question-container .question .alt-4.correct-answer:after {
+.question-wrapper .question-container .question .alt-4.correct-answer:after,
+.question-wrapper .question-container .menu .alt-1.correct-answer:after,
+.question-wrapper .question-container .menu .alt-2.correct-answer:after,
+.question-wrapper .question-container .menu .alt-3.correct-answer:after,
+.question-wrapper .question-container .menu .alt-4.correct-answer:after,
+.question-wrapper .menu-container .question .alt-1.correct-answer:after,
+.question-wrapper .menu-container .question .alt-2.correct-answer:after,
+.question-wrapper .menu-container .question .alt-3.correct-answer:after,
+.question-wrapper .menu-container .question .alt-4.correct-answer:after,
+.question-wrapper .menu-container .menu .alt-1.correct-answer:after,
+.question-wrapper .menu-container .menu .alt-2.correct-answer:after,
+.question-wrapper .menu-container .menu .alt-3.correct-answer:after,
+.question-wrapper .menu-container .menu .alt-4.correct-answer:after,
+.menu-wrapper .question-container .question .alt-1.correct-answer:after,
+.menu-wrapper .question-container .question .alt-2.correct-answer:after,
+.menu-wrapper .question-container .question .alt-3.correct-answer:after,
+.menu-wrapper .question-container .question .alt-4.correct-answer:after,
+.menu-wrapper .question-container .menu .alt-1.correct-answer:after,
+.menu-wrapper .question-container .menu .alt-2.correct-answer:after,
+.menu-wrapper .question-container .menu .alt-3.correct-answer:after,
+.menu-wrapper .question-container .menu .alt-4.correct-answer:after,
+.menu-wrapper .menu-container .question .alt-1.correct-answer:after,
+.menu-wrapper .menu-container .question .alt-2.correct-answer:after,
+.menu-wrapper .menu-container .question .alt-3.correct-answer:after,
+.menu-wrapper .menu-container .question .alt-4.correct-answer:after,
+.menu-wrapper .menu-container .menu .alt-1.correct-answer:after,
+.menu-wrapper .menu-container .menu .alt-2.correct-answer:after,
+.menu-wrapper .menu-container .menu .alt-3.correct-answer:after,
+.menu-wrapper .menu-container .menu .alt-4.correct-answer:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -218,32 +480,254 @@ body, html {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 116, ../sass/screen.scss */
-.question-wrapper .question-container .question .alt-2 {
-  -webkit-transform: perspective(0) translate(420px, 0);
-  -moz-transform: perspective(0) translate(420px, 0);
-  -ms-transform: perspective(0) translate(420px, 0);
-  -o-transform: perspective(0) translate(420px, 0);
-  transform: perspective(0) translate(420px, 0);
+/* line 148, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-2,
+.question-wrapper .question-container .menu .alt-2,
+.question-wrapper .menu-container .question .alt-2,
+.question-wrapper .menu-container .menu .alt-2,
+.menu-wrapper .question-container .question .alt-2,
+.menu-wrapper .question-container .menu .alt-2,
+.menu-wrapper .menu-container .question .alt-2,
+.menu-wrapper .menu-container .menu .alt-2 {
+  -webkit-transform: perspective(0) translate(220px, 0);
+  -moz-transform: perspective(0) translate(220px, 0);
+  -ms-transform: perspective(0) translate(220px, 0);
+  -o-transform: perspective(0) translate(220px, 0);
+  transform: perspective(0) translate(220px, 0);
 }
-/* line 119, ../sass/screen.scss */
-.question-wrapper .question-container .question .alt-3 {
-  -webkit-transform: perspective(0) translate(0, 420px);
-  -moz-transform: perspective(0) translate(0, 420px);
-  -ms-transform: perspective(0) translate(0, 420px);
-  -o-transform: perspective(0) translate(0, 420px);
-  transform: perspective(0) translate(0, 420px);
+@media only screen and (min-height: 650px) {
+  /* line 148, ../sass/screen.scss */
+  .question-wrapper .question-container .question .alt-2,
+  .question-wrapper .question-container .menu .alt-2,
+  .question-wrapper .menu-container .question .alt-2,
+  .question-wrapper .menu-container .menu .alt-2,
+  .menu-wrapper .question-container .question .alt-2,
+  .menu-wrapper .question-container .menu .alt-2,
+  .menu-wrapper .menu-container .question .alt-2,
+  .menu-wrapper .menu-container .menu .alt-2 {
+    -webkit-transform: perspective(0) translate(420px, 0);
+    -moz-transform: perspective(0) translate(420px, 0);
+    -ms-transform: perspective(0) translate(420px, 0);
+    -o-transform: perspective(0) translate(420px, 0);
+    transform: perspective(0) translate(420px, 0);
+  }
 }
-/* line 122, ../sass/screen.scss */
-.question-wrapper .question-container .question .alt-4 {
-  -webkit-transform: perspective(0) translate(420px, 420px);
-  -moz-transform: perspective(0) translate(420px, 420px);
-  -ms-transform: perspective(0) translate(420px, 420px);
-  -o-transform: perspective(0) translate(420px, 420px);
-  transform: perspective(0) translate(420px, 420px);
+/* line 154, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-3,
+.question-wrapper .question-container .menu .alt-3,
+.question-wrapper .menu-container .question .alt-3,
+.question-wrapper .menu-container .menu .alt-3,
+.menu-wrapper .question-container .question .alt-3,
+.menu-wrapper .question-container .menu .alt-3,
+.menu-wrapper .menu-container .question .alt-3,
+.menu-wrapper .menu-container .menu .alt-3 {
+  -webkit-transform: perspective(0) translate(0, 220px);
+  -moz-transform: perspective(0) translate(0, 220px);
+  -ms-transform: perspective(0) translate(0, 220px);
+  -o-transform: perspective(0) translate(0, 220px);
+  transform: perspective(0) translate(0, 220px);
+}
+@media only screen and (min-height: 650px) {
+  /* line 154, ../sass/screen.scss */
+  .question-wrapper .question-container .question .alt-3,
+  .question-wrapper .question-container .menu .alt-3,
+  .question-wrapper .menu-container .question .alt-3,
+  .question-wrapper .menu-container .menu .alt-3,
+  .menu-wrapper .question-container .question .alt-3,
+  .menu-wrapper .question-container .menu .alt-3,
+  .menu-wrapper .menu-container .question .alt-3,
+  .menu-wrapper .menu-container .menu .alt-3 {
+    -webkit-transform: perspective(0) translate(0, 420px);
+    -moz-transform: perspective(0) translate(0, 420px);
+    -ms-transform: perspective(0) translate(0, 420px);
+    -o-transform: perspective(0) translate(0, 420px);
+    transform: perspective(0) translate(0, 420px);
+  }
+}
+/* line 160, ../sass/screen.scss */
+.question-wrapper .question-container .question .alt-4,
+.question-wrapper .question-container .menu .alt-4,
+.question-wrapper .menu-container .question .alt-4,
+.question-wrapper .menu-container .menu .alt-4,
+.menu-wrapper .question-container .question .alt-4,
+.menu-wrapper .question-container .menu .alt-4,
+.menu-wrapper .menu-container .question .alt-4,
+.menu-wrapper .menu-container .menu .alt-4 {
+  -webkit-transform: perspective(0) translate(220px, 220px);
+  -moz-transform: perspective(0) translate(220px, 220px);
+  -ms-transform: perspective(0) translate(220px, 220px);
+  -o-transform: perspective(0) translate(220px, 220px);
+  transform: perspective(0) translate(220px, 220px);
+}
+@media only screen and (min-height: 650px) {
+  /* line 160, ../sass/screen.scss */
+  .question-wrapper .question-container .question .alt-4,
+  .question-wrapper .question-container .menu .alt-4,
+  .question-wrapper .menu-container .question .alt-4,
+  .question-wrapper .menu-container .menu .alt-4,
+  .menu-wrapper .question-container .question .alt-4,
+  .menu-wrapper .question-container .menu .alt-4,
+  .menu-wrapper .menu-container .question .alt-4,
+  .menu-wrapper .menu-container .menu .alt-4 {
+    -webkit-transform: perspective(0) translate(420px, 420px);
+    -moz-transform: perspective(0) translate(420px, 420px);
+    -ms-transform: perspective(0) translate(420px, 420px);
+    -o-transform: perspective(0) translate(420px, 420px);
+    transform: perspective(0) translate(420px, 420px);
+  }
+}
+/* line 167, ../sass/screen.scss */
+.question-wrapper .question-container .menu,
+.question-wrapper .menu-container .menu,
+.menu-wrapper .question-container .menu,
+.menu-wrapper .menu-container .menu {
+  padding: 20px;
+  color: white;
+  display: none;
+  -webkit-transform: rotateY(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotateY(0deg);
+  /* Standard syntax */
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border: 4px solid white;
+  -webkit-transform: translateY(-1000px);
+  -moz-transform: translateY(-1000px);
+  -ms-transform: translateY(-1000px);
+  -o-transform: translateY(-1000px);
+  transform: translateY(-1000px);
+}
+/* line 177, ../sass/screen.scss */
+.question-wrapper .question-container .menu .menu-header,
+.question-wrapper .menu-container .menu .menu-header,
+.menu-wrapper .question-container .menu .menu-header,
+.menu-wrapper .menu-container .menu .menu-header {
+  font-size: 40px;
+  padding-bottom: 20px;
+  line-height: 1.5em;
+  border-bottom: 4px solid white;
+}
+/* line 183, ../sass/screen.scss */
+.question-wrapper .question-container .menu .menu-subheader,
+.question-wrapper .menu-container .menu .menu-subheader,
+.menu-wrapper .question-container .menu .menu-subheader,
+.menu-wrapper .menu-container .menu .menu-subheader {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+/* line 189, ../sass/screen.scss */
+.question-wrapper .question-container .menu .points-number,
+.question-wrapper .menu-container .menu .points-number,
+.menu-wrapper .question-container .menu .points-number,
+.menu-wrapper .menu-container .menu .points-number {
+  padding-top: 20px;
+  font-size: 40px;
+}
+/* line 193, ../sass/screen.scss */
+.question-wrapper .question-container .menu .points-text,
+.question-wrapper .menu-container .menu .points-text,
+.menu-wrapper .question-container .menu .points-text,
+.menu-wrapper .menu-container .menu .points-text {
+  font-size: 20px;
+}
+@media only screen and (min-height: 650px) {
+  /* line 167, ../sass/screen.scss */
+  .question-wrapper .question-container .menu,
+  .question-wrapper .menu-container .menu,
+  .menu-wrapper .question-container .menu,
+  .menu-wrapper .menu-container .menu {
+    width: 800px;
+    height: 800px;
+  }
+}
+/* line 202, ../sass/screen.scss */
+.question-wrapper .question-container .menu#main-menu,
+.question-wrapper .menu-container .menu#main-menu,
+.menu-wrapper .question-container .menu#main-menu,
+.menu-wrapper .menu-container .menu#main-menu {
+  padding-top: 140px;
+}
+/* line 204, ../sass/screen.scss */
+.question-wrapper .question-container .menu#main-menu:before,
+.question-wrapper .menu-container .menu#main-menu:before,
+.menu-wrapper .question-container .menu#main-menu:before,
+.menu-wrapper .menu-container .menu#main-menu:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/logo.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-height: 650px) {
+  /* line 204, ../sass/screen.scss */
+  .question-wrapper .question-container .menu#main-menu:before,
+  .question-wrapper .menu-container .menu#main-menu:before,
+  .menu-wrapper .question-container .menu#main-menu:before,
+  .menu-wrapper .menu-container .menu#main-menu:before {
+    top: -150px;
+    width: 80%;
+    left: 10%;
+  }
+}
+@media only screen and (min-height: 650px) {
+  /* line 202, ../sass/screen.scss */
+  .question-wrapper .question-container .menu#main-menu,
+  .question-wrapper .menu-container .menu#main-menu,
+  .menu-wrapper .question-container .menu#main-menu,
+  .menu-wrapper .menu-container .menu#main-menu {
+    padding-top: 240px;
+  }
+}
+/* line 228, ../sass/screen.scss */
+.question-wrapper .question-container .menu .menu-button,
+.question-wrapper .menu-container .menu .menu-button,
+.menu-wrapper .question-container .menu .menu-button,
+.menu-wrapper .menu-container .menu .menu-button {
+  position: absolute;
+  width: 380px;
+  left: 50%;
+  margin-left: -190px;
+  bottom: 20px;
+  border: 4px solid white;
+  padding: 10px;
+  font-size: 20px;
+}
+/* line 237, ../sass/screen.scss */
+.question-wrapper .question-container .menu .menu-button.selected,
+.question-wrapper .menu-container .menu .menu-button.selected,
+.menu-wrapper .question-container .menu .menu-button.selected,
+.menu-wrapper .menu-container .menu .menu-button.selected {
+  -webkit-box-shadow: 0 0 100px #8cbaff;
+  -moz-box-shadow: 0 0 100px #8cbaff;
+  box-shadow: 0 0 100px #8cbaff;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
+#jan-olav-big {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  height: 100%;
+  width: 600px;
+  background-image: url(../img/janolavtitle.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-height: 650px) {
+  /* line 245, ../sass/screen.scss */
+  #jan-olav-big {
+    width: 1000px;
+  }
+}
+
+/* line 260, ../sass/screen.scss */
 .pellet {
   position: absolute;
   top: 100%;
@@ -252,7 +736,7 @@ body, html {
   margin-top: -40px;
   z-index: 200001;
 }
-/* line 134, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .pellet:after {
   content: "";
   position: absolute;
@@ -271,7 +755,7 @@ body, html {
   border-radius: 50%;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3 {
@@ -291,22 +775,22 @@ body, html {
   z-index: 1;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .pac-man {
   width: 120px;
   height: 80px;
@@ -320,7 +804,82 @@ body, html {
   background-repeat: no-repeat;
   z-index: 200000;
 }
-/* line 186, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
+}
+
+/* line 323, ../sass/screen.scss */
+.count-down {
+  font-size: 150px;
+  color: white;
+  -webkit-transform: perspective(400) translateZ(0);
+  -moz-transform: perspective(400) translateZ(0);
+  -ms-transform: perspective(400) translateZ(0);
+  -o-transform: perspective(400) translateZ(0);
+  transform: perspective(400) translateZ(0);
+  text-align: center;
+  opacity: 0;
+}
+
+/* line 331, ../sass/screen.scss */
+.scoreboard {
+  width: 300px;
+  border: 4px solid white;
+  background: transparent;
+  height: 80%;
+  position: absolute;
+  color: white;
+  top: 10%;
+  left: 20px;
+  padding: 10px;
+  text-align: center;
+  -webkit-transform: translateX(-400px);
+  -moz-transform: translateX(-400px);
+  -ms-transform: translateX(-400px);
+  -o-transform: translateX(-400px);
+  transform: translateX(-400px);
+}
+/* line 343, ../sass/screen.scss */
+.scoreboard #level-text {
+  padding: 4px;
+}
+/* line 347, ../sass/screen.scss */
+.scoreboard #level-number {
+  font-size: 40px;
+  border-bottom: 2px solid white;
+  padding-bottom: 14px;
+}
+/* line 352, ../sass/screen.scss */
+.scoreboard #score-text {
+  border-bottom: 2px solid white;
+  padding-bottom: 14px;
+}
+/* line 356, ../sass/screen.scss */
+.scoreboard #score-number {
+  font-size: 40px;
+  padding: 14px;
+}
+/* line 360, ../sass/screen.scss */
+.scoreboard #lives-text {
+  padding-bottom: 14px;
+}
+/* line 363, ../sass/screen.scss */
+.scoreboard #lives-number {
+  font-size: 40px;
+  padding: 14px;
+}
+
+/* line 368, ../sass/screen.scss */
+.time-counter {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 100%;
+  margin-top: -80px;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  -o-transform: translateY(80px);
+  transform: translateY(80px);
 }

@@ -30,7 +30,7 @@ var generateStar = function(attachmentElement) {
         {
             opacity: 1,
             x: innerWidth+40,
-            z: 40,
+            z: 0,
             opacity: 1,
             ease:Linear.easeNone
     });
