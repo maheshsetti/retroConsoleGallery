@@ -10,6 +10,7 @@ $(function() {
     var levelData = {};
     var usedQuestions = [];
     var gameTimer = undefined;
+    var gameTimerPelletInterval = undefined;
 
     var questionClasses = {
         'alt-1' : 0,
@@ -40,10 +41,15 @@ $(function() {
             TweenLite.to($('#jan-olav-big'), 0.5, {x: '0', ease: Linear.EaseNone});
         }
     };
-
-    var toggleMenu = function(toggle, element) {
+    // the callback is optional
+    var toggleMenu = function(toggle, element, callback) {
         if(!toggle) {
-            TweenLite.to(element, 1, {y: '-1000px', rotation: '-90', ease: Linear.EaseNone, onComplete: function() { element.hide(); }});
+            TweenLite.to(element, 1, {y: '-1000px', rotation: '-90', ease: Linear.EaseNone, onComplete: function() {
+                    element.hide();
+                    if(callback) {
+                        callback();
+                    }
+                }});
         } else {
             element.show();
             TweenLite.to(element, 0, {rotation: '-90'});
@@ -121,41 +127,27 @@ $(function() {
     };
 
     var generatePacMan = function(callback) {
-        var pelletSpaceHorisontal = (window.innerWidth-(30*20)) / 30;
-        var usedSpaced = 0;
-        for (var x = 0; x<60; x++) {
-            if(x > 0) {
-                usedSpaced = pelletSpaceHorisontal;
-            }
-            var pellet = $('<div>').addClass('pellet').css(
-                {
-                'left': (40*(x-1)) + usedSpaced + 'px'
-                }
-                );
+        var pelletSpaceHorisontal = (window.innerWidth-(31*20)) / 30;
+        var skew = 0;
+        for (var x = 1; x<=30; x++) {
+            var pellet = $('<div>').addClass('pellet');
+            TweenLite.to(pellet, 0, {x: skew + 'px'});
             $('.time-counter').append(pellet);
+            skew = (20+pelletSpaceHorisontal)*x;
         }
         $('.time-counter').append($('<div>').addClass('pac-man'));
-        callback();
+        callback(pelletSpaceHorisontal);
     }
-    var startAnimation = function() {
-        $('.pellet').each(function(index) {
-            setTimeoutOnElement($(this), index);
-        });
-    };
-
-    var setTimeoutOnElement = function (element, index) {
-        var nextElement = $('.pellet')[index+1] || undefined;
-        setTimeout(function() {
-            element.remove();
-            if(nextElement) {
-                TweenLite.to($('.pac-man'), 1, {left: $(nextElement).css('left'), onComplete: function() {
-                    $('.pac-man').addClass('aapen');
-                    setTimeout(function() {
-                        $('.pac-man').removeClass('aapen');
-                    }, 800);
-                }});
-            }
-        },1900*(index));
+    var startAnimation = function(pelletSpace) {
+        gameTimerPelletInterval = setInterval(function() {
+            $('.pac-man').css('background-image', 'url(img/janolavlukket.png)');
+            setTimeout(function() {
+                $('.pac-man').css('background-image', 'url(img/janolavaapen.png)');
+            }, 700);
+            TweenLite.to($('.pac-man'), 0.96, {left: '+=' + (20+pelletSpace), onComplete: function() {
+                $('.pellet').first().remove();
+            }});
+        }, 960);
     };
 
     var countDown = function () {
@@ -252,25 +244,25 @@ $(function() {
     var shiftQuestionContainer = function(newFocus) {
         if(newFocus === 1) {
             TweenLite.to($('.question'), 0.25, {
-                rotationY: '-10',
+                rotationY: '10',
                 rotationX: '-10'
             });
         }
         if(newFocus === 2) {
             TweenLite.to($('.question'), 0.25, {
-                rotationY: '10',
+                rotationY: '-10',
                 rotationX: '-10'
             });
         }
         if(newFocus === 3) {
             TweenLite.to($('.question'), 0.25, {
-                rotationY: '-10',
+                rotationY: '10',
                 rotationX: '10'
             });
         }
         if(newFocus === 4) {
             TweenLite.to($('.question'), 0.25, {
-                rotationY: '10',
+                rotationY: '-10',
                 rotationX: '10'
             });
         }
@@ -278,8 +270,10 @@ $(function() {
 
     var startTimer = function(callback) {
         gameTimer = setTimeout(function() {
-
-        },60000);
+            TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
+                callback();
+            }});
+        },30000);
     }
 
     var gameController = function(screen) {
@@ -293,7 +287,9 @@ $(function() {
             gameController('countDown');
         }
         if(screen === 'countDown') {
+            clearLevelBackground();
             countDown();
+            generateLevelBackground(level+1);
         }
         if(screen === 'loadLevel') {
             level = level+1;
@@ -303,8 +299,8 @@ $(function() {
             };
             updateLevel(level);
             toggleScoreBoard(true);
-            generatePacMan(function() {
-                startAnimation();
+            generatePacMan(function(pelletSpace) {
+                startAnimation(pelletSpace);
                 createQuestion(question.question);
                 toggleTimer(true);
                 startTimer(function() {
@@ -315,14 +311,27 @@ $(function() {
         if(screen === 'endLevel') {
         }
         if(screen === 'endGame') {
-            toggleScoreBoard(false);
             toggleTimer(false);
+            if(gameTimer) {
+                clearTimeout(gameTimer);
+            }
+            if(gameTimerPelletInterval) {
+                clearInterval();
+            }
+            toggleScoreBoard(false);
+
             $('#menu-points-number').text(score);
+
             toggleMenu(true, $('#game-over-menu'));
             toggleJanOlav(true);
         }
         if(screen === 'startMenu') {
-            toggleMenu(true, $('#main-menu'));
+            clearLevelBackground();
+
+            toggleMenu(false, $('#game-over-menu'), function() {
+                generateLevelBackground(0);
+                toggleMenu(true, $('#main-menu'));
+            });
         }
     };
 
@@ -341,12 +350,6 @@ $(function() {
             document.onkeydown = function(e) {
                     var e = e || window.event;
                     var keypress = e.keyCode || e.which;
-                    if(keypress === 82) {
-                        createQuestion(questions);
-                        generatePacMan(function() {
-                            startAnimation();
-                        });
-                    }
                     if(keypress === 38) {
                         moveFocus('up');
                     }
@@ -363,10 +366,14 @@ $(function() {
                         moveFocus('left');
                     }
                     if(keypress === 13) {
-                        if(currentScreen == 'startMenu') {
+                        if(currentScreen === 'startMenu') {
                             gameController('startGame');
                         }
-                        if(currentScreen = 'loadLevel') {
+                        if(currentScreen === 'endGame') {
+                            gameController('startMenu');
+                        }
+
+                        if(currentScreen === 'loadLevel') {
                             evaluateAnswer();
                         }
                     }

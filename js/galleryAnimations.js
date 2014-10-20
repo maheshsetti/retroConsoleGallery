@@ -1,6 +1,10 @@
 $(function() {
 });
 
+
+var intervall = undefined;
+var spriteClass = '';
+
 var generateStars = function(amount, startDepth, callback) {
     for(var i = 0; i < amount; i++) {
         generateStar($('body'));
@@ -8,8 +12,8 @@ var generateStars = function(amount, startDepth, callback) {
     callback();
 };
 
-var generateStar = function(attachmentElement) {
-
+var generateSprite = function(spriteClass) {
+    var attachmentElement = $('.background-animation');
     var star = $('<div>');
     var innerWidth = window.innerWidth;
     var innerHeight = window.innerHeight;
@@ -23,46 +27,65 @@ var generateStar = function(attachmentElement) {
         top: randomNumber(0, innerHeight),
         width: 40,
         height: 40,
-        opacity: 1
+        opacity: 0
     })
-    .addClass('star-' + randomStar + '  new-star');
+    .addClass(spriteClass + '-' + randomStar);
+    TweenLite.to(star, 0, {z: 30, rotationY: 10, x: -40});
     TweenLite.to(star, 10,
         {
             opacity: 1,
-            x: innerWidth+40,
+            x: innerWidth/2,
             z: 0,
-            opacity: 1,
-            ease:Linear.easeNone
+            rotationY: 0,
+            opacity: 0.8,
+            ease:Linear.easeNone,
+            onComplete: function() {
+                TweenLite.to(star, 10,
+                    {
+                        opacity: 1,
+                        x: '+=' + innerWidth/2,
+                        z: 30,
+                        rotationY: -10,
+                        opacity: 0,
+                        ease:Linear.easeNone,
+                        onComplete: function() {
+                            star.remove();
+                        }
+                });
+            }
     });
     attachmentElement.append(star);
-    animateOut(star);
+    //animateOut(star);
 };
 
 var animateOut = function(element) {
     setTimeout(function() {
         element.remove();
-    }, 10000);
+    }, 20000);
 };
-
-var removeShit = function(element) {
-    element.remove();
-}
-
-var animateIn = function(elements) {
-    var tween = 50;
-    var randomOpacity = randomNumber(4, 10)/10;
-    TweenLite.to(elements, 2, {
-        opacity: randomOpacity,
-        z: '+=10',
-        ease:Power4.easeInOut
-    });
-}
 
 var randomNumber = function(min, max) {
     return Math.floor((Math.random() * max) + min);
 };
 
-setInterval(function() {
-    console.log('generating stars');
-    generateStar($('.background-animation'));
-}, 200);
+
+var generateLevelBackground = function(level) {
+    spriteClass = '';
+    if(level == 1) {
+        spriteClass = 'star';
+    }
+    if(level == 0) {
+        spriteClass = 'screen';
+    }
+    generateSprite(spriteClass);
+    intervall = setInterval(function() {
+        generateSprite(spriteClass);
+    }, 2000);
+}
+
+var clearLevelBackground = function() {
+    clearInterval(intervall);
+    $('.' + spriteClass + '-1').remove();
+    $('.' + spriteClass + '-2').remove();
+    $('.' + spriteClass + '-3').remove();
+};

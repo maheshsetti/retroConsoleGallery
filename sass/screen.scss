@@ -5,7 +5,7 @@
 
 @import "compass";
 @import "compass/reset";
-$bigScreen: "only screen and (min-height : 650px)";
+$bigScreen: "only screen and (min-height : 700px)";
 
 @font-face {
    font-family: 'p2p';
@@ -175,16 +175,23 @@ body {
             text-align: center;
             border: 4px solid white;
             .menu-header {
-                font-size: 40px;
+                font-size: 20px;
                 padding-bottom: 20px;
                 line-height: 1.5em;
                 border-bottom: 4px solid white;
+                @media #{$bigScreen} {
+                    font-size: 40px;
+                }
             }
             .menu-subheader {
-                font-size: 20px;
+
+                font-size: 16px;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 line-height: 1.5em;
+                @media #{$bigScreen} {
+                    font-size: 20px;
+                }
             }
             .points-number {
                 padding-top: 20px;
@@ -244,7 +251,7 @@ body {
 }
 #jan-olav-big {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: -100px;
     height: 100%;
     width: 600px;
@@ -262,6 +269,7 @@ body {
     top: 100%;
     width: 20px;
     height: 20px;
+    left: 0;
     margin-top: -40px;
     &:after {
         content: "";
@@ -278,19 +286,20 @@ body {
 }
 .star-1,
 .star-2,
-.star-3, {
+.star-3,
+.screen-1,
+.screen-2,
+.screen-3 {
     position: absolute;
     width: 250px;
     height: 250px;
-    left: -324px;
+    left: 0;
     top: 0;
     opacity: 0;
     background: {
         size: cover;
     }
-    @include translateZ(0, 50);
     -webkit-backface-visibility: hidden;
-    z-index: 1;
 }
 .star-1 {
     background-image: url(../img/star-1.png);
@@ -301,13 +310,23 @@ body {
 .star-3 {
     background-image: url(../img/star-3.png);
 }
+
+.screen-1 {
+    background-image: url(../img/screen-1.png);
+}
+.screen-2 {
+    background-image: url(../img/screen-2.png);
+}
+.screen-3 {
+    background-image: url(../img/screen-3.png);
+}
 .pac-man {
     width: 120px;
     height: 80px;
     position: absolute;
     top: 100%;
     margin-top: -80px;
-    margin-left: -50px;
+    margin-left: -90px;
     left: 0;
     background: {
         image: url(../img/janolavlukket.png);
