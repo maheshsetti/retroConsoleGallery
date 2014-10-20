@@ -25,27 +25,23 @@ var generateSprite = function(spriteClass) {
     .css({
         left: 0,
         top: randomNumber(0, innerHeight),
-        width: 40,
-        height: 40,
         opacity: 0
     })
     .addClass(spriteClass + '-' + randomStar);
-    TweenLite.to(star, 0, {z: 30, rotationY: 10, x: -40});
+    TweenLite.to(star, 0, {z: 0, x: -40});
     TweenLite.to(star, 10,
         {
             opacity: 1,
             x: innerWidth/2,
             z: 0,
-            rotationY: 0,
-            opacity: 0.8,
+            opacity: 0.4,
             ease:Linear.easeNone,
             onComplete: function() {
                 TweenLite.to(star, 10,
                     {
                         opacity: 1,
                         x: '+=' + innerWidth/2,
-                        z: 30,
-                        rotationY: -10,
+                        z: 0,
                         opacity: 0,
                         ease:Linear.easeNone,
                         onComplete: function() {

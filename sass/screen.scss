@@ -284,6 +284,19 @@ body {
     }
     z-index: 200001;
 }
+
+.star-1,
+.star-2,
+.star-3 {
+    width: 40px;
+    height: 40px;
+}
+.screen-1,
+.screen-2,
+.screen-3 {
+    width: 100px;
+    height: 100px;
+}
 .star-1,
 .star-2,
 .star-3,
@@ -291,8 +304,6 @@ body {
 .screen-2,
 .screen-3 {
     position: absolute;
-    width: 250px;
-    height: 250px;
     left: 0;
     top: 0;
     opacity: 0;

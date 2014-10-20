@@ -774,7 +774,23 @@ body, html {
   border-radius: 50%;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
+.star-1,
+.star-2,
+.star-3 {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 296, ../sass/screen.scss */
+.screen-1,
+.screen-2,
+.screen-3 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 305, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3,
@@ -782,8 +798,6 @@ body, html {
 .screen-2,
 .screen-3 {
   position: absolute;
-  width: 250px;
-  height: 250px;
   left: 0;
   top: 0;
   opacity: 0;
@@ -791,37 +805,37 @@ body, html {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 307, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .screen-1 {
   background-image: url(../img/screen-1.png);
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .screen-2 {
   background-image: url(../img/screen-2.png);
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .screen-3 {
   background-image: url(../img/screen-3.png);
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .pac-man {
   width: 120px;
   height: 80px;
@@ -835,12 +849,12 @@ body, html {
   background-repeat: no-repeat;
   z-index: 200000;
 }
-/* line 337, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .count-down {
   font-size: 150px;
   color: white;
@@ -853,7 +867,7 @@ body, html {
   opacity: 0;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .scoreboard {
   width: 300px;
   border: 4px solid white;
@@ -871,37 +885,37 @@ body, html {
   -o-transform: translateX(-400px);
   transform: translateX(-400px);
 }
-/* line 362, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .scoreboard #level-text {
   padding: 4px;
 }
-/* line 366, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .scoreboard #level-number {
   font-size: 40px;
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 371, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .scoreboard #score-text {
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 375, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .scoreboard #score-number {
   font-size: 40px;
   padding: 14px;
 }
-/* line 379, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .scoreboard #lives-text {
   padding-bottom: 14px;
 }
-/* line 382, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .scoreboard #lives-number {
   font-size: 40px;
   padding: 14px;
 }
 
-/* line 387, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .time-counter {
   position: absolute;
   width: 100%;
