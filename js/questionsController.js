@@ -11,6 +11,8 @@ $(function() {
     var usedQuestions = [];
     var gameTimer = undefined;
     var gameTimerPelletInterval = undefined;
+    var gameTimerLevelStart = undefined;
+    var gameTimerLevelTime = undefined;
 
     var questionClasses = {
         'alt-1' : 0,
@@ -33,6 +35,17 @@ $(function() {
         $('#level-number').text(level);
     };
 
+    var animateBlobs = function(callback) {
+        console.log('animating blobs');
+        var offset = $('#menu-points-number-next').offset();
+        var width = $('#menu-points-number-next').width();
+        var height = $('#menu-points-number-next').height();
+        TweenLite.to($('.pellet'), 1, {left: offset.left + (width/2), top: offset.top + 60, onComplete: function() {
+         callback($('.pellet').length);
+         $('.pellet').remove();
+        }});
+    };
+
     var toggleJanOlav = function(toggle) {
         if(!toggle) {
             console.log('toggle-jan-olav');
@@ -53,7 +66,7 @@ $(function() {
         } else {
             element.show();
             TweenLite.to(element, 0, {rotation: '-90'});
-            TweenLite.to(element, 1, {y: '0px', rotation: 0, ease: Bounce.easeOut});
+            TweenLite.to(element, 1, {y: '0px', rotation: 0, ease: Bounce.easeOut, onComplete: callback});
         }
     };
 
@@ -118,7 +131,7 @@ $(function() {
             };
             createQuestion(question);
         } else {
-            gameController('endGame');
+            gameController('nextLevel');
         }
     };
 
@@ -131,7 +144,7 @@ $(function() {
         var skew = 0;
         for (var x = 1; x<=30; x++) {
             var pellet = $('<div>').addClass('pellet');
-            TweenLite.to(pellet, 0, {x: skew + 'px'});
+            TweenLite.to(pellet, 0, {left: skew + 'px'});
             $('.time-counter').append(pellet);
             skew = (20+pelletSpaceHorisontal)*x;
         }
@@ -140,6 +153,8 @@ $(function() {
     }
     var startAnimation = function(pelletSpace) {
         gameTimerPelletInterval = setInterval(function() {
+            gameTimerLevelTime = new Date().getTime();
+            console.log('start time: ', gameTimerLevelTime);
             $('.pac-man').css('background-image', 'url(img/janolavlukket.png)');
             setTimeout(function() {
                 $('.pac-man').css('background-image', 'url(img/janolavaapen.png)');
@@ -269,12 +284,26 @@ $(function() {
     };
 
     var startTimer = function(callback) {
+        gameTimerLevelStart = new Date().getTime();
+        console.log('start time: ', gameTimerLevelStart);
         gameTimer = setTimeout(function() {
             TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
                 callback();
             }});
         },30000);
-    }
+    };
+
+    var scoreLoop = function(newScore, callback) {
+        if(score <= newScore) {
+           setTimeout(function () {
+                $('#menu-points-number-next').text(score);
+                score++;
+                scoreLoop(newScore, callback);
+           }, 2);
+        } else {
+            callback();
+        }
+    };
 
     var gameController = function(screen) {
         currentScreen = screen;
@@ -308,15 +337,47 @@ $(function() {
                 });
             });
         }
-        if(screen === 'endLevel') {
+        if(screen === 'nextLevel') {
+            if(gameTimer) {
+                clearTimeout(gameTimer);
+            }
+            if(gameTimerPelletInterval) {
+                clearInterval(gameTimerPelletInterval);
+            }
+
+            toggleScoreBoard(false);
+            console.log('bartfjes');
+            $('#menu-points-number-next').text(score);
+            $('#level-id').text(level);
+            toggleMenu(true, $('#next-level-menu'), function() {
+                animateBlobs(function() {
+                    console.log('tid', gameTimerLevelTime, gameTimerLevelStart);
+                    var timeLeftOfLevelInSeconds = (gameTimerLevelTime - gameTimerLevelStart) / 1000;
+                    console.log(timeLeftOfLevelInSeconds);
+                    if(timeLeftOfLevelInSeconds <= 25) {
+                        var newScore = score + (Math.round(timeLeftOfLevelInSeconds)*100);
+
+                        scoreLoop(newScore, function() {
+                            console.log('ferri');
+                            $('#next-level-button').text('bonus level unlocked');
+
+                            level = level * -1;
+                        });
+                        //$('#menu-points-number-next').text(score);
+
+
+                    }
+                });
+            });
         }
+
         if(screen === 'endGame') {
             toggleTimer(false);
             if(gameTimer) {
                 clearTimeout(gameTimer);
             }
             if(gameTimerPelletInterval) {
-                clearInterval();
+                clearInterval(gameTimerPelletInterval);
             }
             toggleScoreBoard(false);
 

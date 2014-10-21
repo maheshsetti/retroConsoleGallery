@@ -745,36 +745,7 @@ body, html {
   }
 }
 
-/* line 267, ../sass/screen.scss */
-.pellet {
-  position: absolute;
-  top: 100%;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  margin-top: -40px;
-  z-index: 200001;
-}
-/* line 274, ../sass/screen.scss */
-.pellet:after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 5px;
-  height: 5px;
-  background-color: #f2ea0f;
-  -webkit-box-shadow: 0 0 10px #f2ea0f;
-  -moz-box-shadow: 0 0 10px #f2ea0f;
-  box-shadow: 0 0 10px #f2ea0f;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
-/* line 290, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3 {
@@ -782,7 +753,7 @@ body, html {
   height: 40px;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .screen-1,
 .screen-2,
 .screen-3 {
@@ -790,7 +761,7 @@ body, html {
   height: 100px;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3,
@@ -805,56 +776,37 @@ body, html {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .screen-1 {
   background-image: url(../img/screen-1.png);
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .screen-2 {
   background-image: url(../img/screen-2.png);
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .screen-3 {
   background-image: url(../img/screen-3.png);
 }
 
-/* line 334, ../sass/screen.scss */
-.pac-man {
-  width: 120px;
-  height: 80px;
-  position: absolute;
-  top: 100%;
-  margin-top: -80px;
-  margin-left: -90px;
-  left: 0;
-  background-image: url(../img/janolavlukket.png);
-  background-size: 120px 80px;
-  background-repeat: no-repeat;
-  z-index: 200000;
-}
-/* line 348, ../sass/screen.scss */
-.pac-man.aapen {
-  background-image: url(../img/janolavaapen.png);
-}
-
-/* line 353, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .count-down {
   font-size: 150px;
   color: white;
@@ -867,7 +819,7 @@ body, html {
   opacity: 0;
 }
 
-/* line 361, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .scoreboard {
   width: 300px;
   border: 4px solid white;
@@ -885,46 +837,85 @@ body, html {
   -o-transform: translateX(-400px);
   transform: translateX(-400px);
 }
-/* line 373, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .scoreboard #level-text {
   padding: 4px;
 }
-/* line 377, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .scoreboard #level-number {
   font-size: 40px;
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 382, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .scoreboard #score-text {
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 386, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .scoreboard #score-number {
   font-size: 40px;
   padding: 14px;
 }
-/* line 390, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .scoreboard #lives-text {
   padding-bottom: 14px;
 }
-/* line 393, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .scoreboard #lives-number {
   font-size: 40px;
   padding: 14px;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .time-counter {
   position: absolute;
   width: 100%;
+  height: 100%;
+}
+/* line 365, ../sass/screen.scss */
+.time-counter .pac-man {
+  width: 120px;
   height: 80px;
+  position: absolute;
   top: 100%;
   margin-top: -80px;
-  -webkit-transform: translateY(80px);
-  -moz-transform: translateY(80px);
-  -ms-transform: translateY(80px);
-  -o-transform: translateY(80px);
-  transform: translateY(80px);
+  margin-left: -90px;
+  left: 0;
+  background-image: url(../img/janolavlukket.png);
+  background-size: 120px 80px;
+  background-repeat: no-repeat;
+  z-index: 200000;
+}
+/* line 379, ../sass/screen.scss */
+.time-counter .pac-man.aapen {
+  background-image: url(../img/janolavaapen.png);
+}
+/* line 383, ../sass/screen.scss */
+.time-counter .pellet {
+  position: absolute;
+  top: 100%;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-top: -40px;
+  z-index: 200001;
+}
+/* line 390, ../sass/screen.scss */
+.time-counter .pellet:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #f2ea0f;
+  -webkit-box-shadow: 0 0 10px #f2ea0f;
+  -moz-box-shadow: 0 0 10px #f2ea0f;
+  box-shadow: 0 0 10px #f2ea0f;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
