@@ -81,7 +81,9 @@ $(function() {
         if(toggle) {
             TweenLite.to($('.time-counter'), 1, {y: '0px', ease: Elastic.easeInOut});
         } else {
-            TweenLite.to($('.time-counter'), 1, {y: '80px', ease: Elastic.easeInOut});
+            TweenLite.to($('.time-counter'), 1, {y: '80px', ease: Elastic.easeInOut, onComplete: function() {
+                $('.pac-man').remove();
+            }});
         }
     };
 
@@ -124,7 +126,7 @@ $(function() {
     };
     var nextQuestion = function () {
         flushQuestion();
-        if(question.count < 9) {
+        if(question.count < 1) {
             question = {
                 count: question.count + 1,
                 question: levelData['1'][question.count + 1]
@@ -139,10 +141,10 @@ $(function() {
         $('.question-wrapper').remove();
     };
 
-    var generatePacMan = function(callback) {
-        var pelletSpaceHorisontal = (window.innerWidth-(31*20)) / 30;
+    var generatePacMan = function(pellets, callback) {
+        var pelletSpaceHorisontal = (window.innerWidth-((pellets+1)*20)) / pellets;
         var skew = 0;
-        for (var x = 1; x<=30; x++) {
+        for (var x = 1; x<=pellets; x++) {
             var pellet = $('<div>').addClass('pellet');
             TweenLite.to(pellet, 0, {left: skew + 'px'});
             $('.time-counter').append(pellet);
@@ -163,6 +165,23 @@ $(function() {
                 $('.pellet').first().remove();
             }});
         }, 960);
+    };
+
+    var generateAndAnimatePellet = function(callback) {
+        var top = randomNumber(0, window.innerHeight);
+        var animateY = (window.innerHeight-320)-top;
+        console.log(top, animateY);
+        var pellet = $('<div>').addClass('pellet').css({'left': 0, 'top': top});
+        $('body').append(pellet);
+
+        TweenLite.to(pellet, 2, {
+            y: animateY,
+            left: window.innerWidth-105,
+            onComplete: function() {
+                pellet.remove();
+                callback();
+            }
+        });
     };
 
     var countDown = function () {
@@ -283,21 +302,21 @@ $(function() {
         }
     };
 
-    var startTimer = function(callback) {
+    var startTimer = function(amount, callback) {
         gameTimerLevelStart = new Date().getTime();
         console.log('start time: ', gameTimerLevelStart);
         gameTimer = setTimeout(function() {
             TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
                 callback();
             }});
-        },30000);
+        },amount);
     };
 
     var scoreLoop = function(newScore, callback) {
         if(score <= newScore) {
            setTimeout(function () {
                 $('#menu-points-number-next').text(score);
-                score++;
+                score = score + 10;
                 scoreLoop(newScore, callback);
            }, 2);
         } else {
@@ -328,15 +347,32 @@ $(function() {
             };
             updateLevel(level);
             toggleScoreBoard(true);
-            generatePacMan(function(pelletSpace) {
+            generatePacMan(30, function(pelletSpace) {
                 startAnimation(pelletSpace);
                 createQuestion(question.question);
                 toggleTimer(true);
-                startTimer(function() {
+                startTimer(30000, function() {
                     gameController('endGame');
                 });
             });
         }
+
+        if(screen === 'loadBonusLevel') {
+            $('#level-number').text('Bonus level');
+            toggleMenu(false, $('#next-level-menu'), function() {
+                $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedaapenmunnvike.svg)');
+                toggleJanOlav(true);
+                toggleScoreBoard(true);
+                generatePacMan(10, function(pelletSpace) {
+                    startAnimation(pelletSpace);
+                    toggleTimer(true);
+                    startTimer(10000, function() {
+                        gameController('endGame');
+                    });
+                });
+            });
+        }
+
         if(screen === 'nextLevel') {
             if(gameTimer) {
                 clearTimeout(gameTimer);
@@ -349,8 +385,10 @@ $(function() {
             console.log('bartfjes');
             $('#menu-points-number-next').text(score);
             $('#level-id').text(level);
+            $('#next-level-button').hide();
             toggleMenu(true, $('#next-level-menu'), function() {
                 animateBlobs(function() {
+                    toggleTimer(false);
                     console.log('tid', gameTimerLevelTime, gameTimerLevelStart);
                     var timeLeftOfLevelInSeconds = (gameTimerLevelTime - gameTimerLevelStart) / 1000;
                     console.log(timeLeftOfLevelInSeconds);
@@ -358,8 +396,9 @@ $(function() {
                         var newScore = score + (Math.round(timeLeftOfLevelInSeconds)*100);
 
                         scoreLoop(newScore, function() {
-                            console.log('ferri');
+
                             $('#next-level-button').text('bonus level unlocked');
+                            $('#next-level-button').show();
 
                             level = level * -1;
                         });
@@ -411,6 +450,18 @@ $(function() {
             document.onkeydown = function(e) {
                     var e = e || window.event;
                     var keypress = e.keyCode || e.which;
+                    console.log(keypress);
+                    if(keypress === 65 || keypress === 83) {
+                        if(currentScreen === 'loadBonusLevel') {
+                            generateAndAnimatePellet(function() {
+                                score = score+1;
+                                $('#score-number').text(score);
+                            });
+                        }
+                    }
+                    if(keypress === 83) {
+
+                    }
                     if(keypress === 38) {
                         moveFocus('up');
                     }
@@ -433,7 +484,11 @@ $(function() {
                         if(currentScreen === 'endGame') {
                             gameController('startMenu');
                         }
-
+                        if(currentScreen === 'nextLevel') {
+                            if(level < 0) {
+                                gameController('loadBonusLevel');
+                            }
+                        }
                         if(currentScreen === 'loadLevel') {
                             evaluateAnswer();
                         }
