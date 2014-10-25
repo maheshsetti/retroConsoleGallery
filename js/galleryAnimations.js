@@ -28,10 +28,9 @@ var generateSprite = function(spriteClass) {
         opacity: 0
     })
     .addClass(spriteClass + '-' + randomStar);
-    TweenLite.to(star, 0, {z: 0, x: -40});
+    TweenLite.to(star, 40, {z: 0, x: -40});
     TweenLite.to(star, 10,
         {
-            opacity: 1,
             x: innerWidth/2,
             z: 0,
             opacity: 0.4,
@@ -39,9 +38,8 @@ var generateSprite = function(spriteClass) {
             onComplete: function() {
                 TweenLite.to(star, 10,
                     {
-                        opacity: 1,
                         x: '+=' + innerWidth/2,
-                        z: 0,
+                        z: 40,
                         opacity: 0,
                         ease:Linear.easeNone,
                         onComplete: function() {

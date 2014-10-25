@@ -1,0 +1,1302 @@
+[
+  {
+    "question": "Hvem er slem i donkey kong jr.?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "donkeykong",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva er saxxon?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem utviklet Destiny?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilket bilde minner om det nyeste Donkey Kong Country spillet",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "playstation3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nes",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "supernintendo",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken konsoll har ikke Minecraft?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kjøpte Minecraft for 2.5 milliarder dollar?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "megaman",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er hovedpersonen i ninja gaiden?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem spiller hovedpersonen i en populær dyresimulator?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "hdmi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "scart",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "rfcable",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill foregår i Los Santos?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sackboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "I 1997 ble et bilspill kjent fordi du kunne meie ned fotgjengere, hvilket?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "16",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "32",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "8",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "64",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva minner om undertittelen til det nyeste Call of Duty?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket disneyspill ble remastered i 2013?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken franchise fikk sitt andre angry birds spill i 2013?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken Sega konsoll kom før Mega Drive?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "link",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva er Nintendos mest mislykkede konsoll?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva er den mest kjente Super Mario Bros klonen?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "xboxcontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken figur minner om navnet til Mega man i Japan?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er skurken i Monkey Island?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo64controller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Master chiefs kunstige sidekick?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xboxcontroller",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nescontroller",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2controller",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken farge er genseren til Mario i Super Mario Bros?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva får man i den første spørsmålsblokka i super mario bros?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken viser den europeiske versjonen av Contra?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket ord var ninja byttet ut med da Turtles ble lansert på NES i europa?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "n-gage",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "atarilynx",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill har flyvende biler?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "atarilynx",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "n-gage",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilket bilde er fra Dark Souls 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken av disse var launchspill for xbox 360 i europa?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket av disse er utviklet av blizzard?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "grandtheftauto",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er hovedpersonen i gears of war?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "link",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er siste boss i Earth Worm Jim til Super Nintendo?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hva er 1. land i super mario bros 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "quakelogo",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gtalogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "creeper",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva er fra zelda 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "goldeneye",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gtalogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem er ikke i mario kart 64?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva har Microsoft fjernet fra Xbox One?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "luigi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "samus",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket bilde er fra Metal Gear Solid 4?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "starwars",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvordan lager man en øks i Minecraft?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "spaceinvaders",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "warcraftlogo",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilke pokemon kan man begynne med i Pokemon red,green og blue?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "creeper",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill er norskutviklet?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "fallout3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "quakelogo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "callofdutyscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket er et norsk spill sett fra et spesielt perspektiv?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "callofdutyscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "goldeneye",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "doomscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er skaperen av Tetris?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er skaperen av Leisure Suit Larry?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mariokart",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem er sjefen for Valve?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er fra Diablo 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "madden",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "creeper",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "diablo",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "guile",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "tetris",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "spaceinvaders",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gameboy",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "yoshi",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "donkeykong",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "diablo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "assasinscreed",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "charmander",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "et",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "callofdutyblackops",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "haloscreenshot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er en Night Elf fra World of Warcraft?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "simcity",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "sims",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "segagamegear",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "vgacable",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er hovedpersonen i Kings Quest 5?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "playstation4",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xboxone",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "atari2600",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill er ikke et quest spill fra sierra?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nes",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "supernintendo",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  }
+]

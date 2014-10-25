@@ -257,11 +257,25 @@ body {
     width: 600px;
     background: {
         image: url(../img/janolavtitle.svg);
-        size: 100%;
+        position-y: bottom;
         repeat: no-repeat;
     }
     @media #{$bigScreen} {
         width: 1000px;
+    }
+    &.aapen {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 328px;
+            right: 226px;
+            width: 84px;
+            height: 32px;
+            background: {
+                image: url(../img/janolavmunn.svg);
+                repeat: no-repeat;
+            }
+        }
     }
 }
 

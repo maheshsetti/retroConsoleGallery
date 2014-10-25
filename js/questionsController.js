@@ -1,4 +1,4 @@
-$(function() {
+    $(function() {
     var score = 0;
     var level = 0;
     var question = {
@@ -176,10 +176,14 @@ $(function() {
 
         TweenLite.to(pellet, 2, {
             y: animateY,
-            left: window.innerWidth-105,
+            left: window.innerWidth-170,
             onComplete: function() {
+                $('#jan-olav-big').removeClass('aapen');
                 pellet.remove();
-                callback();
+                setTimeout(function() {
+                    $('#jan-olav-big').addClass('aapen');
+                    callback();
+                },50);
             }
         });
     };
@@ -360,13 +364,14 @@ $(function() {
         if(screen === 'loadBonusLevel') {
             $('#level-number').text('Bonus level');
             toggleMenu(false, $('#next-level-menu'), function() {
-                $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedaapenmunnvike.svg)');
+                $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedlukketmunnvike.svg)').addClass('aapen');
                 toggleJanOlav(true);
                 toggleScoreBoard(true);
                 generatePacMan(10, function(pelletSpace) {
                     startAnimation(pelletSpace);
                     toggleTimer(true);
                     startTimer(10000, function() {
+                        $('#jan-olav-big').removeClass('aapen');
                         gameController('endGame');
                     });
                 });
