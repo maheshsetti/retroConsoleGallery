@@ -126,10 +126,10 @@
     };
     var nextQuestion = function () {
         flushQuestion();
-        if(question.count < 1) {
+        if(question.count < 9) {
             question = {
                 count: question.count + 1,
-                question: levelData['1'][question.count + 1]
+                question: levelData[level][question.count + 1]
             };
             createQuestion(question);
         } else {
@@ -219,7 +219,7 @@
                 .addClass('alt-' + (index+1) + '')
                 .addClass('alternative');
             if(_question.type == 'img') {
-                container.append($('<img>').attr('src', 'questions/level' + level + '/' + _question.media + '.jpg'));
+                container.append($('<img>').attr('src', 'questions/levels/' + _question.media + '.jpg'));
             }
             questionC.append(container);
         });
@@ -339,41 +339,51 @@
             gameController('countDown');
         }
         if(screen === 'countDown') {
-            clearLevelBackground();
-            countDown();
-            generateLevelBackground(level+1);
-        }
-        if(screen === 'loadLevel') {
-            level = level+1;
-            question = {
-                count: 0,
-                question: levelData[level][0]
-            };
-            updateLevel(level);
-            toggleScoreBoard(true);
-            generatePacMan(30, function(pelletSpace) {
-                startAnimation(pelletSpace);
-                createQuestion(question.question);
-                toggleTimer(true);
-                startTimer(30000, function() {
-                    gameController('endGame');
-                });
+            toggleJanOlav(false);
+            toggleMenu(false, $('#next-level-menu'), function() {
+                clearLevelBackground();
+                countDown();
+                if(level<0) {
+                    generateLevelBackground(-1);
+                } else {
+                    generateLevelBackground(level+1);
+                }
             });
+        }
+
+        if(screen === 'loadLevel') {
+            if(level < 0) {
+                gameController('loadBonusLevel');
+            } else {
+                level = level+1;
+                question = {
+                    count: 0,
+                    question: levelData[level][0]
+                };
+                updateLevel(level);
+                toggleScoreBoard(true);
+                generatePacMan(30, function(pelletSpace) {
+                    startAnimation(pelletSpace);
+                    createQuestion(question.question);
+                    toggleTimer(true);
+                    startTimer(30000, function() {
+                        gameController('endGame');
+                    });
+                });
+            }
         }
 
         if(screen === 'loadBonusLevel') {
             $('#level-number').text('Bonus level');
-            toggleMenu(false, $('#next-level-menu'), function() {
-                $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedlukketmunnvike.svg)').addClass('aapen');
-                toggleJanOlav(true);
-                toggleScoreBoard(true);
-                generatePacMan(10, function(pelletSpace) {
-                    startAnimation(pelletSpace);
-                    toggleTimer(true);
-                    startTimer(10000, function() {
-                        $('#jan-olav-big').removeClass('aapen');
-                        gameController('endGame');
-                    });
+            $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedlukketmunnvike.svg)').addClass('aapen');
+            toggleJanOlav(true);
+            toggleScoreBoard(true);
+            generatePacMan(10, function(pelletSpace) {
+                startAnimation(pelletSpace);
+                toggleTimer(true);
+                startTimer(10000, function() {
+                    $('#jan-olav-big').removeClass('aapen');
+                    gameController('nextLevel');
                 });
             });
         }
@@ -389,7 +399,12 @@
             toggleScoreBoard(false);
             console.log('bartfjes');
             $('#menu-points-number-next').text(score);
-            $('#level-id').text(level);
+            if(level > 0) {
+                $('#level-id').text('brett ' + level);
+            } else {
+                $('#level-id').text('bonus-banen!');
+            }
+            
             $('#next-level-button').hide();
             toggleMenu(true, $('#next-level-menu'), function() {
                 animateBlobs(function() {
@@ -397,19 +412,19 @@
                     console.log('tid', gameTimerLevelTime, gameTimerLevelStart);
                     var timeLeftOfLevelInSeconds = (gameTimerLevelTime - gameTimerLevelStart) / 1000;
                     console.log(timeLeftOfLevelInSeconds);
-                    if(timeLeftOfLevelInSeconds <= 25) {
+                    if(timeLeftOfLevelInSeconds <= 25 && level > 0) {
                         var newScore = score + (Math.round(timeLeftOfLevelInSeconds)*100);
 
                         scoreLoop(newScore, function() {
 
-                            $('#next-level-button').text('bonus level unlocked');
+                            $('#next-level-button').text('Bonus brett låst opp');
                             $('#next-level-button').show();
 
                             level = level * -1;
                         });
-                        //$('#menu-points-number-next').text(score);
-
-
+                    } else {
+                        level = level *-1;
+                        $('#next-level-button').text('Neste brett').show();
                     }
                 });
             });
@@ -451,56 +466,58 @@
         $.get('getLevel.php?level=1', function(data) {
             levelData[1] = shuffle(data);
             console.log('leveldata', data);
-
-            document.onkeydown = function(e) {
-                    var e = e || window.event;
-                    var keypress = e.keyCode || e.which;
-                    console.log(keypress);
-                    if(keypress === 65 || keypress === 83) {
-                        if(currentScreen === 'loadBonusLevel') {
-                            generateAndAnimatePellet(function() {
-                                score = score+1;
-                                $('#score-number').text(score);
-                            });
-                        }
-                    }
-                    if(keypress === 83) {
-
-                    }
-                    if(keypress === 38) {
-                        moveFocus('up');
-                    }
-                    if(keypress === 39) {
-                        //right
-                        moveFocus('right');
-                    }
-                    if(keypress === 40) {
-                        // down
-                        moveFocus('down');
-                    }
-                    if(keypress === 37) {
-                        // left
-                        moveFocus('left');
-                    }
-                    if(keypress === 13) {
-                        if(currentScreen === 'startMenu') {
-                            gameController('startGame');
-                        }
-                        if(currentScreen === 'endGame') {
-                            gameController('startMenu');
-                        }
-                        if(currentScreen === 'nextLevel') {
-                            if(level < 0) {
-                                gameController('loadBonusLevel');
+            $.get('getLevel.php?level=2', function(data) {
+                levelData[2] = shuffle(data);
+                console.log(levelData);
+                document.onkeydown = function(e) {
+                        var e = e || window.event;
+                        var keypress = e.keyCode || e.which;
+                        console.log(keypress);
+                        if(keypress === 65 || keypress === 83) {
+                            if(currentScreen === 'loadBonusLevel') {
+                                generateAndAnimatePellet(function() {
+                                    score = score+1;
+                                    $('#score-number').text(score);
+                                });
                             }
                         }
-                        if(currentScreen === 'loadLevel') {
-                            evaluateAnswer();
+                        if(keypress === 83) {
+
+                        }
+                        if(keypress === 38) {
+                            moveFocus('up');
+                        }
+                        if(keypress === 39) {
+                            //right
+                            moveFocus('right');
+                        }
+                        if(keypress === 40) {
+                            // down
+                            moveFocus('down');
+                        }
+                        if(keypress === 37) {
+                            // left
+                            moveFocus('left');
+                        }
+                        if(keypress === 13 || keypress) {
+                            console.log(currentScreen);
+                            if(currentScreen === 'startMenu') {
+                                gameController('startGame');
+                            }
+                            if(currentScreen === 'endGame') {
+                                gameController('startMenu');
+                            }
+                            if(currentScreen === 'nextLevel') {
+                                gameController('countDown');
+                            }
+                            if(currentScreen === 'loadLevel') {
+                                evaluateAnswer();
+                            }
                         }
                     }
-                }
 
-            callback();
+                callback();
+            });
         });
     };
 

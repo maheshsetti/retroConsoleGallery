@@ -4,12 +4,7 @@
     "alternatives": [
       {
         "text": "",
-        "media": "donkeykong",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "kirby",
+        "media": "dkjr",
         "type": "img",
         "solution": false
       },{
@@ -19,7 +14,12 @@
         "solution": true
       },{
         "text": "",
-        "media": "luigi",
+        "media": "wario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "dk",
         "type": "img",
         "solution": false
       }
@@ -30,22 +30,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "samus",
+        "media": "saxxon",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "tonyhawk",
+        "media": "wipeout",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sonic",
+        "media": "descent",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tails",
+        "media": "atarigame",
         "type": "img",
         "solution": false
       }
@@ -56,48 +56,48 @@
     "alternatives": [
       {
         "text": "",
-        "media": "masterchief",
+        "media": "microsoft",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tails",
+        "media": "criterion",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sackboy",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mario",
+        "media": "bungie",
         "type": "img",
         "solution": true
+      },{
+        "text": "",
+        "media": "doublefine",
+        "type": "img",
+        "solution": false
       }
     ]
   },
   {
-    "question": "Hvilket bilde minner om det nyeste Donkey Kong Country spillet",
+    "question": "Hva minner om nyeste Donkey Kong Country?",
     "alternatives": [
       {
         "text": "",
-        "media": "playstation3",
+        "media": "frost",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "xbox360",
+        "media": "summer",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nes",
+        "media": "desert",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "supernintendo",
+        "media": "urban",
         "type": "img",
         "solution": false
       }
@@ -108,22 +108,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "sackboy",
+        "media": "3ds",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "sims",
+        "media": "xbox360",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sonic",
+        "media": "playstation3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mario",
+        "media": "psvita",
         "type": "img",
         "solution": false
       }
@@ -134,22 +134,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "megaman",
+        "media": "microsoft",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "mario",
+        "media": "bungie",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sonic",
+        "media": "criterion",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tails",
+        "media": "doublefine",
         "type": "img",
         "solution": false
       }
@@ -160,48 +160,48 @@
     "alternatives": [
       {
         "text": "",
-        "media": "mario",
+        "media": "subsero",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "luigi",
+        "media": "ninjagaiden",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "samus",
+        "media": "strider",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sonic",
+        "media": "shinobi",
         "type": "img",
         "solution": false
       }
     ]
   },
   {
-    "question": "Hvem spiller hovedpersonen i en populær dyresimulator?",
+    "question": "Hvem er hovedpersonen i en populær dyresimulator?",
     "alternatives": [
       {
         "text": "",
-        "media": "vgacable",
+        "media": "porcupine",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "hdmi",
+        "media": "cow",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "scart",
+        "media": "goat",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "rfcable",
+        "media": "donkey",
         "type": "img",
         "solution": false
       }
@@ -212,48 +212,48 @@
     "alternatives": [
       {
         "text": "",
-        "media": "sackboy",
+        "media": "gta5",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "ryu",
+        "media": "tonyhawk",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tails",
+        "media": "battlefield4",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tetris",
+        "media": "destiny",
         "type": "img",
         "solution": false
       }
     ]
   },
   {
-    "question": "I 1997 ble et bilspill kjent fordi du kunne meie ned fotgjengere, hvilket?",
+    "question": "Hvilket spill fra 1997 ble kjent fordi du kan meie ned fotgjengere?",
     "alternatives": [
       {
         "text": "",
-        "media": "16",
+        "media": "needforspeed2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "32",
+        "media": "carmageddon",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "8",
+        "media": "gta2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "64",
+        "media": "gta3",
         "type": "img",
         "solution": false
       }
@@ -264,22 +264,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "mario",
+        "media": "zombie",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "kirby",
+        "media": "ghost",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "snake",
+        "media": "tank",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "ryu",
+        "media": "snake",
         "type": "img",
         "solution": false
       }
@@ -290,22 +290,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "pikachu",
+        "media": "ducktales",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "charmander",
+        "media": "mickeymouse",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "yoshi",
+        "media": "chipndale",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "samus",
+        "media": "donaldduck",
         "type": "img",
         "solution": false
       }
@@ -316,22 +316,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "charmander",
+        "media": "starwars",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "pikachu",
+        "media": "lego",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sims",
+        "media": "marvel",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "pacman",
+        "media": "batman",
         "type": "img",
         "solution": false
       }
@@ -342,22 +342,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "minecraft",
+        "media": "turbografx16",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "pacman",
+        "media": "nomad",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "link",
+        "media": "segamastersystem",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "pikachu",
+        "media": "saturn",
         "type": "img",
         "solution": false
       }
@@ -368,22 +368,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "guile",
+        "media": "3ds",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "ryu",
+        "media": "virtualboy",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "samus",
+        "media": "nomad",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "snake",
+        "media": "turbografx16",
         "type": "img",
         "solution": false
       }
@@ -394,22 +394,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "nescontroller",
+        "media": "gianasisters",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "xboxcontroller",
+        "media": "mariobroshomebrew",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "playstation2controller",
+        "media": "stpatrik",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nintendo64controller",
+        "media": "carmageddon",
         "type": "img",
         "solution": false
       }
@@ -420,22 +420,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "nescontroller",
+        "media": "bread",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "playstation2controller",
+        "media": "rock",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "nintendo64controller",
+        "media": "forest",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nintendo3ds",
+        "media": "gun",
         "type": "img",
         "solution": false
       }
@@ -446,22 +446,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "vgacable",
+        "media": "dogpirate",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nintendo64controller",
+        "media": "lechuck",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "nescontroller",
+        "media": "clown",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "playstation2controller",
+        "media": "clownboss",
         "type": "img",
         "solution": false
       }
@@ -472,22 +472,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "vgacable",
+        "media": "wonderwoman",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "xboxcontroller",
+        "media": "cortana",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "nescontroller",
+        "media": "gearofwarfemale",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "playstation2controller",
+        "media": "gearsofwarredhead",
         "type": "img",
         "solution": false
       }
@@ -498,22 +498,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "ryu",
+        "media": "supermariobros2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "guile",
+        "media": "supermariobros1",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "yoshi",
+        "media": "supermariobros3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "pikachu",
+        "media": "supermariobros4",
         "type": "img",
         "solution": false
       }
@@ -550,22 +550,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "tails",
+        "media": "probotector",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "sonic",
+        "media": "contra",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "guile",
+        "media": "contra2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "ryu",
+        "media": "contra3",
         "type": "img",
         "solution": false
       }
@@ -576,22 +576,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "gameboy",
+        "media": "hero",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "nintendo3ds",
+        "media": "super",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "n-gage",
+        "media": "mega",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "atarilynx",
+        "media": "fight",
         "type": "img",
         "solution": false
       }
@@ -602,22 +602,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "atarilynx",
+        "media": "gta3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "gameboy",
+        "media": "gta2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "n-gage",
+        "media": "carmageddon",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nintendo3ds",
+        "media": "wipeout",
         "type": "img",
         "solution": true
       }
@@ -628,22 +628,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "masterchief",
+        "media": "darksouls2",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "madden",
+        "media": "diablo3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "minecraft",
+        "media": "darksouls1",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mariokart",
+        "media": "callofduty2",
         "type": "img",
         "solution": false
       }
@@ -654,22 +654,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "pacman",
+        "media": "callofduty2",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "pikachu",
+        "media": "halo3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mario",
+        "media": "jakanddaxter",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "madden",
+        "media": "assasinscreed",
         "type": "img",
         "solution": false
       }
@@ -680,22 +680,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "fallout3",
+        "media": "supermariokart",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "grandtheftauto",
+        "media": "thelostvikings",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "ducktales",
+        "media": "commanderkeen",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "guitarhero",
+        "media": "jakanddaxter",
         "type": "img",
         "solution": false
       }
@@ -706,22 +706,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "kirby",
+        "media": "halo3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "link",
+        "media": "darksouls2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "madden",
+        "media": "gearsofwar",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "mario",
+        "media": "assasinscreed",
         "type": "img",
         "solution": false
       }
@@ -732,22 +732,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "et",
+        "media": "bobthegoldfish",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mariokart",
+        "media": "peterpuppy",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "minecraft",
+        "media": "psycrow",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "ducktales",
+        "media": "queenslugforabutt",
         "type": "img",
         "solution": true
       }
@@ -758,22 +758,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "quakelogo",
+        "media": "supermariobros3-1",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "gtalogo",
+        "media": "supermariobros3-2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "fallout3",
+        "media": "supermariobros3-3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "creeper",
+        "media": "supermariobros3-4",
         "type": "img",
         "solution": false
       }
@@ -784,22 +784,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "goldeneye",
+        "media": "zelda-gameboy",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "gtalogo",
+        "media": "zelda3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "gameboy",
+        "media": "zelda1",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "guitarhero",
+        "media": "zelda2",
         "type": "img",
         "solution": true
       }
@@ -820,7 +820,7 @@
         "solution": false
       },{
         "text": "",
-        "media": "tonyhawk",
+        "media": "tonyhawklosgatos",
         "type": "img",
         "solution": true
       },{
@@ -836,7 +836,7 @@
     "alternatives": [
       {
         "text": "",
-        "media": "yoshi",
+        "media": "kirby",
         "type": "img",
         "solution": true
       },{
@@ -851,7 +851,7 @@
         "solution": false
       },{
         "text": "",
-        "media": "samus",
+        "media": "dk",
         "type": "img",
         "solution": false
       }
@@ -862,22 +862,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "starwars",
+        "media": "metalgearsolid2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "snake",
+        "media": "metalgearsolid4",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "tetris",
+        "media": "metalgearsolid3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "yoshi",
+        "media": "metalgearsolid5",
         "type": "img",
         "solution": false
       }
@@ -888,22 +888,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "minecraft",
+        "media": "minecraftaxe",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "sonic",
+        "media": "minecraftgoldarmor",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "spaceinvaders",
+        "media": "minecraftbow",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "warcraftlogo",
+        "media": "minecraftthingy",
         "type": "img",
         "solution": false
       }
@@ -914,22 +914,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "masterchief",
+        "media": "digglett",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "tails",
+        "media": "jigglypuff",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "yoshi",
+        "media": "pikachucharmanderbulbasaur",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "creeper",
+        "media": "squirtlecharmanderbulbasaur",
         "type": "img",
         "solution": true
       }
@@ -940,22 +940,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "fallout3",
+        "media": "thelongestjourney",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "quakelogo",
+        "media": "darkness",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "minecraft",
+        "media": "callofduty2",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "callofdutyscreenshot",
+        "media": "gta2",
         "type": "img",
         "solution": false
       }
@@ -966,22 +966,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "callofdutyscreenshot",
+        "media": "darkness",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "haloscreenshot",
+        "media": "amongthesleep",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "goldeneye",
+        "media": "tonyhawk",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "doomscreenshot",
+        "media": "darksouls1",
         "type": "img",
         "solution": false
       }
@@ -992,22 +992,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "tetris",
+        "media": "alexeypajitnov",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "mariokart",
+        "media": "ralphbaer",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "pacman",
+        "media": "billgates",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sims",
+        "media": "allowe",
         "type": "img",
         "solution": false
       }
@@ -1018,22 +1018,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "et",
+        "media": "nolanbushnell",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "haloscreenshot",
+        "media": "billgates",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "guitarhero",
+        "media": "gabenewell",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mariokart",
+        "media": "allowe",
         "type": "img",
         "solution": true
       }
@@ -1044,7 +1044,7 @@
     "alternatives": [
       {
         "text": "",
-        "media": "sims",
+        "media": "gabenewell",
         "type": "img",
         "solution": true
       },{
@@ -1070,50 +1070,24 @@
     "alternatives": [
       {
         "text": "",
-        "media": "madden",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "creeper",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "diablo",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "guile",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem kom først?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "tetris",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "spaceinvaders",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "tonyhawk",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
         "media": "haloscreenshot",
         "type": "img",
         "solution": false
+      },{
+        "text": "",
+        "media": "guitarhero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "diablo3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "doomscreenshot",
+        "type": "img",
+        "solution": false
       }
     ]
   },
@@ -1122,24 +1096,50 @@
     "alternatives": [
       {
         "text": "",
-        "media": "et",
+        "media": "gta2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gta3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "carmageddon",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mickeymouse",
         "type": "img",
         "solution": true
-      },{
-        "text": "",
-        "media": "ducktales",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gameboy",
-        "type": "img",
-        "solution": false
-      },{
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
         "text": "",
         "media": "minecraft",
         "type": "img",
         "solution": false
+      },{
+        "text": "",
+        "media": "wipeout",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "zelda3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "amongthesleep",
+        "type": "img",
+        "solution": false
       }
     ]
   },
@@ -1148,24 +1148,24 @@
     "alternatives": [
       {
         "text": "",
-        "media": "yoshi",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "tails",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mario",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "donkeykong",
+        "media": "atarigame",
         "type": "img",
         "solution": true
+      },{
+        "text": "",
+        "media": "chipndale",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "contra2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "donaldduck",
+        "type": "img",
+        "solution": false
       }
     ]
   },
@@ -1176,7 +1176,7 @@
         "text": "",
         "media": "ducktales",
         "type": "img",
-        "solution": false
+        "solution": true
       },{
         "text": "",
         "media": "diablo",
@@ -1184,9 +1184,9 @@
         "solution": false
       },{
         "text": "",
-        "media": "assasinscreed",
+        "media": "donaldduck",
         "type": "img",
-        "solution": true
+        "solution": false
       },{
         "text": "",
         "media": "charmander",
@@ -1200,24 +1200,24 @@
     "alternatives": [
       {
         "text": "",
-        "media": "et",
+        "media": "gameboy",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "callofdutyblackops",
+        "media": "atarilynx",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "haloscreenshot",
+        "media": "segagamegear",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "minecraft",
+        "media": "segamastersystem",
         "type": "img",
-        "solution": false
+        "solution": true
       }
     ]
   },
@@ -1226,22 +1226,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "simcity",
+        "media": "wow-2",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "sims",
+        "media": "nightelf",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "wow-3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "segagamegear",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "vgacable",
+        "media": "wow-4",
         "type": "img",
         "solution": false
       }
@@ -1278,22 +1278,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "nes",
+        "media": "goblins",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "supernintendo",
+        "media": "policequest",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "xbox360",
+        "media": "kingsquest",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nintendo3ds",
+        "media": "spacequest",
         "type": "img",
         "solution": false
       }

@@ -74,12 +74,18 @@ var generateLevelBackground = function(level) {
     generateSprite(spriteClass);
     intervall = setInterval(function() {
         generateSprite(spriteClass);
-    }, 2000);
+    }, 1000);
 }
 
 var clearLevelBackground = function() {
     clearInterval(intervall);
-    $('.' + spriteClass + '-1').remove();
-    $('.' + spriteClass + '-2').remove();
-    $('.' + spriteClass + '-3').remove();
+    TweenLite.to($('.' + spriteClass + '-1'), 0.5, {z: 40, opacity: 0, onComplete: function() {
+        $('.' + spriteClass + '-1').remove();
+    }});
+    TweenLite.to($('.' + spriteClass + '-2'), 0.5, {z: 40, opacity: 0, onComplete: function() {
+        $('.' + spriteClass + '-2').remove();
+    }});
+    TweenLite.to($('.' + spriteClass + '-3'), 0.5, {z: 40, opacity: 0, onComplete: function() {
+        $('.' + spriteClass + '-3').remove();
+    }});
 };
