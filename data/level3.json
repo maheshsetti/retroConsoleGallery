@@ -1,0 +1,704 @@
+[
+  {
+    "question": "Hvem har utviklet Super Mario Bros?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "dkjr",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "wario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "dk",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem har utviklet Metal Gear Solid?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "saxxon",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "wipeout",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "descent",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "atarigame",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem har ikke et spill på SNES?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "microsoft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "criterion",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "bungie",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "doublefine",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er ikke i Mario Kart: Double Dash!?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "frost",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "summer",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "desert",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "urban",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Når kom første final fantasy?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "3ds",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "xbox360",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "psvita",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er ikke en planet i Destiny?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "microsoft",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "bungie",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "criterion",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "doublefine",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilke av disse er skate 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "subsero",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ninjagaiden",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "strider",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "shinobi",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Assasins creed IV tilleggstittel?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "porcupine",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "cow",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "goat",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "donkey",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvor foregår Bioshock Infinite?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gta5",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "battlefield4",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "destiny",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er ikke en hovedperson i GTA5?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "needforspeed2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "carmageddon",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gta2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gta3",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er captain comic?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "zombie",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ghost",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tank",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "snake",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Commander Keen?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ducktales",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mickeymouse",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "chipndale",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "donaldduck",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem utviklet Commander Keen?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "starwars",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "lego",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "marvel",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "batman",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken FPS kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "turbografx16",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nomad",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "segamastersystem",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "saturn",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er Dune 2000?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "3ds",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "virtualboy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nomad",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "turbografx16",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem har utviklet Trials?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gianasisters",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "mariobroshomebrew",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "stpatrik",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "carmageddon",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva er det beste våpenet i Doom?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "bread",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "rock",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "forest",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gun",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er skurken i Monkey Island?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "dogpirate",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "lechuck",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "clown",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "clownboss",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Master chiefs kunstige sidekick?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "wonderwoman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "cortana",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gearofwarfemale",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gearsofwarredhead",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken farge er genseren til Mario i Super Mario Bros?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "supermariobros2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "supermariobros1",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "supermariobros3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "supermariobros4",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hva får man i den første spørsmålsblokka i super mario bros?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "ryu",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pacman",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "sonic",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "tails",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken viser den europeiske versjonen av Contra?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "probotector",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "contra",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "contra2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "contra3",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket ord var ninja byttet ut med da Turtles ble lansert på NES i europa?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "hero",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "super",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mega",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "fight",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill har flyvende biler?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gta3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gta2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "carmageddon",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "wipeout",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilket bilde er fra Dark Souls 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "darksouls2",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "diablo3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "darksouls1",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "callofduty2",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilken av disse var launchspill for xbox 360 i europa?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "callofduty2",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "halo3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "jakanddaxter",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "assasinscreed",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket av disse er utviklet av blizzard?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "supermariokart",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "thelostvikings",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "commanderkeen",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "jakanddaxter",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  }
+]
