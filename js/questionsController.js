@@ -49,8 +49,12 @@
     var toggleJanOlav = function(toggle) {
         if(!toggle) {
             console.log('toggle-jan-olav');
-            TweenLite.to($('#jan-olav-big'), 0.5, {x: '1000px', ease: Linear.EaseNone});
+            TweenLite.to($('#jan-olav-big'), 1, {z: '50',x: -window.innerWidth/2,  ease: Linear.EaseNone, onComplete: function() {
+                $('#jan-olav-big').hide();
+            }});
         } else {
+            TweenLite.to($('#jan-olav-big'), 0, {z: 0, x: 2000});
+            $('#jan-olav-big').show();
             TweenLite.to($('#jan-olav-big'), 0.5, {x: '0', ease: Linear.EaseNone});
         }
     };
@@ -171,19 +175,19 @@
         var top = randomNumber(0, window.innerHeight);
         var animateY = (window.innerHeight-320)-top;
         console.log(top, animateY);
-        var pellet = $('<div>').addClass('pellet').css({'left': 0, 'top': top});
+        var pellet = $('<div>').addClass('fireball-small').css({'left': 0, 'top': top});
         $('body').append(pellet);
 
-        TweenLite.to(pellet, 2, {
+        TweenLite.to(pellet, 1, {
             y: animateY,
-            left: window.innerWidth-170,
+            left: window.innerWidth-200,
             onComplete: function() {
-                $('#jan-olav-big').removeClass('aapen');
+                $('#jan-olav-big').css('background-image', 'url(img/janolavbowserhit.png)');
                 pellet.remove();
                 setTimeout(function() {
-                    $('#jan-olav-big').addClass('aapen');
+                    $('#jan-olav-big').css('background-image', 'url(img/janolavbowser.png)');
                     callback();
-                },50);
+                },100);
             }
         });
     };
@@ -282,26 +286,8 @@
     var shiftQuestionContainer = function(newFocus) {
         if(newFocus === 1) {
             TweenLite.to($('.question'), 0.25, {
-                rotationY: '10',
-                rotationX: '-10'
-            });
-        }
-        if(newFocus === 2) {
-            TweenLite.to($('.question'), 0.25, {
-                rotationY: '-10',
-                rotationX: '-10'
-            });
-        }
-        if(newFocus === 3) {
-            TweenLite.to($('.question'), 0.25, {
-                rotationY: '10',
-                rotationX: '10'
-            });
-        }
-        if(newFocus === 4) {
-            TweenLite.to($('.question'), 0.25, {
-                rotationY: '-10',
-                rotationX: '10'
+                rotationY: '0',
+                rotationX: '0'
             });
         }
     };
@@ -375,14 +361,14 @@
 
         if(screen === 'loadBonusLevel') {
             $('#level-number').text('Bonus level');
-            $('#jan-olav-big').css('background-image', 'url(img/janolavtitlemedlukketmunnvike.svg)').addClass('aapen');
+            $('#jan-olav-big').css('background-image', 'url(img/janolavbowser.png)');
             toggleJanOlav(true);
             toggleScoreBoard(true);
             generatePacMan(10, function(pelletSpace) {
                 startAnimation(pelletSpace);
                 toggleTimer(true);
                 startTimer(10000, function() {
-                    $('#jan-olav-big').removeClass('aapen');
+                    toggleJanOlav(false);
                     gameController('nextLevel');
                 });
             });
@@ -499,7 +485,7 @@
                             // left
                             moveFocus('left');
                         }
-                        if(keypress === 13 || keypress) {
+                        if(keypress === 13) {
                             console.log(currentScreen);
                             if(currentScreen === 'startMenu') {
                                 gameController('startGame');
@@ -515,7 +501,6 @@
                             }
                         }
                     }
-
                 callback();
             });
         });

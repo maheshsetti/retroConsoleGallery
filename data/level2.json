@@ -572,32 +572,6 @@
     ]
   },
   {
-    "question": "Hvilket ord var ninja byttet ut med da Turtles ble lansert på NES i europa?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "hero",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "super",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mega",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "fight",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
     "question": "Hvilket spill har flyvende biler?",
     "alternatives": [
       {
@@ -728,7 +702,7 @@
     ]
   },
   {
-    "question": "Hvem er siste boss i Earth Worm Jim til Super Nintendo?",
+    "question": "Siste boss i Earth Worm Jim til Super Nintendo?",
     "alternatives": [
       {
         "text": "",
@@ -910,7 +884,7 @@
     ]
   },
   {
-    "question": "Hvilke pokemon kan man begynne med i Pokemon red,green og blue?",
+    "question": "Starter Pokemon i Pokemon-red,green og blue?",
     "alternatives": [
       {
         "text": "",
@@ -962,7 +936,7 @@
     ]
   },
   {
-    "question": "Hvilket er et norsk spill sett fra et spesielt perspektiv?",
+    "question": "Norsk spill sett fra et spesielt perspektiv?",
     "alternatives": [
       {
         "text": "",

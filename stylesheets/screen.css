@@ -95,14 +95,87 @@ body, html {
   font-family: 'p2p';
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
+body {
+  background-image: url();
+}
+
+/* line 32, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
+.background-animation-cool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-image: url(../img/loadingscreen.jpg);
+  background-repeat: no-repeat;
+}
+/* line 45, ../sass/screen.scss */
+.background-animation-cool:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3820px;
+  width: 1920px;
+  height: 1920px;
+  background-image: url(../img/loadingscreen.jpg);
+  background-repeat: no-repeat;
+}
+/* line 57, ../sass/screen.scss */
+.background-animation-cool:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1920px;
+  width: 1920px;
+  height: 1920px;
+  background-image: url(../img/loadingscreen.jpg);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+/* line 71, ../sass/screen.scss */
+.foreground-animation-cool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  background-image: url(../img/clouds.png);
+  background-repeat: no-repeat;
+}
+/* line 81, ../sass/screen.scss */
+.foreground-animation-cool:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3820px;
+  width: 1920px;
+  height: 1920px;
+  background-image: url(../img/clouds.png);
+  background-repeat: no-repeat;
+}
+/* line 93, ../sass/screen.scss */
+.foreground-animation-cool:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1920px;
+  width: 1920px;
+  height: 1920px;
+  background-image: url(../img/clouds.png);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+/* line 107, ../sass/screen.scss */
 .background-animation {
   position: absolute;
   top: 0;
@@ -111,7 +184,7 @@ body, html {
   height: 100%;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .question-wrapper,
 .menu-wrapper {
   position: fixed;
@@ -122,7 +195,7 @@ body, html {
   height: 100%;
   z-index: 1001;
 }
-/* line 51, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .question-wrapper .question-container,
 .question-wrapper .menu-container,
 .menu-wrapper .question-container,
@@ -135,7 +208,7 @@ body, html {
   perspective: 1000;
   z-index: 1001;
 }
-/* line 60, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .question-wrapper .question-container .question,
 .question-wrapper .question-container .menu,
 .question-wrapper .menu-container .question,
@@ -158,7 +231,7 @@ body, html {
   z-index: 101;
 }
 @media only screen and (min-height: 700px) {
-  /* line 60, ../sass/screen.scss */
+  /* line 133, ../sass/screen.scss */
   .question-wrapper .question-container .question,
   .question-wrapper .question-container .menu,
   .question-wrapper .menu-container .question,
@@ -167,11 +240,11 @@ body, html {
   .menu-wrapper .question-container .menu,
   .menu-wrapper .menu-container .question,
   .menu-wrapper .menu-container .menu {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
   }
 }
-/* line 75, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .question-wrapper .question-container .question .question-header,
 .question-wrapper .question-container .menu .question-header,
 .question-wrapper .menu-container .question .question-header,
@@ -186,7 +259,7 @@ body, html {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 85, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1,
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .question .alt-3,
@@ -227,7 +300,7 @@ body, html {
   background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
-/* line 93, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1 img,
 .question-wrapper .question-container .question .alt-2 img,
 .question-wrapper .question-container .question .alt-3 img,
@@ -263,7 +336,7 @@ body, html {
   width: 100%;
 }
 @media only screen and (min-height: 700px) {
-  /* line 85, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-1,
   .question-wrapper .question-container .question .alt-2,
   .question-wrapper .question-container .question .alt-3,
@@ -296,11 +369,11 @@ body, html {
   .menu-wrapper .menu-container .menu .alt-2,
   .menu-wrapper .menu-container .menu .alt-3,
   .menu-wrapper .menu-container .menu .alt-4 {
-    width: 380px;
-    height: 380px;
+    width: 280px;
+    height: 280px;
   }
 }
-/* line 100, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected,
 .question-wrapper .question-container .question .alt-2.selected,
 .question-wrapper .question-container .question .alt-3.selected,
@@ -338,7 +411,7 @@ body, html {
   box-shadow: 0 0 100px #8cbaff;
   z-index: 100;
 }
-/* line 104, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected:after, .question-wrapper .question-container .question .alt-1.selected:before,
 .question-wrapper .question-container .question .alt-2.selected:after,
 .question-wrapper .question-container .question .alt-2.selected:before,
@@ -412,7 +485,7 @@ body, html {
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
 }
-/* line 114, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.answer-unselected,
 .question-wrapper .question-container .question .alt-2.answer-unselected,
 .question-wrapper .question-container .question .alt-3.answer-unselected,
@@ -450,7 +523,7 @@ body, html {
   filter: grayscale(100%);
   opacity: 0.5;
 }
-/* line 119, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.false-answer:after,
 .question-wrapper .question-container .question .alt-2.false-answer:after,
 .question-wrapper .question-container .question .alt-3.false-answer:after,
@@ -502,7 +575,7 @@ body, html {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 137, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.correct-answer:after,
 .question-wrapper .question-container .question .alt-2.correct-answer:after,
 .question-wrapper .question-container .question .alt-3.correct-answer:after,
@@ -554,7 +627,7 @@ body, html {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 158, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .menu .alt-2,
 .question-wrapper .menu-container .question .alt-2,
@@ -570,7 +643,7 @@ body, html {
   transform: perspective(0) translate(220px, 0);
 }
 @media only screen and (min-height: 700px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-2,
   .question-wrapper .question-container .menu .alt-2,
   .question-wrapper .menu-container .question .alt-2,
@@ -579,14 +652,14 @@ body, html {
   .menu-wrapper .question-container .menu .alt-2,
   .menu-wrapper .menu-container .question .alt-2,
   .menu-wrapper .menu-container .menu .alt-2 {
-    -webkit-transform: perspective(0) translate(420px, 0);
-    -moz-transform: perspective(0) translate(420px, 0);
-    -ms-transform: perspective(0) translate(420px, 0);
-    -o-transform: perspective(0) translate(420px, 0);
-    transform: perspective(0) translate(420px, 0);
+    -webkit-transform: perspective(0) translate(320px, 0);
+    -moz-transform: perspective(0) translate(320px, 0);
+    -ms-transform: perspective(0) translate(320px, 0);
+    -o-transform: perspective(0) translate(320px, 0);
+    transform: perspective(0) translate(320px, 0);
   }
 }
-/* line 164, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-3,
 .question-wrapper .question-container .menu .alt-3,
 .question-wrapper .menu-container .question .alt-3,
@@ -602,7 +675,7 @@ body, html {
   transform: perspective(0) translate(0, 220px);
 }
 @media only screen and (min-height: 700px) {
-  /* line 164, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-3,
   .question-wrapper .question-container .menu .alt-3,
   .question-wrapper .menu-container .question .alt-3,
@@ -611,14 +684,14 @@ body, html {
   .menu-wrapper .question-container .menu .alt-3,
   .menu-wrapper .menu-container .question .alt-3,
   .menu-wrapper .menu-container .menu .alt-3 {
-    -webkit-transform: perspective(0) translate(0, 420px);
-    -moz-transform: perspective(0) translate(0, 420px);
-    -ms-transform: perspective(0) translate(0, 420px);
-    -o-transform: perspective(0) translate(0, 420px);
-    transform: perspective(0) translate(0, 420px);
+    -webkit-transform: perspective(0) translate(0, 320px);
+    -moz-transform: perspective(0) translate(0, 320px);
+    -ms-transform: perspective(0) translate(0, 320px);
+    -o-transform: perspective(0) translate(0, 320px);
+    transform: perspective(0) translate(0, 320px);
   }
 }
-/* line 170, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-4,
 .question-wrapper .question-container .menu .alt-4,
 .question-wrapper .menu-container .question .alt-4,
@@ -634,7 +707,7 @@ body, html {
   transform: perspective(0) translate(220px, 220px);
 }
 @media only screen and (min-height: 700px) {
-  /* line 170, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-4,
   .question-wrapper .question-container .menu .alt-4,
   .question-wrapper .menu-container .question .alt-4,
@@ -643,14 +716,14 @@ body, html {
   .menu-wrapper .question-container .menu .alt-4,
   .menu-wrapper .menu-container .question .alt-4,
   .menu-wrapper .menu-container .menu .alt-4 {
-    -webkit-transform: perspective(0) translate(420px, 420px);
-    -moz-transform: perspective(0) translate(420px, 420px);
-    -ms-transform: perspective(0) translate(420px, 420px);
-    -o-transform: perspective(0) translate(420px, 420px);
-    transform: perspective(0) translate(420px, 420px);
+    -webkit-transform: perspective(0) translate(320px, 320px);
+    -moz-transform: perspective(0) translate(320px, 320px);
+    -ms-transform: perspective(0) translate(320px, 320px);
+    -o-transform: perspective(0) translate(320px, 320px);
+    transform: perspective(0) translate(320px, 320px);
   }
 }
-/* line 177, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .question-wrapper .question-container .menu,
 .question-wrapper .menu-container .menu,
 .menu-wrapper .question-container .menu,
@@ -671,7 +744,7 @@ body, html {
   -o-transform: translateY(-1000px);
   transform: translateY(-1000px);
 }
-/* line 187, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-header,
 .question-wrapper .menu-container .menu .menu-header,
 .menu-wrapper .question-container .menu .menu-header,
@@ -682,7 +755,7 @@ body, html {
   border-bottom: 4px solid white;
 }
 @media only screen and (min-height: 700px) {
-  /* line 187, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-header,
   .question-wrapper .menu-container .menu .menu-header,
   .menu-wrapper .question-container .menu .menu-header,
@@ -690,7 +763,7 @@ body, html {
     font-size: 40px;
   }
 }
-/* line 196, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-subheader,
 .question-wrapper .menu-container .menu .menu-subheader,
 .menu-wrapper .question-container .menu .menu-subheader,
@@ -701,7 +774,7 @@ body, html {
   line-height: 1.5em;
 }
 @media only screen and (min-height: 700px) {
-  /* line 196, ../sass/screen.scss */
+  /* line 269, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-subheader,
   .question-wrapper .menu-container .menu .menu-subheader,
   .menu-wrapper .question-container .menu .menu-subheader,
@@ -709,7 +782,7 @@ body, html {
     font-size: 20px;
   }
 }
-/* line 206, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-number,
 .question-wrapper .menu-container .menu .points-number,
 .menu-wrapper .question-container .menu .points-number,
@@ -717,7 +790,7 @@ body, html {
   padding-top: 20px;
   font-size: 40px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-text,
 .question-wrapper .menu-container .menu .points-text,
 .menu-wrapper .question-container .menu .points-text,
@@ -725,23 +798,23 @@ body, html {
   font-size: 20px;
 }
 @media only screen and (min-height: 700px) {
-  /* line 177, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .question-wrapper .question-container .menu,
   .question-wrapper .menu-container .menu,
   .menu-wrapper .question-container .menu,
   .menu-wrapper .menu-container .menu {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: auto;
   }
 }
-/* line 219, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu,
 .question-wrapper .menu-container .menu#main-menu,
 .menu-wrapper .question-container .menu#main-menu,
 .menu-wrapper .menu-container .menu#main-menu {
   padding-top: 140px;
 }
-/* line 221, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu:before,
 .question-wrapper .menu-container .menu#main-menu:before,
 .menu-wrapper .question-container .menu#main-menu:before,
@@ -757,7 +830,7 @@ body, html {
   background-repeat: no-repeat;
 }
 @media only screen and (min-height: 700px) {
-  /* line 221, ../sass/screen.scss */
+  /* line 295, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu:before,
   .question-wrapper .menu-container .menu#main-menu:before,
   .menu-wrapper .question-container .menu#main-menu:before,
@@ -768,7 +841,7 @@ body, html {
   }
 }
 @media only screen and (min-height: 700px) {
-  /* line 219, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu,
   .question-wrapper .menu-container .menu#main-menu,
   .menu-wrapper .question-container .menu#main-menu,
@@ -776,21 +849,20 @@ body, html {
     padding-top: 240px;
   }
 }
-/* line 245, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button,
 .question-wrapper .menu-container .menu .menu-button,
 .menu-wrapper .question-container .menu .menu-button,
 .menu-wrapper .menu-container .menu .menu-button {
-  position: absolute;
+  position: relative;
   width: 380px;
-  left: 50%;
-  margin-left: -190px;
+  margin: 20px auto 0 auto;
   bottom: 20px;
   border: 4px solid white;
   padding: 10px;
   font-size: 20px;
 }
-/* line 254, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button.selected,
 .question-wrapper .menu-container .menu .menu-button.selected,
 .menu-wrapper .question-container .menu .menu-button.selected,
@@ -799,7 +871,7 @@ body, html {
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
 }
-/* line 257, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button:after,
 .question-wrapper .menu-container .menu .menu-button:after,
 .menu-wrapper .question-container .menu .menu-button:after,
@@ -815,37 +887,20 @@ body, html {
   display: inline-block;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #jan-olav-big {
   position: absolute;
-  bottom: 0;
-  right: -100px;
-  height: 100%;
+  top: 50%;
+  margin-top: -200px;
+  right: 100px;
+  height: 400px;
   width: 600px;
-  background-image: url(../img/janolavtitle.svg);
-  background-position-y: bottom;
+  background-image: url(../img/janolavrocket.png);
   background-repeat: no-repeat;
   z-index: 1;
 }
-@media only screen and (min-height: 700px) {
-  /* line 273, ../sass/screen.scss */
-  #jan-olav-big {
-    width: 1000px;
-  }
-}
-/* line 289, ../sass/screen.scss */
-#jan-olav-big.aapen:after {
-  content: "";
-  position: absolute;
-  bottom: 328px;
-  right: 226px;
-  width: 84px;
-  height: 32px;
-  background-image: url(../img/janolavmunn.svg);
-  background-repeat: no-repeat;
-}
 
-/* line 306, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3 {
@@ -853,7 +908,7 @@ body, html {
   height: 40px;
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .screen-1,
 .screen-2,
 .screen-3 {
@@ -861,7 +916,7 @@ body, html {
   height: 100px;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3,
@@ -876,37 +931,37 @@ body, html {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .screen-1 {
   background-image: url(../img/screen-1.png);
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .screen-2 {
   background-image: url(../img/screen-2.png);
 }
 
-/* line 347, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .screen-3 {
   background-image: url(../img/screen-3.png);
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .count-down {
   font-size: 150px;
   color: white;
@@ -919,7 +974,7 @@ body, html {
   opacity: 0;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .scoreboard {
   width: 300px;
   border: 4px solid white;
@@ -937,44 +992,44 @@ body, html {
   -o-transform: translateX(-400px);
   transform: translateX(-400px);
 }
-/* line 372, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .scoreboard #level-text {
   padding: 4px;
 }
-/* line 376, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .scoreboard #level-number {
   font-size: 40px;
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 381, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .scoreboard #score-text {
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 385, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .scoreboard #score-number {
   font-size: 40px;
   padding: 14px;
 }
-/* line 389, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .scoreboard #lives-text {
   padding-bottom: 14px;
 }
-/* line 392, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .scoreboard #lives-number {
   font-size: 40px;
   padding: 14px;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 .time-counter {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 200000;
 }
-/* line 402, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .time-counter .pac-man {
   width: 120px;
   height: 80px;
@@ -988,12 +1043,12 @@ body, html {
   background-repeat: no-repeat;
   z-index: 200000;
 }
-/* line 416, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .time-counter .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
 }
 
-/* line 421, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .pellet {
   position: absolute;
   top: 100%;
@@ -1003,7 +1058,7 @@ body, html {
   margin-top: -40px;
   z-index: 200001;
 }
-/* line 428, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .pellet:after {
   content: "";
   position: absolute;
@@ -1020,4 +1075,17 @@ body, html {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+}
+
+/* line 499, ../sass/screen.scss */
+.fireball-small {
+  position: absolute;
+  top: 100%;
+  width: 27px;
+  height: 29px;
+  left: 0;
+  background-image: url(../img/fireball-small.gif);
+  background-repeat: no-repeat;
+  margin-top: -40px;
+  z-index: 200001;
 }
