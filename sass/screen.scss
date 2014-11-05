@@ -27,17 +27,17 @@ body, html {
 }
 
 body {
-    background-image: url()
+    background-color: #081525;
 }
 * {
     @include box-sizing(border-box);
 }
 .background-animation-cool {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 1920px;
-    height: 1080px;
+    height: 540px;
     background: {
         image: url(../img/loadingscreen.jpg);
         repeat: no-repeat;
@@ -48,7 +48,7 @@ body {
         top: 0;
         left: -3820px;
         width: 1920px;
-        height: 1920px;
+        height: 540px;
         background: {
             image: url(../img/loadingscreen.jpg);
             repeat: no-repeat;
@@ -60,7 +60,7 @@ body {
         top: 0;
         left: -1920px;
         width: 1920px;
-        height: 1920px;
+        height: 540px;
         background: {
             image: url(../img/loadingscreen.jpg);
             repeat: no-repeat;
@@ -68,42 +68,32 @@ body {
         transform: scaleX(-1);
     }
 }
-.foreground-animation-cool {
+
+.cloud {
+    width: 376px;
+    height: 116px;
     position: absolute;
-    top: 0;
     left: 0;
-    width: 1920px;
-    height: 1080px;
+    @include translateX(-376px);
+    top: 0;
+    z-index: 1;
     background: {
-        image: url(../img/clouds.png);
-        repeat: no-repeat;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -3820px;
-        width: 1920px;
-        height: 1920px;
-        background: {
-            image: url(../img/clouds.png);
-            repeat: no-repeat;
-        }
-    }
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -1920px;
-        width: 1920px;
-        height: 1920px;
-        background: {
-            image: url(../img/clouds.png);
-            repeat: no-repeat;
-        }
-        transform: scaleX(-1);
+        image: url(../img/cloud.png);
+        size: 100%;
     }
 }
+
+
+
+.clouds-container {
+    position: absolute;
+    width: 1920px;
+    height: 800px;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+}
+
 .background-animation {
     position: absolute;
     top: 0;
@@ -356,7 +346,17 @@ body {
     }
     @media #{$bigScreen} {
     }
-    z-index: 1;
+    z-index: 500000;
+    &.bowser {
+        background: {
+            image: url(../img/janolavbowser.png);
+        }
+        &.aapen {
+            background: {
+                image: url(../img/janolavbowserhit.png);
+            }
+        }
+    }
 }
 
 .star-1,

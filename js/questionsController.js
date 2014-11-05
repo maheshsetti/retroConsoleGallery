@@ -182,10 +182,10 @@
             y: animateY,
             left: window.innerWidth-200,
             onComplete: function() {
-                $('#jan-olav-big').css('background-image', 'url(img/janolavbowserhit.png)');
+                $('#jan-olav-big').addClass('aapen');
                 pellet.remove();
                 setTimeout(function() {
-                    $('#jan-olav-big').css('background-image', 'url(img/janolavbowser.png)');
+                    $('#jan-olav-big').removeClass('aapen');
                     callback();
                 },100);
             }
@@ -361,7 +361,7 @@
 
         if(screen === 'loadBonusLevel') {
             $('#level-number').text('Bonus level');
-            $('#jan-olav-big').css('background-image', 'url(img/janolavbowser.png)');
+            $('#jan-olav-big').addClass('bowser');
             toggleJanOlav(true);
             toggleScoreBoard(true);
             generatePacMan(10, function(pelletSpace) {
@@ -375,6 +375,7 @@
         }
 
         if(screen === 'nextLevel') {
+            $('#jan-olav-big').removeClass('bowser');
             if(gameTimer) {
                 clearTimeout(gameTimer);
             }
@@ -390,7 +391,7 @@
             } else {
                 $('#level-id').text('bonus-banen!');
             }
-            
+
             $('#next-level-button').hide();
             toggleMenu(true, $('#next-level-menu'), function() {
                 animateBlobs(function() {
@@ -417,6 +418,7 @@
         }
 
         if(screen === 'endGame') {
+            $('#jan-olav-big').removeClass('bowser');
             toggleTimer(false);
             if(gameTimer) {
                 clearTimeout(gameTimer);
@@ -455,53 +457,57 @@
             $.get('getLevel.php?level=2', function(data) {
                 levelData[2] = shuffle(data);
                 console.log(levelData);
-                document.onkeydown = function(e) {
-                        var e = e || window.event;
-                        var keypress = e.keyCode || e.which;
-                        console.log(keypress);
-                        if(keypress === 65 || keypress === 83) {
-                            if(currentScreen === 'loadBonusLevel') {
-                                generateAndAnimatePellet(function() {
-                                    score = score+1;
-                                    $('#score-number').text(score);
-                                });
+                $.get('getLevel.php?level=3', function(data) {
+                    levelData[3] = shuffle(data);
+                    console.log(levelData);
+                    document.onkeydown = function(e) {
+                            var e = e || window.event;
+                            var keypress = e.keyCode || e.which;
+                            console.log(keypress);
+                            if(keypress === 65 || keypress === 83) {
+                                if(currentScreen === 'loadBonusLevel') {
+                                    generateAndAnimatePellet(function() {
+                                        score = score+1;
+                                        $('#score-number').text(score);
+                                    });
+                                }
                             }
-                        }
-                        if(keypress === 83) {
+                            if(keypress === 83) {
 
-                        }
-                        if(keypress === 38) {
-                            moveFocus('up');
-                        }
-                        if(keypress === 39) {
-                            //right
-                            moveFocus('right');
-                        }
-                        if(keypress === 40) {
-                            // down
-                            moveFocus('down');
-                        }
-                        if(keypress === 37) {
-                            // left
-                            moveFocus('left');
-                        }
-                        if(keypress === 13) {
-                            console.log(currentScreen);
-                            if(currentScreen === 'startMenu') {
-                                gameController('startGame');
                             }
-                            if(currentScreen === 'endGame') {
-                                gameController('startMenu');
+                            if(keypress === 38) {
+                                moveFocus('up');
                             }
-                            if(currentScreen === 'nextLevel') {
-                                gameController('countDown');
+                            if(keypress === 39) {
+                                //right
+                                moveFocus('right');
                             }
-                            if(currentScreen === 'loadLevel') {
-                                evaluateAnswer();
+                            if(keypress === 40) {
+                                // down
+                                moveFocus('down');
+                            }
+                            if(keypress === 37) {
+                                // left
+                                moveFocus('left');
+                            }
+                            if(keypress === 13) {
+                                console.log(currentScreen);
+                                if(currentScreen === 'startMenu') {
+                                    gameController('startGame');
+                                }
+                                if(currentScreen === 'endGame') {
+                                    gameController('startMenu');
+                                }
+                                if(currentScreen === 'nextLevel') {
+                                    gameController('countDown');
+                                }
+                                if(currentScreen === 'loadLevel') {
+                                    evaluateAnswer();
+                                }
                             }
                         }
-                    }
-                callback();
+                    callback();
+                });
             });
         });
     };

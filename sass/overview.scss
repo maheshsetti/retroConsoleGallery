@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+$bigScreen: "only screen and (min-height : 700px)";
+
+@font-face {
+   font-family: 'p2p';
+      src: url('../fonts/p2p.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body, html {
+    @include perspective(50);
+    @include transform-style(preserve-3d);
+    margin: 0;
+    padding: 0;
+    font-family: 'p2p';
+}
+h3 {
+    padding: 10px;
+}
+.container {
+    padding: 10px;
+}
+img {
+    width: 10%;
+}

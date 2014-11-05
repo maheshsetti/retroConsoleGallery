@@ -1,51 +1,51 @@
 [
   {
-    "question": "Hvem har utviklet Super Mario Bros?",
+    "question": "Hvem har designet Super Mario Bros?",
     "alternatives": [
       {
         "text": "",
-        "media": "dkjr",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mario",
+        "media": "miyamoto",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "wario",
+        "media": "gabenewell",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "dk",
+        "media": "billgates",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "doublefine",
         "type": "img",
         "solution": false
       }
     ]
   },
   {
-    "question": "Hvem har utviklet Metal Gear Solid?",
+    "question": "Hvem har designet Metal Gear Solid?",
     "alternatives": [
       {
         "text": "",
-        "media": "saxxon",
+        "media": "hideokojima",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "wipeout",
+        "media": "miyamoto",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "descent",
+        "media": "microsoft",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "atarigame",
+        "media": "allowe",
         "type": "img",
         "solution": false
       }
@@ -56,22 +56,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "microsoft",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "criterion",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "bungie",
+        "media": "ducktales",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "doublefine",
+        "media": "donaldduck",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kirby",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "link",
         "type": "img",
         "solution": false
       }
@@ -82,22 +82,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "frost",
+        "media": "kirby",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "summer",
+        "media": "luigi",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "desert",
+        "media": "mario",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "urban",
+        "media": "dkjr",
         "type": "img",
         "solution": false
       }
@@ -108,22 +108,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "3ds",
+        "media": "1987",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "xbox360",
+        "media": "1984",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "playstation3",
+        "media": "1982",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "psvita",
+        "media": "1980",
         "type": "img",
         "solution": false
       }
@@ -134,22 +134,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "microsoft",
+        "media": "uranus",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "bungie",
+        "media": "moon",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "criterion",
+        "media": "mars",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "doublefine",
+        "media": "venus",
         "type": "img",
         "solution": false
       }
@@ -160,95 +160,17 @@
     "alternatives": [
       {
         "text": "",
-        "media": "subsero",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "ninjagaiden",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "strider",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "shinobi",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Assasins creed IV tilleggstittel?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "porcupine",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "cow",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "goat",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "donkey",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvor foregår Bioshock Infinite?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "gta5",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
         "media": "tonyhawk",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "battlefield4",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "destiny",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er ikke en hovedperson i GTA5?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "needforspeed2",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "carmageddon",
+        "media": "skate3",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "gta2",
+        "media": "tonyhawklosgatos",
         "type": "img",
         "solution": false
       },{
@@ -260,26 +182,104 @@
     ]
   },
   {
-    "question": "Hvem er captain comic?",
+    "question": "Assasins creed IV tilleggstittel?",
     "alternatives": [
       {
         "text": "",
-        "media": "zombie",
+        "media": "ghost",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "ghost",
+        "media": "goat",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "blackflag",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "tank",
+        "media": "hero",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvor far cry 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "farcry3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "urban",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "snake",
+        "media": "uranus",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "moon",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er ikke en hovedperson i GTA5?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "gta5char",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gta4char",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gta5charr",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gta5charrr",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er captain comic?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "minecraft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "captaincomic",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ninjagaiden",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "commanderkeen",
         "type": "img",
         "solution": false
       }
@@ -290,22 +290,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "ducktales",
+        "media": "commanderkeen",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "mickeymouse",
+        "media": "peterpuppy",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "chipndale",
+        "media": "porcupine",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "donaldduck",
+        "media": "sackboy",
         "type": "img",
         "solution": false
       }
@@ -316,22 +316,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "starwars",
+        "media": "idsoftware",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "lego",
+        "media": "microsoft",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "marvel",
+        "media": "bungie",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "batman",
+        "media": "gabenewell",
         "type": "img",
         "solution": false
       }
@@ -342,22 +342,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "turbografx16",
+        "media": "halo3",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "nomad",
+        "media": "amongthesleep",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "segamastersystem",
+        "media": "callofduty2",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "saturn",
+        "media": "callofdutyscreenshot",
         "type": "img",
         "solution": false
       }
@@ -368,22 +368,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "3ds",
+        "media": "commandandconquer",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "virtualboy",
+        "media": "dune2000",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "nomad",
+        "media": "haloscreenshot",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "turbografx16",
+        "media": "callofdutyscreenshot",
         "type": "img",
         "solution": false
       }
@@ -394,22 +394,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "gianasisters",
+        "media": "redlynx",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "mariobroshomebrew",
+        "media": "microsoft",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "stpatrik",
+        "media": "bungie",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "carmageddon",
+        "media": "ubisoft",
         "type": "img",
         "solution": false
       }
@@ -420,22 +420,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "bread",
+        "media": "doomsniper",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "rock",
+        "media": "doombfg",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "forest",
+        "media": "doomstrangeweapon",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "gun",
+        "media": "doomshotgun",
         "type": "img",
         "solution": false
       }
@@ -524,22 +524,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "ryu",
+        "media": "nothing",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "pacman",
+        "media": "mushroom",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "sonic",
+        "media": "coin",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "tails",
+        "media": "cow",
         "type": "img",
         "solution": false
       }

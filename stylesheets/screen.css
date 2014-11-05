@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -97,7 +97,7 @@ body, html {
 
 /* line 29, ../sass/screen.scss */
 body {
-  background-image: url();
+  background-color: #081525;
 }
 
 /* line 32, ../sass/screen.scss */
@@ -110,10 +110,10 @@ body {
 /* line 35, ../sass/screen.scss */
 .background-animation-cool {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 1920px;
-  height: 1080px;
+  height: 540px;
   background-image: url(../img/loadingscreen.jpg);
   background-repeat: no-repeat;
 }
@@ -124,7 +124,7 @@ body {
   top: 0;
   left: -3820px;
   width: 1920px;
-  height: 1920px;
+  height: 540px;
   background-image: url(../img/loadingscreen.jpg);
   background-repeat: no-repeat;
 }
@@ -135,47 +135,40 @@ body {
   top: 0;
   left: -1920px;
   width: 1920px;
-  height: 1920px;
+  height: 540px;
   background-image: url(../img/loadingscreen.jpg);
   background-repeat: no-repeat;
   transform: scaleX(-1);
 }
 
-/* line 71, ../sass/screen.scss */
-.foreground-animation-cool {
+/* line 72, ../sass/screen.scss */
+.cloud {
+  width: 376px;
+  height: 116px;
   position: absolute;
-  top: 0;
   left: 0;
-  width: 1920px;
-  height: 1080px;
-  background-image: url(../img/clouds.png);
-  background-repeat: no-repeat;
-}
-/* line 81, ../sass/screen.scss */
-.foreground-animation-cool:before {
-  content: "";
-  position: absolute;
+  -webkit-transform: translateX(-376px);
+  -moz-transform: translateX(-376px);
+  -ms-transform: translateX(-376px);
+  -o-transform: translateX(-376px);
+  transform: translateX(-376px);
   top: 0;
-  left: -3820px;
-  width: 1920px;
-  height: 1920px;
-  background-image: url(../img/clouds.png);
-  background-repeat: no-repeat;
-}
-/* line 93, ../sass/screen.scss */
-.foreground-animation-cool:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1920px;
-  width: 1920px;
-  height: 1920px;
-  background-image: url(../img/clouds.png);
-  background-repeat: no-repeat;
-  transform: scaleX(-1);
+  z-index: 1;
+  background-image: url(../img/cloud.png);
+  background-size: 100%;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
+.clouds-container {
+  position: absolute;
+  width: 1920px;
+  height: 800px;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 97, ../sass/screen.scss */
 .background-animation {
   position: absolute;
   top: 0;
@@ -184,7 +177,7 @@ body {
   height: 100%;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .question-wrapper,
 .menu-wrapper {
   position: fixed;
@@ -195,7 +188,7 @@ body {
   height: 100%;
   z-index: 1001;
 }
-/* line 124, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .question-wrapper .question-container,
 .question-wrapper .menu-container,
 .menu-wrapper .question-container,
@@ -208,7 +201,7 @@ body {
   perspective: 1000;
   z-index: 1001;
 }
-/* line 133, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .question-wrapper .question-container .question,
 .question-wrapper .question-container .menu,
 .question-wrapper .menu-container .question,
@@ -231,7 +224,7 @@ body {
   z-index: 101;
 }
 @media only screen and (min-height: 700px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 123, ../sass/screen.scss */
   .question-wrapper .question-container .question,
   .question-wrapper .question-container .menu,
   .question-wrapper .menu-container .question,
@@ -244,7 +237,7 @@ body {
     height: 600px;
   }
 }
-/* line 148, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .question-wrapper .question-container .question .question-header,
 .question-wrapper .question-container .menu .question-header,
 .question-wrapper .menu-container .question .question-header,
@@ -259,7 +252,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 158, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1,
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .question .alt-3,
@@ -300,7 +293,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
-/* line 166, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1 img,
 .question-wrapper .question-container .question .alt-2 img,
 .question-wrapper .question-container .question .alt-3 img,
@@ -336,7 +329,7 @@ body {
   width: 100%;
 }
 @media only screen and (min-height: 700px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-1,
   .question-wrapper .question-container .question .alt-2,
   .question-wrapper .question-container .question .alt-3,
@@ -373,7 +366,7 @@ body {
     height: 280px;
   }
 }
-/* line 173, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected,
 .question-wrapper .question-container .question .alt-2.selected,
 .question-wrapper .question-container .question .alt-3.selected,
@@ -411,7 +404,7 @@ body {
   box-shadow: 0 0 100px #8cbaff;
   z-index: 100;
 }
-/* line 177, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.selected:after, .question-wrapper .question-container .question .alt-1.selected:before,
 .question-wrapper .question-container .question .alt-2.selected:after,
 .question-wrapper .question-container .question .alt-2.selected:before,
@@ -485,7 +478,7 @@ body {
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
 }
-/* line 187, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.answer-unselected,
 .question-wrapper .question-container .question .alt-2.answer-unselected,
 .question-wrapper .question-container .question .alt-3.answer-unselected,
@@ -523,7 +516,7 @@ body {
   filter: grayscale(100%);
   opacity: 0.5;
 }
-/* line 192, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.false-answer:after,
 .question-wrapper .question-container .question .alt-2.false-answer:after,
 .question-wrapper .question-container .question .alt-3.false-answer:after,
@@ -575,7 +568,7 @@ body {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 210, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-1.correct-answer:after,
 .question-wrapper .question-container .question .alt-2.correct-answer:after,
 .question-wrapper .question-container .question .alt-3.correct-answer:after,
@@ -627,7 +620,7 @@ body {
   background--moz-box-shadow: 0 0 10px #c8c8c8;
   background-box-shadow: 0 0 10px #c8c8c8;
 }
-/* line 231, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-2,
 .question-wrapper .question-container .menu .alt-2,
 .question-wrapper .menu-container .question .alt-2,
@@ -643,7 +636,7 @@ body {
   transform: perspective(0) translate(220px, 0);
 }
 @media only screen and (min-height: 700px) {
-  /* line 231, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-2,
   .question-wrapper .question-container .menu .alt-2,
   .question-wrapper .menu-container .question .alt-2,
@@ -659,7 +652,7 @@ body {
     transform: perspective(0) translate(320px, 0);
   }
 }
-/* line 237, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-3,
 .question-wrapper .question-container .menu .alt-3,
 .question-wrapper .menu-container .question .alt-3,
@@ -675,7 +668,7 @@ body {
   transform: perspective(0) translate(0, 220px);
 }
 @media only screen and (min-height: 700px) {
-  /* line 237, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-3,
   .question-wrapper .question-container .menu .alt-3,
   .question-wrapper .menu-container .question .alt-3,
@@ -691,7 +684,7 @@ body {
     transform: perspective(0) translate(0, 320px);
   }
 }
-/* line 243, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .question-wrapper .question-container .question .alt-4,
 .question-wrapper .question-container .menu .alt-4,
 .question-wrapper .menu-container .question .alt-4,
@@ -707,7 +700,7 @@ body {
   transform: perspective(0) translate(220px, 220px);
 }
 @media only screen and (min-height: 700px) {
-  /* line 243, ../sass/screen.scss */
+  /* line 233, ../sass/screen.scss */
   .question-wrapper .question-container .question .alt-4,
   .question-wrapper .question-container .menu .alt-4,
   .question-wrapper .menu-container .question .alt-4,
@@ -723,7 +716,7 @@ body {
     transform: perspective(0) translate(320px, 320px);
   }
 }
-/* line 250, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .question-wrapper .question-container .menu,
 .question-wrapper .menu-container .menu,
 .menu-wrapper .question-container .menu,
@@ -744,7 +737,7 @@ body {
   -o-transform: translateY(-1000px);
   transform: translateY(-1000px);
 }
-/* line 260, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-header,
 .question-wrapper .menu-container .menu .menu-header,
 .menu-wrapper .question-container .menu .menu-header,
@@ -755,7 +748,7 @@ body {
   border-bottom: 4px solid white;
 }
 @media only screen and (min-height: 700px) {
-  /* line 260, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-header,
   .question-wrapper .menu-container .menu .menu-header,
   .menu-wrapper .question-container .menu .menu-header,
@@ -763,7 +756,7 @@ body {
     font-size: 40px;
   }
 }
-/* line 269, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-subheader,
 .question-wrapper .menu-container .menu .menu-subheader,
 .menu-wrapper .question-container .menu .menu-subheader,
@@ -774,7 +767,7 @@ body {
   line-height: 1.5em;
 }
 @media only screen and (min-height: 700px) {
-  /* line 269, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-subheader,
   .question-wrapper .menu-container .menu .menu-subheader,
   .menu-wrapper .question-container .menu .menu-subheader,
@@ -782,7 +775,7 @@ body {
     font-size: 20px;
   }
 }
-/* line 280, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-number,
 .question-wrapper .menu-container .menu .points-number,
 .menu-wrapper .question-container .menu .points-number,
@@ -790,7 +783,7 @@ body {
   padding-top: 20px;
   font-size: 40px;
 }
-/* line 284, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-text,
 .question-wrapper .menu-container .menu .points-text,
 .menu-wrapper .question-container .menu .points-text,
@@ -798,7 +791,7 @@ body {
   font-size: 20px;
 }
 @media only screen and (min-height: 700px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .question-wrapper .question-container .menu,
   .question-wrapper .menu-container .menu,
   .menu-wrapper .question-container .menu,
@@ -807,14 +800,14 @@ body {
     height: auto;
   }
 }
-/* line 293, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu,
 .question-wrapper .menu-container .menu#main-menu,
 .menu-wrapper .question-container .menu#main-menu,
 .menu-wrapper .menu-container .menu#main-menu {
   padding-top: 140px;
 }
-/* line 295, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu:before,
 .question-wrapper .menu-container .menu#main-menu:before,
 .menu-wrapper .question-container .menu#main-menu:before,
@@ -830,7 +823,7 @@ body {
   background-repeat: no-repeat;
 }
 @media only screen and (min-height: 700px) {
-  /* line 295, ../sass/screen.scss */
+  /* line 285, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu:before,
   .question-wrapper .menu-container .menu#main-menu:before,
   .menu-wrapper .question-container .menu#main-menu:before,
@@ -841,7 +834,7 @@ body {
   }
 }
 @media only screen and (min-height: 700px) {
-  /* line 293, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu,
   .question-wrapper .menu-container .menu#main-menu,
   .menu-wrapper .question-container .menu#main-menu,
@@ -849,7 +842,7 @@ body {
     padding-top: 240px;
   }
 }
-/* line 319, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button,
 .question-wrapper .menu-container .menu .menu-button,
 .menu-wrapper .question-container .menu .menu-button,
@@ -862,7 +855,7 @@ body {
   padding: 10px;
   font-size: 20px;
 }
-/* line 327, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button.selected,
 .question-wrapper .menu-container .menu .menu-button.selected,
 .menu-wrapper .question-container .menu .menu-button.selected,
@@ -871,7 +864,7 @@ body {
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
 }
-/* line 330, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button:after,
 .question-wrapper .menu-container .menu .menu-button:after,
 .menu-wrapper .question-container .menu .menu-button:after,
@@ -887,7 +880,7 @@ body {
   display: inline-block;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 #jan-olav-big {
   position: absolute;
   top: 50%;
@@ -897,7 +890,15 @@ body {
   width: 600px;
   background-image: url(../img/janolavrocket.png);
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 500000;
+}
+/* line 350, ../sass/screen.scss */
+#jan-olav-big.bowser {
+  background-image: url(../img/janolavbowser.png);
+}
+/* line 354, ../sass/screen.scss */
+#jan-olav-big.bowser.aapen {
+  background-image: url(../img/janolavbowserhit.png);
 }
 
 /* line 364, ../sass/screen.scss */
