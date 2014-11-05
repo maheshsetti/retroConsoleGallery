@@ -13,6 +13,25 @@
     var gameTimerPelletInterval = undefined;
     var gameTimerLevelStart = undefined;
     var gameTimerLevelTime = undefined;
+    var audioPoint = new Audio('sounds/point.wav');
+    var audioLostLife = new Audio('sounds/lostlife.wav');
+    var audioFireball = new Audio('sounds/fireball.wav');
+    var audioSelect = new Audio('sounds/select.wav');
+    var audioTimeout = new Audio('sounds/timeout.wav');
+    var audioPebble = new Audio('sounds/pebble.wav');
+    var audioNextlevel = new Audio('sounds/nextlevel.wav');
+    //var audioBonus = new Audio('sounds/bonus.wav');
+    var audioVictory = new Audio('sounds/victory.wav');
+    var audioBowserhit = new Audio('sounds/bowserhit.wav');
+    var audioBowserQuit = new Audio('sounds/bowserquit.wav');
+    var audioDpad = new Audio('sounds/dpad.wav');
+    var song = new Audio('sounds/song.mp3');
+    var audioGamestart = new Audio('sounds/gamestart.wav');
+    var countdown = new Audio('sounds/countdown.wav');
+    var song2 = new Audio('sounds/song2.mp3');
+    var song3 = new Audio('sounds/song3.mp3');
+    var song4 = new Audio('sounds/song4.mp3');
+
 
     var questionClasses = {
         'alt-1' : 0,
@@ -104,15 +123,18 @@
     var evaluateAnswer = function () {
         var success = false;
         if(question.question.alternatives[currentAlternative-1].solution) {
+            audioPoint.play();
             questionNumbered.forEach(function(value, key) {
                 if(key !== (currentAlternative-1)) {
                     $(value).addClass('answer-unselected');
                 } else {
                     $(value).addClass('correct-answer');
+
                 }
             });
             updateScore(score+100);
         } else {
+            audioLostLife.play();
             $(questionNumbered[currentAlternative-1]).addClass('false-answer');
             questionNumbered.forEach(function(value, key) {
                 $(value).addClass('answer-unselected');
@@ -166,6 +188,7 @@
                 $('.pac-man').css('background-image', 'url(img/janolavaapen.png)');
             }, 700);
             TweenLite.to($('.pac-man'), 0.96, {left: '+=' + (20+pelletSpace), onComplete: function() {
+                audioPebble.play();
                 $('.pellet').first().remove();
             }});
         }, 960);
@@ -175,14 +198,17 @@
         var top = randomNumber(0, window.innerHeight);
         var animateY = (window.innerHeight-320)-top;
         console.log(top, animateY);
+        audioFireball.play();
         var pellet = $('<div>').addClass('fireball-small').css({'left': 0, 'top': top});
         $('body').append(pellet);
 
         TweenLite.to(pellet, 1, {
             y: animateY,
-            left: window.innerWidth-200,
+            left: window.innerWidth-529,
             onComplete: function() {
+                audioBowserhit.play();
                 $('#jan-olav-big').addClass('aapen');
+
                 pellet.remove();
                 setTimeout(function() {
                     $('#jan-olav-big').removeClass('aapen');
@@ -202,10 +228,11 @@
         questionWrapper.append(questionContainer);
         questionContainer.append(countDown1);
         $('body').append(questionWrapper);
-        TweenLite.to(countDown1, 0.5, {z: '100', opacity: 1, delay: 0.5, onComplete: function() { countDown1.remove(); questionContainer.append(countDown2); }});
-        TweenLite.to(countDown2, 0.5, {z: '100', opacity: 1, delay: 1, onComplete: function() { countDown2.remove(); questionContainer.append(countDown3); }});
-        TweenLite.to(countDown3, 0.5, {z: '100', opacity: 1, delay: 1.5, onComplete: function() { countDown3.remove(); questionContainer.append(countDownGo); }});
-        TweenLite.to(countDownGo, 0.5, {z: '100', opacity: 1, delay: 2, onComplete: function() { countDownGo.remove(); gameController('loadLevel'); }});
+        countdown.play();
+        TweenLite.to(countDown1, 0.5, {z: '100', opacity: 1, delay: 0.5, onComplete: function() { countDown1.remove(); countdown.currentTime = 0; countdown.play(); questionContainer.append(countDown2); }});
+        TweenLite.to(countDown2, 0.5, {z: '100', opacity: 1, delay: 1, onComplete: function() { countDown2.remove(); countdown.currentTime = 0; countdown.play(); questionContainer.append(countDown3); }});
+        TweenLite.to(countDown3, 0.5, {z: '100', opacity: 1, delay: 1.5, onComplete: function() { countDown3.remove(); countdown.currentTime = 0; audioGamestart.play(); questionContainer.append(countDownGo); }});
+        TweenLite.to(countDownGo, 0.5, {z: '100', opacity: 1, delay: 2, onComplete: function() { countDownGo.remove(); countdown.currentTime = 0;  gameController('loadLevel'); }});
     };
 
     var createQuestion = function() {
@@ -277,6 +304,7 @@
             }
         }
         if(newFocus) {
+            audioDpad.play();
             setFocusAlternativeFromClass(newFocus);
             currentAlternative = newFocus;
             shiftQuestionContainer(newFocus);
@@ -325,6 +353,9 @@
             gameController('countDown');
         }
         if(screen === 'countDown') {
+            song2.pause();
+            song3.pause();
+            song.pause();
             toggleJanOlav(false);
             toggleMenu(false, $('#next-level-menu'), function() {
                 clearLevelBackground();
@@ -341,6 +372,7 @@
             if(level < 0) {
                 gameController('loadBonusLevel');
             } else {
+                song2.play();
                 level = level+1;
                 question = {
                     count: 0,
@@ -353,6 +385,7 @@
                     createQuestion(question.question);
                     toggleTimer(true);
                     startTimer(30000, function() {
+                        song2.pause();
                         gameController('endGame');
                     });
                 });
@@ -368,6 +401,7 @@
                 startAnimation(pelletSpace);
                 toggleTimer(true);
                 startTimer(10000, function() {
+                    audioBowserQuit.play();
                     toggleJanOlav(false);
                     gameController('nextLevel');
                 });
@@ -375,6 +409,9 @@
         }
 
         if(screen === 'nextLevel') {
+            song2.pause();
+            song3.play();
+            audioNextlevel.play();
             $('#jan-olav-big').removeClass('bowser');
             if(gameTimer) {
                 clearTimeout(gameTimer);
@@ -418,6 +455,7 @@
         }
 
         if(screen === 'endGame') {
+            audioTimeout.play();
             $('#jan-olav-big').removeClass('bowser');
             toggleTimer(false);
             if(gameTimer) {
@@ -493,10 +531,15 @@
                             if(keypress === 13) {
                                 console.log(currentScreen);
                                 if(currentScreen === 'startMenu') {
+                                    audioSelect.play();
+                                    song.pause();
                                     gameController('startGame');
                                 }
                                 if(currentScreen === 'endGame') {
                                     gameController('startMenu');
+                                    audioSelect.play();
+                                    song.currentTime = 0;
+                                    song.play();
                                 }
                                 if(currentScreen === 'nextLevel') {
                                     gameController('countDown');
@@ -513,6 +556,8 @@
     };
 
     init(function() {
+        song.play();
+        song.loop = true;
         gameController('startMenu');
     });
 });
