@@ -199,7 +199,7 @@
 
     var generateAndAnimatePellet = function(callback) {
         var top = randomNumber(0, window.innerHeight);
-        var animateY = (window.innerHeight-320)-top;
+        var animateY = (window.innerHeight-529)-top;
         audioFireball.play();
         var pellet = $('<div>').addClass('fireball-small').css({'left': 0, 'top': top});
         $('body').append(pellet);
