@@ -1226,22 +1226,22 @@
     "alternatives": [
       {
         "text": "",
-        "media": "playstation4",
+        "media": "lance",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "xboxone",
+        "media": "lechuck",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "xbox360",
+        "media": "kingsquest5",
         "type": "img",
-        "solution": false
+        "solution": true
       },{
         "text": "",
-        "media": "atari2600",
+        "media": "jigglypuff",
         "type": "img",
         "solution": true
       }

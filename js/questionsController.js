@@ -28,6 +28,8 @@
     var song = new Audio('sounds/song.mp3');
     var audioGamestart = new Audio('sounds/gamestart.wav');
     var countdown = new Audio('sounds/countdown.wav');
+    var countdown2 = new Audio('sounds/countdown.wav');
+    var countdown3 = new Audio('sounds/countdown.wav');
     var song2 = new Audio('sounds/song2.mp3');
     var song3 = new Audio('sounds/song3.mp3');
     var song4 = new Audio('sounds/song4.mp3');
@@ -55,7 +57,6 @@
     };
 
     var animateBlobs = function(callback) {
-        console.log('animating blobs');
         var offset = $('#menu-points-number-next').offset();
         var width = $('#menu-points-number-next').width();
         var height = $('#menu-points-number-next').height();
@@ -67,7 +68,6 @@
 
     var toggleJanOlav = function(toggle) {
         if(!toggle) {
-            console.log('toggle-jan-olav');
             TweenLite.to($('#jan-olav-big'), 1, {z: '50',x: -window.innerWidth/2,  ease: Linear.EaseNone, onComplete: function() {
                 $('#jan-olav-big').hide();
             }});
@@ -112,7 +112,6 @@
 
     var updateScore = function(_score) {
         score = _score;
-        console.log('updateing score', _score, score);
         $('#score-number').text(score);
     };
     var updateLives = function(_lives) {
@@ -144,6 +143,7 @@
 
         TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
             if(lives === 0) {
+                song2.pause();
                 gameController('endGame');
             } else {
                 nextQuestion();
@@ -159,7 +159,11 @@
             };
             createQuestion(question);
         } else {
-            gameController('nextLevel');
+            if(level+1 === 5) {
+                gameController('winnerMenu');
+            } else {
+                gameController('nextLevel');
+            }
         }
     };
 
@@ -182,7 +186,6 @@
     var startAnimation = function(pelletSpace) {
         gameTimerPelletInterval = setInterval(function() {
             gameTimerLevelTime = new Date().getTime();
-            console.log('start time: ', gameTimerLevelTime);
             $('.pac-man').css('background-image', 'url(img/janolavlukket.png)');
             setTimeout(function() {
                 $('.pac-man').css('background-image', 'url(img/janolavaapen.png)');
@@ -197,7 +200,6 @@
     var generateAndAnimatePellet = function(callback) {
         var top = randomNumber(0, window.innerHeight);
         var animateY = (window.innerHeight-320)-top;
-        console.log(top, animateY);
         audioFireball.play();
         var pellet = $('<div>').addClass('fireball-small').css({'left': 0, 'top': top});
         $('body').append(pellet);
@@ -205,6 +207,7 @@
         TweenLite.to(pellet, 1, {
             y: animateY,
             left: window.innerWidth-529,
+            ease: Linear.easeNone,
             onComplete: function() {
                 audioBowserhit.play();
                 $('#jan-olav-big').addClass('aapen');
@@ -218,21 +221,25 @@
         });
     };
 
-    var countDown = function () {
+    var countDown = function (countDownWords) {
         var questionWrapper = $('<div>').addClass('question-wrapper');
         var questionContainer = $('<div>').addClass('question-container');
-        var countDown1 = $('<h1>').addClass('count-down').text('3');
-        var countDown2 = $('<h1>').addClass('count-down').text('2');
-        var countDown3 = $('<h1>').addClass('count-down').text('1');
-        var countDownGo = $('<h1>').addClass('count-down').text('Go!');
+        var countDown1 = $('<h1>').addClass('count-down').text(countDownWords[0]);
+        var countDown2 = $('<h1>').addClass('count-down').text(countDownWords[1]);
+        var countDown3 = $('<h1>').addClass('count-down').text(countDownWords[2]);
+        var countDownGo = $('<h1>').addClass('count-down').text(countDownWords[3]);
         questionWrapper.append(questionContainer);
         questionContainer.append(countDown1);
         $('body').append(questionWrapper);
-        countdown.play();
-        TweenLite.to(countDown1, 0.5, {z: '100', opacity: 1, delay: 0.5, onComplete: function() { countDown1.remove(); countdown.currentTime = 0; countdown.play(); questionContainer.append(countDown2); }});
-        TweenLite.to(countDown2, 0.5, {z: '100', opacity: 1, delay: 1, onComplete: function() { countDown2.remove(); countdown.currentTime = 0; countdown.play(); questionContainer.append(countDown3); }});
-        TweenLite.to(countDown3, 0.5, {z: '100', opacity: 1, delay: 1.5, onComplete: function() { countDown3.remove(); countdown.currentTime = 0; audioGamestart.play(); questionContainer.append(countDownGo); }});
-        TweenLite.to(countDownGo, 0.5, {z: '100', opacity: 1, delay: 2, onComplete: function() { countDownGo.remove(); countdown.currentTime = 0;  gameController('loadLevel'); }});
+        setTimeout(function() {
+
+            countdown.play();
+        }, 1000);
+
+        TweenLite.to(countDown1, 1.5, {z: '100', opacity: 1, delay: 1.5, ease: Linear.easeNone, onComplete: function() { countdown2.play();countDown1.remove(); questionContainer.append(countDown2); }});
+        TweenLite.to(countDown2, 1.5, {z: '100', opacity: 1, delay: 3, ease: Linear.easeNone, onComplete: function() { countDown2.remove(); countdown3.play(); questionContainer.append(countDown3); }});
+        TweenLite.to(countDown3, 1.5, {z: '100', opacity: 1, delay: 4.5, ease: Linear.easeNone, onComplete: function() { countDown3.remove(); audioGamestart.play();  questionContainer.append(countDownGo); }});
+        TweenLite.to(countDownGo, 1.5, {z: '100', opacity: 1, delay: 6, ease: Linear.easeNone, onComplete: function() { countDownGo.remove(); gameController('loadLevel'); }});
     };
 
     var createQuestion = function() {
@@ -243,7 +250,6 @@
         var questionC = $('<div>').addClass('question');
 
         // Create questions
-        console.log(question);
         questionC.append(questionHeader);
         question.question.alternatives.forEach(function(_question, index) {
             var container = $('<div>')
@@ -322,7 +328,6 @@
 
     var startTimer = function(amount, callback) {
         gameTimerLevelStart = new Date().getTime();
-        console.log('start time: ', gameTimerLevelStart);
         gameTimer = setTimeout(function() {
             TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
                 callback();
@@ -359,7 +364,37 @@
             toggleJanOlav(false);
             toggleMenu(false, $('#next-level-menu'), function() {
                 clearLevelBackground();
-                countDown();
+                if(level >= 0) {
+                    var bane = '';
+                    if(level+1 === 1) {
+                        bane = 'Enkelt';
+                    }
+                    if(level+1 === 2) {
+                        bane = 'Medium';
+                    }
+                    if(level+1 === 3) {
+                        bane = 'Vanskelig';
+                    }
+                    if(level+1 === 4) {
+                        bane === 'Ultra hardcore';
+                    }
+
+                    var countDownArray = [
+                        'Laster "' + bane + '"',
+                        'Svar på ti spørsmål',
+                        lives + ' liv igjen',
+                        'Lykke til!'
+                    ];
+                } else {
+                    var countDownArray = [
+                        'Laster bonus bane',
+                        'Skyt Jan Olav med A og B',
+                        'hvert treff gir 10 poeng',
+                        'Lykke til!'
+                    ];
+                }
+
+                countDown(countDownArray);
                 if(level<0) {
                     generateLevelBackground(-1);
                 } else {
@@ -410,7 +445,9 @@
 
         if(screen === 'nextLevel') {
             song2.pause();
+            song3.currentTime = 0;
             song3.play();
+            audioNextlevel.currentTime = 0;
             audioNextlevel.play();
             $('#jan-olav-big').removeClass('bowser');
             if(gameTimer) {
@@ -421,7 +458,6 @@
             }
 
             toggleScoreBoard(false);
-            console.log('bartfjes');
             $('#menu-points-number-next').text(score);
             if(level > 0) {
                 $('#level-id').text('brett ' + level);
@@ -433,10 +469,9 @@
             toggleMenu(true, $('#next-level-menu'), function() {
                 animateBlobs(function() {
                     toggleTimer(false);
-                    console.log('tid', gameTimerLevelTime, gameTimerLevelStart);
                     var timeLeftOfLevelInSeconds = (gameTimerLevelTime - gameTimerLevelStart) / 1000;
-                    console.log(timeLeftOfLevelInSeconds);
-                    if(timeLeftOfLevelInSeconds <= 25 && level > 0) {
+                    console.log('tid igjen på level: ', timeLeftOfLevelInSeconds);
+                    if(timeLeftOfLevelInSeconds <= 20 && level > 0) {
                         var newScore = score + (Math.round(timeLeftOfLevelInSeconds)*100);
 
                         scoreLoop(newScore, function() {
@@ -447,7 +482,9 @@
                             level = level * -1;
                         });
                     } else {
-                        level = level *-1;
+                        if(level < 0) {
+                            level = level*-1;
+                        }
                         $('#next-level-button').text('Neste brett').show();
                     }
                 });
@@ -471,6 +508,23 @@
             toggleMenu(true, $('#game-over-menu'));
             toggleJanOlav(true);
         }
+        if(screen === 'winnerMenu') {
+            song2.pause();
+            audioTimeout.play();
+            $('#jan-olav-big').removeClass('bowser');
+            toggleTimer(false);
+            toggleScoreBoard(false);
+            if(gameTimer) {
+                clearTimeout(gameTimer);
+            }
+            if(gameTimerPelletInterval) {
+                clearInterval(gameTimerPelletInterval);
+            }
+            $('#winner-menu-points-number').text(score);
+            toggleMenu(true, $('#winner-menu'));
+            toggleJanOlav(true);
+        }
+
         if(screen === 'startMenu') {
             clearLevelBackground();
 
@@ -491,65 +545,63 @@
     var init = function (callback) {
         $.get('getLevel.php?level=1', function(data) {
             levelData[1] = shuffle(data);
-            console.log('leveldata', data);
             $.get('getLevel.php?level=2', function(data) {
                 levelData[2] = shuffle(data);
-                console.log(levelData);
                 $.get('getLevel.php?level=3', function(data) {
                     levelData[3] = shuffle(data);
-                    console.log(levelData);
-                    document.onkeydown = function(e) {
-                            var e = e || window.event;
-                            var keypress = e.keyCode || e.which;
-                            console.log(keypress);
-                            if(keypress === 65 || keypress === 83) {
-                                if(currentScreen === 'loadBonusLevel') {
-                                    generateAndAnimatePellet(function() {
-                                        score = score+1;
-                                        $('#score-number').text(score);
-                                    });
+                    $.get('getLevel.php?level=4', function(data) {
+                        levelData[4] = shuffle(data);
+                        document.onkeydown = function(e) {
+                                var e = e || window.event;
+                                var keypress = e.keyCode || e.which;
+                                if(keypress === 65 || keypress === 83) {
+                                    if(currentScreen === 'loadBonusLevel') {
+                                        generateAndAnimatePellet(function() {
+                                            score = score+1;
+                                            $('#score-number').text(score);
+                                        });
+                                    }
                                 }
-                            }
-                            if(keypress === 83) {
+                                if(keypress === 83) {
 
-                            }
-                            if(keypress === 38) {
-                                moveFocus('up');
-                            }
-                            if(keypress === 39) {
-                                //right
-                                moveFocus('right');
-                            }
-                            if(keypress === 40) {
-                                // down
-                                moveFocus('down');
-                            }
-                            if(keypress === 37) {
-                                // left
-                                moveFocus('left');
-                            }
-                            if(keypress === 13) {
-                                console.log(currentScreen);
-                                if(currentScreen === 'startMenu') {
-                                    audioSelect.play();
-                                    song.pause();
-                                    gameController('startGame');
                                 }
-                                if(currentScreen === 'endGame') {
-                                    gameController('startMenu');
-                                    audioSelect.play();
-                                    song.currentTime = 0;
-                                    song.play();
+                                if(keypress === 38) {
+                                    moveFocus('up');
                                 }
-                                if(currentScreen === 'nextLevel') {
-                                    gameController('countDown');
+                                if(keypress === 39) {
+                                    //right
+                                    moveFocus('right');
                                 }
-                                if(currentScreen === 'loadLevel') {
-                                    evaluateAnswer();
+                                if(keypress === 40) {
+                                    // down
+                                    moveFocus('down');
+                                }
+                                if(keypress === 37) {
+                                    // left
+                                    moveFocus('left');
+                                }
+                                if(keypress === 13) {
+                                    if(currentScreen === 'startMenu') {
+                                        audioSelect.play();
+                                        song.pause();
+                                        gameController('startGame');
+                                    }
+                                    if(currentScreen === 'endGame') {
+                                        gameController('startMenu');
+                                        audioSelect.play();
+                                        song.currentTime = 0;
+                                        song.play();
+                                    }
+                                    if(currentScreen === 'nextLevel') {
+                                        gameController('countDown');
+                                    }
+                                    if(currentScreen === 'loadLevel') {
+                                        evaluateAnswer();
+                                    }
                                 }
                             }
-                        }
-                    callback();
+                        callback();
+                    });
                 });
             });
         });

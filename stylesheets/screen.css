@@ -964,7 +964,7 @@ body {
 
 /* line 410, ../sass/screen.scss */
 .count-down {
-  font-size: 150px;
+  font-size: 90px;
   color: white;
   -webkit-transform: perspective(400) translateZ(0);
   -moz-transform: perspective(400) translateZ(0);

@@ -15,6 +15,15 @@
         <div class="level-3">
             <h3>Level Three</h3>
         </div>
+
+
+
+
+
+
+        <div class="level-4">
+            <h3>Level Three</h3>
+        </div>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenLite.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
@@ -43,6 +52,9 @@
             });
             $.get('getLevel.php?level=3', function(data) {
                 createLevelWithQuestions(data, 3);
+            });
+            $.get('getLevel.php?level=4', function(data) {
+                createLevelWithQuestions(data, 4);
             });
 
         });

@@ -21,14 +21,14 @@ var generateAndAnimateCloud = function (callback, randomLeft) {
 
 var startBackgroundAnimation = function() {
     TweenLite.to($('.background-animation-cool'), 0, {'x': '0px'});
-    TweenLite.to($('.background-animation-cool'), 110, {'x': '+3820px', ease: Linear.easeNone, onComplete: startBackgroundAnimation});
+    TweenLite.to($('.background-animation-cool'), 200, {'x': '+3820px', ease: Linear.easeNone, onComplete: startBackgroundAnimation});
 };
 
 var startForegroundAnimation = function() {
     setInterval(function() {
         console.log('hello');
         generateAndAnimateCloud();
-    }, 2000);
+    }, 4000);
 };
 
 var startRocketBounce = function() {

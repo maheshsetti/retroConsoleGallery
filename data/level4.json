@@ -1,0 +1,262 @@
+[
+  {
+    "question": "Hvem har stemmen til Master Chief i halo 4?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "halo4guy",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "markrolston",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "traviswillingham",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "brucethomas",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvor mange brett er det i super mario bros 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "20",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "8",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "21",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "22",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Når kom Donkey Kong ut?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "1981",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "1979",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "1980",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "1982",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem kom først?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "vic20",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "commodore64",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "mario",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "dkjr",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem laget ikke ekstra lydchip til Nintendo Entertainment System",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "Sunsoft",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "Konami",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "Namco",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "Capcom",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+  {
+    "question": "Hvilken er den nyeste spillmaskinen til Asus?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "alienware",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "alienware1",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "asusg20",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "asusg10",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilke våpen er nytt i 'nye' GTA5?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "machinegun",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "machete",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "lance",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "crossbow",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Howard Scott Warshaw lagde ET og?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "atarigame2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "activisionatari",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "yarrsrevenge",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "atarigame",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvilket spill ble kalt for skamløs lisensmelking?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "legendofkorra",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "ducktalesremastered",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "turtlesintime",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "dukenukem",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Hunters klassen i Destiny inspirert fra?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "bobafett",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "hansolo",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "dukenukem",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "samusaran",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  }
+]
