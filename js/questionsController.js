@@ -376,7 +376,7 @@
                         bane = 'Vanskelig';
                     }
                     if(level+1 === 4) {
-                        bane === 'Ultra hardcore';
+                        bane = 'Ultra hardcore';
                     }
 
                     var countDownArray = [
@@ -459,8 +459,21 @@
 
             toggleScoreBoard(false);
             $('#menu-points-number-next').text(score);
+            var levelName = '';
+            if(level+1 === 1) {
+                levelName = 'Enkelt';
+            }
+            if(level+1 === 2) {
+                levelName = 'Medium';
+            }
+            if(level+1 === 3) {
+                levelName = 'Vanskelig';
+            }
+            if(level+1 === 4) {
+                levelName = 'Ultra hardcore';
+            }
             if(level > 0) {
-                $('#level-id').text('brett ' + level);
+                $('#level-id').text(levelName);
             } else {
                 $('#level-id').text('bonus-banen!');
             }
