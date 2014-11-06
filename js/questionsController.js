@@ -586,12 +586,13 @@
                                         song.pause();
                                         gameController('startGame');
                                     }
-                                    if(currentScreen === 'endGame') {
+                                    if(currentScreen === 'endGame' || currentScreen = 'winnerMenu') {
                                         gameController('startMenu');
                                         audioSelect.play();
                                         song.currentTime = 0;
                                         song.play();
                                     }
+
                                     if(currentScreen === 'nextLevel') {
                                         gameController('countDown');
                                     }
