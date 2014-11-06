@@ -53,7 +53,25 @@
     var currentQuestionElement; // jquery element
     var updateLevel = function(_level) {
         level = _level;
-        $('#level-number').text(level);
+        var levelName = '';
+        if(level === 1) {
+            levelName = 'Enkelt';
+        }
+        if(level === 2) {
+            levelName = 'Medium';
+        }
+        if(level === 3) {
+            levelName = 'Vanskelig';
+        }
+        if(level === 4) {
+            levelName = 'Ultra hardcore';
+        }
+        if(level > 0) {
+            $('#level-id').text(levelName);
+        } else {
+            $('#level-id').text('bonus-banen!');
+        }
+        $('#level-number').text(levelName);
     };
 
     var animateBlobs = function(callback) {
