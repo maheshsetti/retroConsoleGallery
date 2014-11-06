@@ -989,9 +989,11 @@ body {
   transform: perspective(400) translateZ(0);
   text-align: center;
   opacity: 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .scoreboard {
   width: 300px;
   border: 4px solid white;
@@ -1009,63 +1011,63 @@ body {
   -o-transform: translateX(-400px);
   transform: translateX(-400px);
 }
-/* line 432, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .scoreboard #level-text {
   padding: 4px;
 }
-/* line 436, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .scoreboard #level-number {
   font-size: 40px;
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 441, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .scoreboard #score-text {
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 445, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .scoreboard #score-number {
   font-size: 40px;
   padding: 14px;
 }
-/* line 449, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .scoreboard #lives-text {
   padding-bottom: 14px;
 }
-/* line 452, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .scoreboard #lives-number {
   font-size: 40px;
   padding: 14px;
 }
 
-/* line 457, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .time-counter {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 200000;
 }
-/* line 462, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 .time-counter .pac-man {
   width: 120px;
   height: 80px;
   position: absolute;
   top: 100%;
   margin-top: -80px;
-  margin-left: -90px;
+  margin-left: -120px;
   left: 0;
   background-image: url(../img/janolavlukket.png);
   background-size: 120px 80px;
   background-repeat: no-repeat;
   z-index: 200000;
 }
-/* line 476, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .time-counter .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
 }
 
-/* line 481, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .pellet {
   position: absolute;
   top: 100%;
@@ -1075,7 +1077,7 @@ body {
   margin-top: -40px;
   z-index: 200001;
 }
-/* line 488, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .pellet:after {
   content: "";
   position: absolute;
@@ -1094,7 +1096,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .fireball-small {
   position: absolute;
   top: 100%;

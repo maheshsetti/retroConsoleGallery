@@ -415,6 +415,8 @@ body {
     @include translateZ(0, 400);
     text-align: center;
     opacity: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .scoreboard {
@@ -465,7 +467,7 @@ body {
         position: absolute;
         top: 100%;
         margin-top: -80px;
-        margin-left: -90px;
+        margin-left: -120px;
         left: 0;
         background: {
             image: url(../img/janolavlukket.png);
