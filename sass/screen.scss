@@ -247,7 +247,8 @@ body {
             height: 400px;
             text-align: center;
             //border: 4px solid white;
-            .menu-header {
+            .menu-header,
+            .winner-menu-header {
                 font-size: 20px;
                 padding-bottom: 20px;
                 line-height: 1.5em;
@@ -256,7 +257,8 @@ body {
                     font-size: 40px;
                 }
             }
-            .menu-subheader {
+            .menu-subheader,
+            .winner-menu-subheader {
 
                 font-size: 16px;
                 padding-top: 20px;

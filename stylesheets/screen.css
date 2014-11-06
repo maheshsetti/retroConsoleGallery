@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -737,45 +737,61 @@ body {
   -o-transform: translateY(-1000px);
   transform: translateY(-1000px);
 }
-/* line 250, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-header,
+.question-wrapper .question-container .menu .winner-menu-header,
 .question-wrapper .menu-container .menu .menu-header,
+.question-wrapper .menu-container .menu .winner-menu-header,
 .menu-wrapper .question-container .menu .menu-header,
-.menu-wrapper .menu-container .menu .menu-header {
+.menu-wrapper .question-container .menu .winner-menu-header,
+.menu-wrapper .menu-container .menu .menu-header,
+.menu-wrapper .menu-container .menu .winner-menu-header {
   font-size: 20px;
   padding-bottom: 20px;
   line-height: 1.5em;
   border-bottom: 4px solid white;
 }
 @media only screen and (min-height: 700px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-header,
+  .question-wrapper .question-container .menu .winner-menu-header,
   .question-wrapper .menu-container .menu .menu-header,
+  .question-wrapper .menu-container .menu .winner-menu-header,
   .menu-wrapper .question-container .menu .menu-header,
-  .menu-wrapper .menu-container .menu .menu-header {
+  .menu-wrapper .question-container .menu .winner-menu-header,
+  .menu-wrapper .menu-container .menu .menu-header,
+  .menu-wrapper .menu-container .menu .winner-menu-header {
     font-size: 40px;
   }
 }
-/* line 259, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-subheader,
+.question-wrapper .question-container .menu .winner-menu-subheader,
 .question-wrapper .menu-container .menu .menu-subheader,
+.question-wrapper .menu-container .menu .winner-menu-subheader,
 .menu-wrapper .question-container .menu .menu-subheader,
-.menu-wrapper .menu-container .menu .menu-subheader {
+.menu-wrapper .question-container .menu .winner-menu-subheader,
+.menu-wrapper .menu-container .menu .menu-subheader,
+.menu-wrapper .menu-container .menu .winner-menu-subheader {
   font-size: 16px;
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 1.5em;
 }
 @media only screen and (min-height: 700px) {
-  /* line 259, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   .question-wrapper .question-container .menu .menu-subheader,
+  .question-wrapper .question-container .menu .winner-menu-subheader,
   .question-wrapper .menu-container .menu .menu-subheader,
+  .question-wrapper .menu-container .menu .winner-menu-subheader,
   .menu-wrapper .question-container .menu .menu-subheader,
-  .menu-wrapper .menu-container .menu .menu-subheader {
+  .menu-wrapper .question-container .menu .winner-menu-subheader,
+  .menu-wrapper .menu-container .menu .menu-subheader,
+  .menu-wrapper .menu-container .menu .winner-menu-subheader {
     font-size: 20px;
   }
 }
-/* line 270, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-number,
 .question-wrapper .menu-container .menu .points-number,
 .menu-wrapper .question-container .menu .points-number,
@@ -783,7 +799,7 @@ body {
   padding-top: 20px;
   font-size: 40px;
 }
-/* line 274, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .question-wrapper .question-container .menu .points-text,
 .question-wrapper .menu-container .menu .points-text,
 .menu-wrapper .question-container .menu .points-text,
@@ -800,14 +816,14 @@ body {
     height: auto;
   }
 }
-/* line 283, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu,
 .question-wrapper .menu-container .menu#main-menu,
 .menu-wrapper .question-container .menu#main-menu,
 .menu-wrapper .menu-container .menu#main-menu {
   padding-top: 140px;
 }
-/* line 285, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .question-wrapper .question-container .menu#main-menu:before,
 .question-wrapper .menu-container .menu#main-menu:before,
 .menu-wrapper .question-container .menu#main-menu:before,
@@ -823,7 +839,7 @@ body {
   background-repeat: no-repeat;
 }
 @media only screen and (min-height: 700px) {
-  /* line 285, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu:before,
   .question-wrapper .menu-container .menu#main-menu:before,
   .menu-wrapper .question-container .menu#main-menu:before,
@@ -834,7 +850,7 @@ body {
   }
 }
 @media only screen and (min-height: 700px) {
-  /* line 283, ../sass/screen.scss */
+  /* line 285, ../sass/screen.scss */
   .question-wrapper .question-container .menu#main-menu,
   .question-wrapper .menu-container .menu#main-menu,
   .menu-wrapper .question-container .menu#main-menu,
@@ -842,7 +858,7 @@ body {
     padding-top: 240px;
   }
 }
-/* line 309, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button,
 .question-wrapper .menu-container .menu .menu-button,
 .menu-wrapper .question-container .menu .menu-button,
@@ -855,7 +871,7 @@ body {
   padding: 10px;
   font-size: 20px;
 }
-/* line 317, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button.selected,
 .question-wrapper .menu-container .menu .menu-button.selected,
 .menu-wrapper .question-container .menu .menu-button.selected,
@@ -864,7 +880,7 @@ body {
   -moz-box-shadow: 0 0 100px #8cbaff;
   box-shadow: 0 0 100px #8cbaff;
 }
-/* line 320, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .question-wrapper .question-container .menu .menu-button:after,
 .question-wrapper .menu-container .menu .menu-button:after,
 .menu-wrapper .question-container .menu .menu-button:after,
@@ -880,7 +896,7 @@ body {
   display: inline-block;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #jan-olav-big {
   position: absolute;
   top: 50%;
@@ -892,16 +908,16 @@ body {
   background-repeat: no-repeat;
   z-index: 500000;
 }
-/* line 350, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 #jan-olav-big.bowser {
   background-image: url(../img/janolavbowser.png);
 }
-/* line 354, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 #jan-olav-big.bowser.aapen {
   background-image: url(../img/janolavbowserhit.png);
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3 {
@@ -909,7 +925,7 @@ body {
   height: 40px;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .screen-1,
 .screen-2,
 .screen-3 {
@@ -917,7 +933,7 @@ body {
   height: 100px;
 }
 
-/* line 379, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .star-1,
 .star-2,
 .star-3,
@@ -932,37 +948,37 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .star-1 {
   background-image: url(../img/star-1.png);
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .star-2 {
   background-image: url(../img/star-2.png);
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .star-3 {
   background-image: url(../img/star-3.png);
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .screen-1 {
   background-image: url(../img/screen-1.png);
 }
 
-/* line 402, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .screen-2 {
   background-image: url(../img/screen-2.png);
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .screen-3 {
   background-image: url(../img/screen-3.png);
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .count-down {
   font-size: 90px;
   color: white;
@@ -975,7 +991,7 @@ body {
   opacity: 0;
 }
 
-/* line 418, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .scoreboard {
   width: 300px;
   border: 4px solid white;
@@ -993,44 +1009,44 @@ body {
   -o-transform: translateX(-400px);
   transform: translateX(-400px);
 }
-/* line 430, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .scoreboard #level-text {
   padding: 4px;
 }
-/* line 434, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .scoreboard #level-number {
   font-size: 40px;
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 439, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .scoreboard #score-text {
   border-bottom: 2px solid white;
   padding-bottom: 14px;
 }
-/* line 443, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .scoreboard #score-number {
   font-size: 40px;
   padding: 14px;
 }
-/* line 447, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .scoreboard #lives-text {
   padding-bottom: 14px;
 }
-/* line 450, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .scoreboard #lives-number {
   font-size: 40px;
   padding: 14px;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .time-counter {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 200000;
 }
-/* line 460, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .time-counter .pac-man {
   width: 120px;
   height: 80px;
@@ -1044,12 +1060,12 @@ body {
   background-repeat: no-repeat;
   z-index: 200000;
 }
-/* line 474, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .time-counter .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
 }
 
-/* line 479, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .pellet {
   position: absolute;
   top: 100%;
@@ -1059,7 +1075,7 @@ body {
   margin-top: -40px;
   z-index: 200001;
 }
-/* line 486, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 .pellet:after {
   content: "";
   position: absolute;
@@ -1078,7 +1094,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 499, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .fireball-small {
   position: absolute;
   top: 100%;
