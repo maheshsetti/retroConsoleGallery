@@ -586,7 +586,7 @@
                                         song.pause();
                                         gameController('startGame');
                                     }
-                                    if(currentScreen === 'endGame' || currentScreen = 'winnerMenu') {
+                                    if(currentScreen === 'endGame' || currentScreen === 'winnerMenu') {
                                         gameController('startMenu');
                                         audioSelect.play();
                                         song.currentTime = 0;
