@@ -430,6 +430,7 @@
         if(screen === 'loadBonusLevel') {
             $('#level-number').text('Bonus level');
             $('#jan-olav-big').addClass('bowser');
+            $('.pac-man').addClass('bonus');
             toggleJanOlav(true);
             toggleScoreBoard(true);
             generatePacMan(10, function(pelletSpace) {
@@ -439,6 +440,7 @@
                     audioBowserQuit.play();
                     toggleJanOlav(false);
                     gameController('nextLevel');
+                    $('.pac-man').removeClass('bonus');
                 });
             });
         }
@@ -460,16 +462,16 @@
             toggleScoreBoard(false);
             $('#menu-points-number-next').text(score);
             var levelName = '';
-            if(level+1 === 1) {
+            if(level === 1) {
                 levelName = 'Enkelt';
             }
-            if(level+1 === 2) {
+            if(level === 2) {
                 levelName = 'Medium';
             }
-            if(level+1 === 3) {
+            if(level === 3) {
                 levelName = 'Vanskelig';
             }
-            if(level+1 === 4) {
+            if(level === 4) {
                 levelName = 'Ultra hardcore';
             }
             if(level > 0) {

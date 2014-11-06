@@ -467,7 +467,7 @@ body {
         position: absolute;
         top: 100%;
         margin-top: -80px;
-        margin-left: -120px;
+        margin-left: -110px;
         left: 0;
         background: {
             image: url(../img/janolavlukket.png);
@@ -477,6 +477,9 @@ body {
         z-index: 200000;
         &.aapen {
             background-image: url(../img/janolavaapen.png);
+        }
+        &.bonus {
+            margin-left: 0px;
         }
     }
 }

@@ -1055,7 +1055,7 @@ body {
   position: absolute;
   top: 100%;
   margin-top: -80px;
-  margin-left: -120px;
+  margin-left: -110px;
   left: 0;
   background-image: url(../img/janolavlukket.png);
   background-size: 120px 80px;
@@ -1066,8 +1066,12 @@ body {
 .time-counter .pac-man.aapen {
   background-image: url(../img/janolavaapen.png);
 }
+/* line 481, ../sass/screen.scss */
+.time-counter .pac-man.bonus {
+  margin-left: 0px;
+}
 
-/* line 483, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .pellet {
   position: absolute;
   top: 100%;
@@ -1077,7 +1081,7 @@ body {
   margin-top: -40px;
   z-index: 200001;
 }
-/* line 490, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .pellet:after {
   content: "";
   position: absolute;
@@ -1096,7 +1100,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .fireball-small {
   position: absolute;
   top: 100%;
