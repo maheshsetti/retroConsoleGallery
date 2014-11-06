@@ -568,6 +568,9 @@
                                 var e = e || window.event;
                                 var keypress = e.keyCode || e.which;
                                 if(keypress === 65 || keypress === 83) {
+                                    if(currentScreen === 'loadLevel') {
+                                        evaluateAnswer();
+                                    }
                                     if(currentScreen === 'loadBonusLevel') {
                                         generateAndAnimatePellet(function() {
                                             score = score+1;
