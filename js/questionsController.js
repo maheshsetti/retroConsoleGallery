@@ -160,7 +160,7 @@
         }
 
         TweenLite.to('.question', 0.25, {rotationY: '-90', opacity: 0, delay: 0.25, onComplete: function() {
-            if(lives === 0) {
+            if(lives <= 0) {
                 song2.pause();
                 gameController('endGame');
             } else {
@@ -240,6 +240,7 @@
     };
 
     var countDown = function (countDownWords) {
+        $('question-wrapper').remove();
         var questionWrapper = $('<div>').addClass('question-wrapper');
         var questionContainer = $('<div>').addClass('question-container');
         var countDown1 = $('<h1>').addClass('count-down').text(countDownWords[0]);
@@ -527,6 +528,7 @@
         }
 
         if(screen === 'endGame') {
+            $('.question-wrapper').remove();
             audioTimeout.play();
             $('#jan-olav-big').removeClass('bowser');
             toggleTimer(false);
@@ -561,6 +563,7 @@
         }
 
         if(screen === 'startMenu') {
+            $('.question-wrapper').remove();
             clearLevelBackground();
 
             toggleMenu(false, $('#game-over-menu'), function() {

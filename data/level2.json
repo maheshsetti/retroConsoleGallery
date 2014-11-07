@@ -806,32 +806,6 @@
     ]
   },
   {
-    "question": "Hva har Microsoft fjernet fra Xbox One?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "kirby",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "mario",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "luigi",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "dk",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
     "question": "Hvilket bilde er fra Metal Gear Solid 4?",
     "alternatives": [
       {
