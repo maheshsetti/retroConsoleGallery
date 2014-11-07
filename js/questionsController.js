@@ -376,6 +376,7 @@
             gameController('countDown');
         }
         if(screen === 'countDown') {
+            $('.pellet').remove();
             song2.pause();
             song3.pause();
             song.pause();
@@ -464,6 +465,7 @@
         }
 
         if(screen === 'nextLevel') {
+            $('.question-wrapper').remove();
             song2.pause();
             song3.currentTime = 0;
             song3.play();
