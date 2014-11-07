@@ -622,6 +622,10 @@
                                     if(currentScreen === 'startMenu') {
                                         audioSelect.play();
                                         song.pause();
+                                        levelData[1] = shuffle(levelData[1]);
+                                        levelData[2] = shuffle(levelData[2]);
+                                        levelData[3] = shuffle(levelData[3]);
+                                        levelData[4] = shuffle(levelData[4]);
                                         gameController('startGame');
                                     }
                                     if(currentScreen === 'endGame' || currentScreen === 'winnerMenu') {
