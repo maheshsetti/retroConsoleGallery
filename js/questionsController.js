@@ -170,7 +170,7 @@
     };
     var nextQuestion = function () {
         flushQuestion();
-        if(question.count < 9) {
+        if(question.count < 7) {
             question = {
                 count: question.count + 1,
                 question: levelData[level][question.count + 1]
@@ -400,7 +400,7 @@
 
                     var countDownArray = [
                         'Laster "' + bane + '"',
-                        'Svar på ti spørsmål',
+                        'Svar på 8 spørsmål',
                         lives + ' liv igjen',
                         'Lykke til!'
                     ];
