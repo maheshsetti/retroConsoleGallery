@@ -33,6 +33,7 @@
     var song2 = new Audio('sounds/song2.mp3');
     var song3 = new Audio('sounds/song3.mp3');
     var song4 = new Audio('sounds/song4.mp3');
+    var inputController = false;
 
 
     var questionClasses = {
@@ -296,8 +297,11 @@
 
     var moveFocus = function(direction) {
         var newFocus = undefined;
+        //console.log('dette er alternativet: ', currentAlternative);
+        console.log('no trykker me her', direction);
         if(currentAlternative === 1) {
-            if('down') {
+            console.log('no trykker me her 1', direction);
+            if(direction === 'down') {
                 newFocus = 3;
             }
             if(direction === 'right') {
@@ -305,6 +309,7 @@
             }
         }
         if(currentAlternative === 2) {
+            console.log('no trykker me her 2', direction);
             if(direction === 'down') {
                 newFocus = 4;
             }
@@ -313,6 +318,7 @@
             }
         }
         if(currentAlternative === 3) {
+            console.log('no trykker me her 3', direction);
             if(direction === 'up') {
                 newFocus = 1;
             }
@@ -321,6 +327,7 @@
             }
         }
         if(currentAlternative === 4) {
+            console.log('no trykker me her 4', direction);
             if(direction === 'up') {
                 newFocus = 2;
             }
