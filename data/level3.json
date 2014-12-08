@@ -1,5 +1,135 @@
 [
   {
+    "question": "Hvilket spill er ssx tricky?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "snowboard2",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "snowboard1",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ssxtricky",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "doublefine",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Metal Gear Solid 3?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "metalgearsolid3",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "metagearsolid2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "masterchief",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "metalgearsolid4",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er NBA Street vol 2?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "nbajam",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nbagame",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nbastreetvol2",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "needforspeed",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er Sony-håndholdt?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "n-gage",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "psvita",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "nintendo3ds",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "nomad",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
+    "question": "Hvem er fra Beyond Good and Evil?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "beyondgoodandevil",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "thelongestjourney",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "metalgearsolid4",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "metalgearsolid5",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
     "question": "Hvem har designet Super Mario Bros?",
     "alternatives": [
       {
@@ -26,678 +156,80 @@
     ]
   },
   {
+    "question": "Hvem er Sly Cooper?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "slycooper",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "crashbandicoot",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "jakanddaxter",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "pikachu",
+        "type": "img",
+        "solution": false
+      }
+    ]
+  },
+  {
     "question": "Hvem har designet Metal Gear Solid?",
     "alternatives": [
       {
+        "text": "",
+        "media": "miyamoto",
+        "type": "img",
+        "solution": true
+      },{
+        "text": "",
+        "media": "gabenewell",
+        "type": "img",
+        "solution": false
+      },{
         "text": "",
         "media": "hideokojima",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "miyamoto",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "microsoft",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "allowe",
+        "media": "billgates",
         "type": "img",
         "solution": false
       }
     ]
   },
   {
-    "question": "Hvem har ikke et spill på SNES?",
+    "question": "Hvem er fra prince of persia 2?",
     "alternatives": [
       {
         "text": "",
-        "media": "ducktales",
+        "media": "princeofpersia1",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "princeofpersia2",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "princeofpersia6",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "princeofpersia",
         "type": "img",
         "solution": true
-      },{
-        "text": "",
-        "media": "donaldduck",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "kirby",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "link",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er ikke i Mario Kart: Double Dash!?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "kirby",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "luigi",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mario",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "dkjr",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Når kom første final fantasy?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "1987",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "1984",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "1982",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "1980",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken er ikke en planet i Destiny?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "uranus",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "moon",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mars",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "venus",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilke av disse er skate 3?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "tonyhawk",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "skate3",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "tonyhawklosgatos",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gta3",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Assasins creed IV tilleggstittel?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "ghost",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "goat",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "blackflag",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "hero",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvor far cry 3?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "farcry3",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "urban",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "uranus",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "moon",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er ikke en hovedperson i GTA5?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "gta5char",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gta4char",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "gta5charr",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gta5charrr",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er captain comic?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "minecraft",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "captaincomic",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "ninjagaiden",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "commanderkeen",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er Commander Keen?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "commanderkeen",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "peterpuppy",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "porcupine",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "sackboy",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem utviklet Commander Keen?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "idsoftware",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "microsoft",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "bungie",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gabenewell",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken FPS kom først?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "halo3",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "amongthesleep",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "callofduty2",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "callofdutyscreenshot",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken er Dune 2000?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "commandandconquer",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "dune2000",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "haloscreenshot",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "callofdutyscreenshot",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem har utviklet Trials?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "redlynx",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "microsoft",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "bungie",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "ubisoft",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hva er det beste våpenet i Doom?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "doomsniper",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "doombfg",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "doomstrangeweapon",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "doomshotgun",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er skurken i Monkey Island?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "dogpirate",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "lechuck",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "clown",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "clownboss",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er Master chiefs kunstige sidekick?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "wonderwoman",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "cortana",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "gearofwarfemale",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gearsofwarredhead",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken farge er genseren til Mario i Super Mario Bros?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "supermariobros2",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "supermariobros1",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "supermariobros3",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "supermariobros4",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hva får man i den første spørsmålsblokka i super mario bros?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "nothing",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mushroom",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "coin",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "cow",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken viser den europeiske versjonen av Contra?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "probotector",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "contra",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "contra2",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "contra3",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilket ord var ninja byttet ut med da Turtles ble lansert på NES i europa?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "hero",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "super",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "mega",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "fight",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilket spill har flyvende biler?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "gta3",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "gta2",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "carmageddon",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "wipeout",
-        "type": "img",
-        "solution": true
-      }
-    ]
-  },
-  {
-    "question": "Hvilket bilde er fra Dark Souls 2?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "darksouls2",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "diablo3",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "darksouls1",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "callofduty2",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilken av disse var launchspill for xbox 360 i europa?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "callofduty2",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "halo3",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "jakanddaxter",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "assasinscreed",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvilket av disse er utviklet av blizzard?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "supermariokart",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "thelostvikings",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "commanderkeen",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "jakanddaxter",
-        "type": "img",
-        "solution": false
       }
     ]
   }

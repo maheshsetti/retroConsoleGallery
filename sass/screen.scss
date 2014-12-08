@@ -9,7 +9,7 @@ $bigScreen: "only screen and (min-height : 700px)";
 
 @font-face {
    font-family: 'p2p';
-      src: url('../fonts/p2p.ttf');
+      src: url('../eater.ttf');
    font-weight: normal;
    font-style: normal;
 }
@@ -96,10 +96,10 @@ body {
 
 .background-animation {
     position: absolute;
-    top: 0;
+    top: -47px;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
 }
 .question-wrapper,
 .menu-wrapper {
@@ -136,7 +136,7 @@ body {
                 height: 600px;
             }
             .question-header {
-                font-size: 30px;
+                font-size: 60px;
                 color: white;
                 margin-top: -40px;
                 text-align: center;
@@ -150,7 +150,6 @@ body {
                 position: absolute;
                 width: 180px;
                 height: 180px;
-                border: 4px solid white;
                 background-color: rgba(255,255,255,0.1);
                 overflow: hidden;
                 img {
@@ -161,7 +160,7 @@ body {
                     height: 280px;
                 }
                 &.selected {
-                    @include box-shadow(0 0 100px #8cbaff);
+                    @include box-shadow(0 0 100px red);
                     z-index: 100;
                     &:after,
                     &:before {
@@ -171,7 +170,7 @@ body {
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        @include box-shadow(0 0 100px #8cbaff);
+                        @include box-shadow(0 0 100px red inset);
                     }
                 }
                 &.answer-unselected {
@@ -249,32 +248,31 @@ body {
             //border: 4px solid white;
             .menu-header,
             .winner-menu-header {
-                font-size: 20px;
+                font-size: 120px;
                 padding-bottom: 20px;
                 line-height: 1.5em;
                 border-bottom: 4px solid white;
                 @media #{$bigScreen} {
-                    font-size: 40px;
+                    font-size: 120px;
                 }
             }
             .menu-subheader,
             .winner-menu-subheader {
 
-                font-size: 16px;
+                font-size: 60px;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                line-height: 1.5em;
                 @media #{$bigScreen} {
-                    font-size: 20px;
+                    font-size: 70px;
 
                 }
             }
             .points-number {
                 padding-top: 20px;
-                font-size: 40px;
+                font-size: 60px;
             }
             .points-text {
-                font-size: 20px;
+                font-size: 40px;
             }
             @include translateY(-1000px);
             @media #{$bigScreen} {
@@ -284,23 +282,23 @@ body {
 
             &#main-menu {
                 padding-top: 140px;
-                &:before {
+                #logo {
                     content: "";
                     position: absolute;
                     top: -100px;
-                    left:0;
-                    width: 100%;
+                    left:-200px;
+                    width: 847px;
 
-                    height: 600px;
+                    height: 413px;
                     background: {
-                        image: url(../img/logo.svg);
+                        image: url(../img/logo.png);
                         size: 100%;
                         repeat: no-repeat;
                     }
                     @media #{$bigScreen} {
                         top: -150px;
-                        width: 80%;
-                        left: 10%;
+                        width: 847px;
+                        left: -20%;
 
                     }
                 }
@@ -315,35 +313,51 @@ body {
                 bottom: 20px;
                 border: 4px solid white;
                 padding: 10px;
-                font-size: 20px;
+                font-size: 70px;
                 &.selected {
-                    @include box-shadow(0 0 100px #8cbaff);
-                }
-                &:after {
-                    content: "start";
-                    border: 2px solid white;
-                    border-radius: 10px;
-                    font-size: 12px;
-                    padding: 6px;
-                    vertical-align: bottom;
-                    margin-left: 10px;
-                    margin-top: 0;
-                    display: inline-block;
+                    @include box-shadow(0 0 100px red);
                 }
             }
 
         }
     }
 }
-#jan-olav-big {
+#crashcool-big {
     position: absolute;
-    top: 50%;
-    margin-top: -200px;
-    right: 100px;
-    height: 400px;
-    width: 600px;
+    top: 0;
+    opacity: 0;
+    right: 0px;
+    height: 1200px;
+    width: 731px;
     background: {
         image: url(../img/janolavrocket.png);
+        repeat: no-repeat;
+        size: 100%;
+    }
+    @media #{$bigScreen} {
+    }
+    z-index: 500000;
+    &.bowser {
+        background: {
+            image: url(../img/janolavbowser.png);
+        }
+        &.aapen {
+            background: {
+                image: url(../img/janolavbowserhit.png);
+            }
+        }
+    }
+}
+
+#kratos-big {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    height: 1800px;
+    width: 1102px;
+    opacity: 0;
+    background: {
+        image: url(../img/kratos-big.png);
         repeat: no-repeat;
     }
     @media #{$bigScreen} {
@@ -418,6 +432,15 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.countdown {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 140px;
+    z-index: 100;
+    color: white;
+}
 
 .scoreboard {
     width: 300px;
@@ -470,13 +493,13 @@ body {
         margin-left: -110px;
         left: 0;
         background: {
-            image: url(../img/janolavlukket.png);
+            image: url(../img/pacman.gif);
             size: 120px 80px;
             repeat: no-repeat;
         }
         z-index: 200000;
         &.aapen {
-            background-image: url(../img/janolavaapen.png);
+            background-image: url(../img/pacman.gif);
         }
         &.bonus {
             margin-left: 0px;
@@ -486,17 +509,17 @@ body {
 .pellet {
         position: absolute;
         top: 100%;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         left: 0;
-        margin-top: -40px;
+        margin-top: -60px;
         &:after {
             content: "";
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 5px;
-            height: 5px;
+            width: 10px;
+            height: 10px;
             background-color: #f2ea0f;
             @include box-shadow(0 0 10px #f2ea0f);
             @include border-radius(50%);

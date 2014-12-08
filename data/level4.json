@@ -1,259 +1,155 @@
 [
   {
-    "question": "Hvem har stemmen til Master Chief i halo 4?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "halo4guy",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "markrolston",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "traviswillingham",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "brucethomas",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvor mange brett er det i super mario bros 2?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "20",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "8",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "21",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "22",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Når kom Donkey Kong ut?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "1981",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "1979",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "1980",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "1982",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
     "question": "Hvem kom først?",
     "alternatives": [
       {
         "text": "",
-        "media": "vic20",
+        "media": "wipeout",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "ridgeracer",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "commodore64",
+        "media": "silenthill",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "mario",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "dkjr",
+        "media": "metagearsolid2",
         "type": "img",
         "solution": false
       }
     ]
   },
   {
-    "question": "Hvem laget ikke ekstra lydchip til Nintendo Entertainment System",
+    "question": "Hvem utviklet Destruction Derby?",
     "alternatives": [
       {
         "text": "",
-        "media": "Sunsoft",
+        "media": "konami",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "Konami",
+        "media": "microsoft",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "Namco",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "Capcom",
-        "type": "img",
-        "solution": true
-      }
-    ]
-  },
-  {
-    "question": "Hvilken er den nyeste spillmaskinen til Asus?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "alienware",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "alienware1",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "asusg20",
+        "media": "psygnosis",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "asusg10",
+        "media": "namco",
         "type": "img",
         "solution": false
       }
     ]
   },
-  {
-    "question": "Hvilke våpen er nytt i 'nye' GTA5?",
+ {
+    "question": "Hvem utviklet Destruction Derby?",
     "alternatives": [
       {
         "text": "",
-        "media": "machinegun",
+        "media": "guitarhero",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "machete",
+        "media": "gtasanandreas",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "lance",
+        "media": "rockband",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "crossbow",
+        "media": "singstar",
         "type": "img",
         "solution": false
       }
     ]
   },
-  {
-    "question": "Howard Scott Warshaw lagde ET og?",
+ {
+    "question": "Hvilket spill var det siste på Playstation 1?",
     "alternatives": [
       {
         "text": "",
-        "media": "atarigame2",
+        "media": "snowboard1",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "activisionatari",
+        "media": "streefighter2alpha",
         "type": "img",
         "solution": false
       },{
         "text": "",
-        "media": "yarrsrevenge",
+        "media": "tonyhawk",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "fifa2005",
+        "type": "img",
+        "solution": true
+      }
+    ]
+  },
+ {
+    "question": "Hvem er faren til Playstation?",
+    "alternatives": [
+      {
+        "text": "",
+        "media": "miyamoto",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "kenkutaragi",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "atarigame",
+        "media": "hideokojima",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "gabenewell",
         "type": "img",
         "solution": false
       }
     ]
   },
-  {
-    "question": "Hvilket spill ble kalt for skamløs lisensmelking?",
+ {
+    "question": "Hva er verdens mest solgte konsoll?",
     "alternatives": [
       {
         "text": "",
-        "media": "legendofkorra",
+        "media": "nes",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation3",
+        "type": "img",
+        "solution": false
+      },{
+        "text": "",
+        "media": "playstation2",
         "type": "img",
         "solution": true
       },{
         "text": "",
-        "media": "ducktalesremastered",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "turtlesintime",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "dukenukem",
-        "type": "img",
-        "solution": false
-      }
-    ]
-  },
-  {
-    "question": "Hvem er Hunters klassen i Destiny inspirert fra?",
-    "alternatives": [
-      {
-        "text": "",
-        "media": "bobafett",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "hansolo",
-        "type": "img",
-        "solution": true
-      },{
-        "text": "",
-        "media": "dukenukem",
-        "type": "img",
-        "solution": false
-      },{
-        "text": "",
-        "media": "samusaran",
+        "media": "psvita",
         "type": "img",
         "solution": false
       }

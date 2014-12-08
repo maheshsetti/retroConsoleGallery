@@ -16,7 +16,7 @@
     var audioPoint = new Audio('sounds/point.wav');
     var audioLostLife = new Audio('sounds/lostlife.wav');
     var audioFireball = new Audio('sounds/fireball.wav');
-    var audioSelect = new Audio('sounds/select.wav');
+    var audioSelect = new Audio('sounds/select.mp3');
     var audioTimeout = new Audio('sounds/timeout.wav');
     var audioPebble = new Audio('sounds/pebble.wav');
     var audioNextlevel = new Audio('sounds/nextlevel.wav');
@@ -27,12 +27,10 @@
     var audioDpad = new Audio('sounds/dpad.wav');
     var song = new Audio('sounds/song.mp3');
     var audioGamestart = new Audio('sounds/gamestart.wav');
-    var countdown = new Audio('sounds/countdown.wav');
-    var countdown2 = new Audio('sounds/countdown.wav');
-    var countdown3 = new Audio('sounds/countdown.wav');
-    var song2 = new Audio('sounds/song2.mp3');
-    var song3 = new Audio('sounds/song3.mp3');
-    var song4 = new Audio('sounds/song4.mp3');
+    var countdown = new Audio('sounds/countdown.mp3');
+    var song2 = new Audio('sounds/song.mp3');
+    var song3 = new Audio('sounds/song.mp3');
+    var song4 = new Audio('sounds/song.mp3');
     var inputController = false;
 
 
@@ -86,20 +84,11 @@
     };
 
     var toggleJanOlav = function(toggle) {
-        if(!toggle) {
-            TweenLite.to($('#jan-olav-big'), 1, {z: '50',x: -window.innerWidth/2,  ease: Linear.EaseNone, onComplete: function() {
-                $('#jan-olav-big').hide();
-            }});
-        } else {
-            TweenLite.to($('#jan-olav-big'), 0, {z: 0, x: 2000});
-            $('#jan-olav-big').show();
-            TweenLite.to($('#jan-olav-big'), 0.5, {x: '0', ease: Linear.EaseNone});
-        }
     };
     // the callback is optional
     var toggleMenu = function(toggle, element, callback) {
         if(!toggle) {
-            TweenLite.to(element, 1, {y: '-1000px', rotation: '-90', ease: Linear.EaseNone, onComplete: function() {
+            TweenLite.to(element, 1, {opacity: 0, ease: Linear.EaseNone, onComplete: function() {
                     element.hide();
                     if(callback) {
                         callback();
@@ -107,8 +96,8 @@
                 }});
         } else {
             element.show();
-            TweenLite.to(element, 0, {rotation: '-90'});
-            TweenLite.to(element, 1, {y: '0px', rotation: 0, ease: Bounce.easeOut, onComplete: callback});
+            TweenLite.to(element, 0, {opacity: 0, y: '0px'});
+            TweenLite.to(element, 1, {y: '0px', opacity: '0.8', ease: Linear.easeNone, onComplete: callback});
         }
     };
 
@@ -205,9 +194,7 @@
     var startAnimation = function(pelletSpace) {
         gameTimerPelletInterval = setInterval(function() {
             gameTimerLevelTime = new Date().getTime();
-            $('.pac-man').css('background-image', 'url(img/janolavlukket.png)');
             setTimeout(function() {
-                $('.pac-man').css('background-image', 'url(img/janolavaapen.png)');
             }, 700);
             TweenLite.to($('.pac-man'), 0.96, {left: '+=' + (20+pelletSpace), onComplete: function() {
                 audioPebble.play();
@@ -256,9 +243,9 @@
             countdown.play();
         }, 1000);
 
-        TweenLite.to(countDown1, 1.5, {z: '100', opacity: 1, delay: 1.5, ease: Linear.easeNone, onComplete: function() { countdown2.play();countDown1.remove(); questionContainer.append(countDown2); }});
-        TweenLite.to(countDown2, 1.5, {z: '100', opacity: 1, delay: 3, ease: Linear.easeNone, onComplete: function() { countDown2.remove(); countdown3.play(); questionContainer.append(countDown3); }});
-        TweenLite.to(countDown3, 1.5, {z: '100', opacity: 1, delay: 4.5, ease: Linear.easeNone, onComplete: function() { countDown3.remove(); audioGamestart.play();  questionContainer.append(countDownGo); }});
+        TweenLite.to(countDown1, 1.5, {z: '100', opacity: 1, delay: 1.5, ease: Linear.easeNone, onComplete: function() { countDown1.remove(); questionContainer.append(countDown2); }});
+        TweenLite.to(countDown2, 1.5, {z: '100', opacity: 1, delay: 3, ease: Linear.easeNone, onComplete: function() { countDown2.remove();  questionContainer.append(countDown3); }});
+        TweenLite.to(countDown3, 1.5, {z: '100', opacity: 1, delay: 4.5, ease: Linear.easeNone, onComplete: function() { countDown3.remove();  questionContainer.append(countDownGo); }});
         TweenLite.to(countDownGo, 1.5, {z: '100', opacity: 1, delay: 6, ease: Linear.easeNone, onComplete: function() { countDownGo.remove(); gameController('loadLevel'); }});
     };
 

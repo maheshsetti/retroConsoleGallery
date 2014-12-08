@@ -6,8 +6,10 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
     </head>
     <body class="body">
-    <div class="background-animation"></div>
-    <div class="background-animation-cool"></div>
+
+    <video class="background-animation" autoplay muted loop>
+        <source src="video/flames.mp4" type="video/mp4">
+    </video>
     <div class="clouds-container"></div>
     <div class="scoreboard">
         <div id="level-text">Brett </div>
@@ -20,6 +22,7 @@
     <div class="menu-wrapper">
         <div class="menu-container">
             <div id="main-menu" class="menu">
+                <div id="logo"></div>
                 <div class="menu-button selected">Start spill</div>
             </div>
             <div id="game-over-menu" class="menu">
@@ -47,7 +50,8 @@
         </div>
     </div>
     <div class="time-counter"></div>
-    <div id="jan-olav-big"></div>
+    <div id="kratos-big"></div>
+    <div id="crashcool-big"></div>
     <!--
         <div class="question-wrapper">
             <div class="question-container">
